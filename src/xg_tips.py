@@ -59,12 +59,16 @@ def build_xg_tip_for_match(
     *,
     min_edge_pct: float = 3.0,
     home_advantage: float = 1.08,
+    min_team_games: int = 4,
+    max_odds: float = 8.0,
 ) -> dict[str, Any] | None:
     home_name = match.get("home_team") or ""
     away_name = match.get("away_team") or ""
     home_stats = resolve_team(home_name, league_xg)
     away_stats = resolve_team(away_name, league_xg)
     if not home_stats or not away_stats:
+        return None
+    if (home_stats.get("games") or 0) < min_team_games or (away_stats.get("games") or 0) < min_team_games:
         return None
 
     lam_h, lam_a = expected_lambdas(home_stats, away_stats, home_advantage=home_advantage)
@@ -99,7 +103,13 @@ def build_xg_tip_for_match(
             }
         )
 
-    viable = [o for o in options if o.get("ev_pct") is not None and o["ev_pct"] >= min_edge_pct]
+    viable = [
+        o
+        for o in options
+        if o.get("ev_pct") is not None
+        and o["ev_pct"] >= min_edge_pct
+        and (o.get("odds") is None or o["odds"] <= max_odds)
+    ]
     if not viable:
         best_pick = max(
             (o for o in options if o.get("ev_pct") is not None),
@@ -145,6 +155,8 @@ def attach_xg_tips(
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     min_edge = float(config.get("xg_min_edge_pct", 3.0))
     home_adv = float(config.get("xg_home_advantage", 1.08))
+    min_games = int(config.get("xg_min_team_games", 4))
+    max_odds = float(config.get("xg_max_odds", 8.0))
 
     all_tips: list[dict[str, Any]] = []
     for m in matches:
@@ -157,6 +169,8 @@ def attach_xg_tips(
             league_xg,
             min_edge_pct=min_edge,
             home_advantage=home_adv,
+            min_team_games=min_games,
+            max_odds=max_odds,
         )
         if not tip:
             m["xg_tip"] = None

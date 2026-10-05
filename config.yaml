@@ -27,3 +27,5 @@ value_threshold: 1.05
 # xG tippek (Understat, nyilvános)
 xg_min_edge_pct: 3.0
 xg_home_advantage: 1.08
+xg_min_team_games: 4
+xg_max_odds: 8.0
