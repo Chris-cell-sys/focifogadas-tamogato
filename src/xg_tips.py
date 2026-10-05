@@ -126,34 +126,21 @@ def attach_xg_tips(
         m["is_today"] = is_today_match(m.get("commence_time"), now=now)
         m["kick_date"] = kick.date().isoformat() if kick else None
 
-    has_today = any(m.get("is_today") for m in matches)
-    target_date = None
-    if today_only and not has_today:
-        future_dates = sorted(
-            {
-                m["kick_date"]
-                for m in matches
-                if m.get("kick_date")
-                and parse_kickoff(m.get("commence_time"))
-                and parse_kickoff(m.get("commence_time")) >= now
-            }
-        )
-        target_date = future_dates[0] if future_dates else None
+    today_label = (now.date() if now.hour >= 3 else (now - timedelta(days=1)).date()).isoformat()
 
     for m in matches:
         league = m.get("league") or ""
-        on_slate = True
+        # mindig csak a mai nap
         if today_only:
-            if has_today:
-                on_slate = bool(m.get("is_today"))
-            else:
-                on_slate = bool(target_date and m.get("kick_date") == target_date)
+            on_slate = bool(m.get("is_today"))
+        else:
+            on_slate = True
         if not on_slate:
             m["xg_tip"] = None
             m["on_slate"] = False
             continue
         m["on_slate"] = True
-
+        m["slate_day"] = today_label if today_only else m.get("kick_date")
         league_xg = xg_by_league.get(league) or {}
         if not league_xg or league not in UNDERSTAT_LEAGUES:
             m["xg_tip"] = None

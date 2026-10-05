@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T18:22:23.861328+00:00",
+  "updated_at": "2026-10-05T18:29:47.486319+00:00",
   "source": "espn + understat + tippmixpro + ensemble-models",
   "odds_band": [
     1.8,
@@ -6169,770 +6169,9 @@
       "source": "tippmixpro"
     }
   ],
-  "xg_tips_count": 6,
-  "xg_tips": [
-    {
-      "match_id": "401876446",
-      "league": "fra.1",
-      "sport_title": "Ligue 1",
-      "commence_time": "2026-10-10T15:15Z",
-      "kickoff_local": "2026-10-10 17:15",
-      "kickoff_display": "2026-10-10 17:15 (szombat)",
-      "is_today": false,
-      "home_team": "Lille",
-      "away_team": "Le Havre AC",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Mindkét csapat szerez gólt (Igen)",
-      "short": "BTTS Igen",
-      "market": "BTTS",
-      "prob_pct": 63.6,
-      "fair_odds": 1.57,
-      "tippmix_odds": 1.83,
-      "tippmix_markets": {
-        "1": 1.45,
-        "X": 4.7,
-        "2": 6.25,
-        "O2.5": 1.62,
-        "U2.5": 2.25,
-        "BTTS Igen": 1.83,
-        "BTTS Nem": 1.94
-      },
-      "tippmix_matched": true,
-      "edge_pct": 9.0,
-      "elite_score": 66.3,
-      "confidence_tier": "strong",
-      "model_agreement": 84.4,
-      "models": {
-        "stat_prob_pct": 67.4,
-        "xg_prob_pct": 64.9,
-        "form_prob_pct": 58.2,
-        "ensemble_prob_pct": 63.6
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 19.81,
-        "stake_pct": 3.0,
-        "suggested_stake": 3000.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 3000.0,
-      "stake_pct": 3.0,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "2.03 – 1.33",
-      "home_form": "WDWWL",
-      "away_form": "LDLDL",
-      "home_op_xg": 1.607,
-      "home_op_xga": 1.067,
-      "away_op_xg": 1.63,
-      "away_op_xga": 2.19,
-      "home_attack_balance": 0.601,
-      "away_attack_balance": 0.427,
-      "winner_pick": "2",
-      "winner_prob": 24.9,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 63.6,
-      "goals_pick": "O2.5",
-      "goals_prob": 65.0,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401879265",
-      "league": "eng.1",
-      "sport_title": "Premier League",
-      "commence_time": "2026-10-10T14:00Z",
-      "kickoff_local": "2026-10-10 16:00",
-      "kickoff_display": "2026-10-10 16:00 (szombat)",
-      "is_today": false,
-      "home_team": "Ipswich Town",
-      "away_team": "Fulham",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Under 2.5 gól",
-      "short": "U2.5",
-      "market": "Gólok",
-      "prob_pct": 58.0,
-      "fair_odds": 1.72,
-      "tippmix_odds": 2.05,
-      "tippmix_markets": {
-        "1": 2.7,
-        "X": 3.45,
-        "2": 2.46,
-        "O2.5": 1.74,
-        "U2.5": 2.05,
-        "BTTS Igen": 1.61,
-        "BTTS Nem": 2.26
-      },
-      "tippmix_matched": true,
-      "edge_pct": 9.2,
-      "elite_score": 64.6,
-      "confidence_tier": "strong",
-      "model_agreement": 90.0,
-      "models": {
-        "stat_prob_pct": 57.0,
-        "xg_prob_pct": 56.0,
-        "form_prob_pct": 61.7,
-        "ensemble_prob_pct": 58.0
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 18.02,
-        "stake_pct": 3.0,
-        "suggested_stake": 3000.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 3000.0,
-      "stake_pct": 3.0,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.37 – 0.99",
-      "home_form": "WLLWL",
-      "away_form": "LLLDD",
-      "home_op_xg": 1.091,
-      "home_op_xga": 0.961,
-      "away_op_xg": 0.973,
-      "away_op_xga": 1.68,
-      "home_attack_balance": 0.532,
-      "away_attack_balance": 0.367,
-      "winner_pick": "1",
-      "winner_prob": 45.5,
-      "btts_pick": "BTTS Nem",
-      "btts_prob": 53.4,
-      "goals_pick": "U2.5",
-      "goals_prob": 58.0,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401874947",
-      "league": "ita.1",
-      "sport_title": "Serie A",
-      "commence_time": "2026-10-10T13:00Z",
-      "kickoff_local": "2026-10-10 15:00",
-      "kickoff_display": "2026-10-10 15:00 (szombat)",
-      "is_today": false,
-      "home_team": "Genoa",
-      "away_team": "Fiorentina",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Over 2.5 gól",
-      "short": "O2.5",
-      "market": "Gólok",
-      "prob_pct": 61.3,
-      "fair_odds": 1.63,
-      "tippmix_odds": 1.99,
-      "tippmix_markets": {
-        "1": 3.05,
-        "X": 3.3,
-        "2": 2.3,
-        "O2.5": 1.99,
-        "U2.5": 1.79,
-        "BTTS Igen": 1.77,
-        "BTTS Nem": 2.01
-      },
-      "tippmix_matched": true,
-      "edge_pct": 11.1,
-      "elite_score": 58.5,
-      "confidence_tier": "moderate",
-      "model_agreement": 57.9,
-      "models": {
-        "stat_prob_pct": 71.6,
-        "xg_prob_pct": 64.6,
-        "form_prob_pct": 46.6,
-        "ensemble_prob_pct": 61.3
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 22.25,
-        "stake_pct": 3.0,
-        "suggested_stake": 3000.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 3000.0,
-      "stake_pct": 3.0,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.58 – 1.63",
-      "home_form": "LLLDL",
-      "away_form": "LLLWD",
-      "home_op_xg": 0.834,
-      "home_op_xga": 1.637,
-      "away_op_xg": 1.709,
-      "away_op_xga": 2.404,
-      "home_attack_balance": 0.338,
-      "away_attack_balance": 0.416,
-      "winner_pick": "1",
-      "winner_prob": 37.1,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 63.1,
-      "goals_pick": "O2.5",
-      "goals_prob": 61.3,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401879268",
-      "league": "eng.1",
-      "sport_title": "Premier League",
-      "commence_time": "2026-10-10T11:30Z",
-      "kickoff_local": "2026-10-10 13:30",
-      "kickoff_display": "2026-10-10 13:30 (szombat)",
-      "is_today": false,
-      "home_team": "Arsenal",
-      "away_team": "Leeds United",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Mindkét csapat szerez gólt (Igen)",
-      "short": "BTTS Igen",
-      "market": "BTTS",
-      "prob_pct": 52.4,
-      "fair_odds": 1.91,
-      "tippmix_odds": 2.02,
-      "tippmix_markets": {
-        "1": 1.37,
-        "X": 4.85,
-        "2": 7.5,
-        "O2.5": 1.7,
-        "U2.5": 2.1,
-        "BTTS Igen": 2.02,
-        "BTTS Nem": 1.76
-      },
-      "tippmix_matched": true,
-      "edge_pct": 2.9,
-      "elite_score": 53.4,
-      "confidence_tier": "moderate",
-      "model_agreement": 96.6,
-      "models": {
-        "stat_prob_pct": 52.2,
-        "xg_prob_pct": 53.4,
-        "form_prob_pct": 51.3,
-        "ensemble_prob_pct": 52.4
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 5.72,
-        "stake_pct": 1.43,
-        "suggested_stake": 1429.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 1429.0,
-      "stake_pct": 1.43,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.94 – 0.95",
-      "home_form": "WWWWL",
-      "away_form": "WDDWD",
-      "home_op_xg": 2.33,
-      "home_op_xga": 0.494,
-      "away_op_xg": 1.35,
-      "away_op_xga": 1.438,
-      "home_attack_balance": 0.825,
-      "away_attack_balance": 0.484,
-      "winner_pick": "1",
-      "winner_prob": 60.2,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 52.4,
-      "goals_pick": "O2.5",
-      "goals_prob": 55.2,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401876445",
-      "league": "fra.1",
-      "sport_title": "Ligue 1",
-      "commence_time": "2026-10-10T18:45Z",
-      "kickoff_local": "2026-10-10 20:45",
-      "kickoff_display": "2026-10-10 20:45 (szombat)",
-      "is_today": false,
-      "home_team": "Lorient",
-      "away_team": "Paris FC",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Over 2.5 gól",
-      "short": "O2.5",
-      "market": "Gólok",
-      "prob_pct": 54.3,
-      "fair_odds": 1.84,
-      "tippmix_odds": 1.92,
-      "tippmix_markets": {
-        "1": 3.05,
-        "X": 3.25,
-        "2": 2.31,
-        "O2.5": 1.92,
-        "U2.5": 1.85,
-        "BTTS Igen": 1.7,
-        "BTTS Nem": 2.1
-      },
-      "tippmix_matched": true,
-      "edge_pct": 2.2,
-      "elite_score": 53.1,
-      "confidence_tier": "moderate",
-      "model_agreement": 94.9,
-      "models": {
-        "stat_prob_pct": 55.0,
-        "xg_prob_pct": 52.7,
-        "form_prob_pct": 55.7,
-        "ensemble_prob_pct": 54.3
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 4.56,
-        "stake_pct": 1.14,
-        "suggested_stake": 1140.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 1140.0,
-      "stake_pct": 1.14,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.19 – 1.66",
-      "home_form": "DLWDL",
-      "away_form": "DWWDW",
-      "home_op_xg": 0.855,
-      "home_op_xga": 1.129,
-      "away_op_xg": 2.082,
-      "away_op_xga": 1.031,
-      "home_attack_balance": 0.431,
-      "away_attack_balance": 0.669,
-      "winner_pick": "X",
-      "winner_prob": 23.6,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 55.2,
-      "goals_pick": "O2.5",
-      "goals_prob": 54.3,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401882851",
-      "league": "esp.1",
-      "sport_title": "La Liga",
-      "commence_time": "2026-10-09T19:00Z",
-      "kickoff_local": "2026-10-09 21:00",
-      "kickoff_display": "2026-10-09 21:00 (péntek)",
-      "is_today": false,
-      "home_team": "Málaga",
-      "away_team": "Espanyol",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Over 2.5 gól",
-      "short": "O2.5",
-      "market": "Gólok",
-      "prob_pct": 51.6,
-      "fair_odds": 1.94,
-      "tippmix_odds": 2.04,
-      "tippmix_markets": {
-        "1": 2.68,
-        "X": 3.15,
-        "2": 2.68,
-        "O2.5": 2.04,
-        "U2.5": 1.75,
-        "BTTS Igen": 1.78,
-        "BTTS Nem": 2
-      },
-      "tippmix_matched": true,
-      "edge_pct": 2.6,
-      "elite_score": 43.5,
-      "confidence_tier": "weak",
-      "model_agreement": 71.2,
-      "models": {
-        "stat_prob_pct": 50.6,
-        "xg_prob_pct": 59.5,
-        "form_prob_pct": 41.9,
-        "ensemble_prob_pct": 51.6
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 5.02,
-        "stake_pct": 1.25,
-        "suggested_stake": 1254.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 1254.0,
-      "stake_pct": 1.25,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.26 – 1.49",
-      "home_form": "LDDLL",
-      "away_form": "LDWLL",
-      "home_op_xg": 0.672,
-      "home_op_xga": 2.348,
-      "away_op_xg": 1.166,
-      "away_op_xga": 1.951,
-      "home_attack_balance": 0.223,
-      "away_attack_balance": 0.374,
-      "winner_pick": "2",
-      "winner_prob": 42.3,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 55.1,
-      "goals_pick": "O2.5",
-      "goals_prob": 51.6,
-      "is_actionable": true,
-      "is_top": false
-    }
-  ],
-  "top_tips": [
-    {
-      "match_id": "401876446",
-      "league": "fra.1",
-      "sport_title": "Ligue 1",
-      "commence_time": "2026-10-10T15:15Z",
-      "kickoff_local": "2026-10-10 17:15",
-      "kickoff_display": "2026-10-10 17:15 (szombat)",
-      "is_today": false,
-      "home_team": "Lille",
-      "away_team": "Le Havre AC",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Mindkét csapat szerez gólt (Igen)",
-      "short": "BTTS Igen",
-      "market": "BTTS",
-      "prob_pct": 63.6,
-      "fair_odds": 1.57,
-      "tippmix_odds": 1.83,
-      "tippmix_markets": {
-        "1": 1.45,
-        "X": 4.7,
-        "2": 6.25,
-        "O2.5": 1.62,
-        "U2.5": 2.25,
-        "BTTS Igen": 1.83,
-        "BTTS Nem": 1.94
-      },
-      "tippmix_matched": true,
-      "edge_pct": 9.0,
-      "elite_score": 66.3,
-      "confidence_tier": "strong",
-      "model_agreement": 84.4,
-      "models": {
-        "stat_prob_pct": 67.4,
-        "xg_prob_pct": 64.9,
-        "form_prob_pct": 58.2,
-        "ensemble_prob_pct": 63.6
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 19.81,
-        "stake_pct": 3.0,
-        "suggested_stake": 3000.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 3000.0,
-      "stake_pct": 3.0,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "2.03 – 1.33",
-      "home_form": "WDWWL",
-      "away_form": "LDLDL",
-      "home_op_xg": 1.607,
-      "home_op_xga": 1.067,
-      "away_op_xg": 1.63,
-      "away_op_xga": 2.19,
-      "home_attack_balance": 0.601,
-      "away_attack_balance": 0.427,
-      "winner_pick": "2",
-      "winner_prob": 24.9,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 63.6,
-      "goals_pick": "O2.5",
-      "goals_prob": 65.0,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401879265",
-      "league": "eng.1",
-      "sport_title": "Premier League",
-      "commence_time": "2026-10-10T14:00Z",
-      "kickoff_local": "2026-10-10 16:00",
-      "kickoff_display": "2026-10-10 16:00 (szombat)",
-      "is_today": false,
-      "home_team": "Ipswich Town",
-      "away_team": "Fulham",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Under 2.5 gól",
-      "short": "U2.5",
-      "market": "Gólok",
-      "prob_pct": 58.0,
-      "fair_odds": 1.72,
-      "tippmix_odds": 2.05,
-      "tippmix_markets": {
-        "1": 2.7,
-        "X": 3.45,
-        "2": 2.46,
-        "O2.5": 1.74,
-        "U2.5": 2.05,
-        "BTTS Igen": 1.61,
-        "BTTS Nem": 2.26
-      },
-      "tippmix_matched": true,
-      "edge_pct": 9.2,
-      "elite_score": 64.6,
-      "confidence_tier": "strong",
-      "model_agreement": 90.0,
-      "models": {
-        "stat_prob_pct": 57.0,
-        "xg_prob_pct": 56.0,
-        "form_prob_pct": 61.7,
-        "ensemble_prob_pct": 58.0
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 18.02,
-        "stake_pct": 3.0,
-        "suggested_stake": 3000.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 3000.0,
-      "stake_pct": 3.0,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.37 – 0.99",
-      "home_form": "WLLWL",
-      "away_form": "LLLDD",
-      "home_op_xg": 1.091,
-      "home_op_xga": 0.961,
-      "away_op_xg": 0.973,
-      "away_op_xga": 1.68,
-      "home_attack_balance": 0.532,
-      "away_attack_balance": 0.367,
-      "winner_pick": "1",
-      "winner_prob": 45.5,
-      "btts_pick": "BTTS Nem",
-      "btts_prob": 53.4,
-      "goals_pick": "U2.5",
-      "goals_prob": 58.0,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401874947",
-      "league": "ita.1",
-      "sport_title": "Serie A",
-      "commence_time": "2026-10-10T13:00Z",
-      "kickoff_local": "2026-10-10 15:00",
-      "kickoff_display": "2026-10-10 15:00 (szombat)",
-      "is_today": false,
-      "home_team": "Genoa",
-      "away_team": "Fiorentina",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Over 2.5 gól",
-      "short": "O2.5",
-      "market": "Gólok",
-      "prob_pct": 61.3,
-      "fair_odds": 1.63,
-      "tippmix_odds": 1.99,
-      "tippmix_markets": {
-        "1": 3.05,
-        "X": 3.3,
-        "2": 2.3,
-        "O2.5": 1.99,
-        "U2.5": 1.79,
-        "BTTS Igen": 1.77,
-        "BTTS Nem": 2.01
-      },
-      "tippmix_matched": true,
-      "edge_pct": 11.1,
-      "elite_score": 58.5,
-      "confidence_tier": "moderate",
-      "model_agreement": 57.9,
-      "models": {
-        "stat_prob_pct": 71.6,
-        "xg_prob_pct": 64.6,
-        "form_prob_pct": 46.6,
-        "ensemble_prob_pct": 61.3
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 22.25,
-        "stake_pct": 3.0,
-        "suggested_stake": 3000.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 3000.0,
-      "stake_pct": 3.0,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.58 – 1.63",
-      "home_form": "LLLDL",
-      "away_form": "LLLWD",
-      "home_op_xg": 0.834,
-      "home_op_xga": 1.637,
-      "away_op_xg": 1.709,
-      "away_op_xga": 2.404,
-      "home_attack_balance": 0.338,
-      "away_attack_balance": 0.416,
-      "winner_pick": "1",
-      "winner_prob": 37.1,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 63.1,
-      "goals_pick": "O2.5",
-      "goals_prob": 61.3,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401879268",
-      "league": "eng.1",
-      "sport_title": "Premier League",
-      "commence_time": "2026-10-10T11:30Z",
-      "kickoff_local": "2026-10-10 13:30",
-      "kickoff_display": "2026-10-10 13:30 (szombat)",
-      "is_today": false,
-      "home_team": "Arsenal",
-      "away_team": "Leeds United",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Mindkét csapat szerez gólt (Igen)",
-      "short": "BTTS Igen",
-      "market": "BTTS",
-      "prob_pct": 52.4,
-      "fair_odds": 1.91,
-      "tippmix_odds": 2.02,
-      "tippmix_markets": {
-        "1": 1.37,
-        "X": 4.85,
-        "2": 7.5,
-        "O2.5": 1.7,
-        "U2.5": 2.1,
-        "BTTS Igen": 2.02,
-        "BTTS Nem": 1.76
-      },
-      "tippmix_matched": true,
-      "edge_pct": 2.9,
-      "elite_score": 53.4,
-      "confidence_tier": "moderate",
-      "model_agreement": 96.6,
-      "models": {
-        "stat_prob_pct": 52.2,
-        "xg_prob_pct": 53.4,
-        "form_prob_pct": 51.3,
-        "ensemble_prob_pct": 52.4
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 5.72,
-        "stake_pct": 1.43,
-        "suggested_stake": 1429.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 1429.0,
-      "stake_pct": 1.43,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.94 – 0.95",
-      "home_form": "WWWWL",
-      "away_form": "WDDWD",
-      "home_op_xg": 2.33,
-      "home_op_xga": 0.494,
-      "away_op_xg": 1.35,
-      "away_op_xga": 1.438,
-      "home_attack_balance": 0.825,
-      "away_attack_balance": 0.484,
-      "winner_pick": "1",
-      "winner_prob": 60.2,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 52.4,
-      "goals_pick": "O2.5",
-      "goals_prob": 55.2,
-      "is_actionable": true,
-      "is_top": true
-    },
-    {
-      "match_id": "401876445",
-      "league": "fra.1",
-      "sport_title": "Ligue 1",
-      "commence_time": "2026-10-10T18:45Z",
-      "kickoff_local": "2026-10-10 20:45",
-      "kickoff_display": "2026-10-10 20:45 (szombat)",
-      "is_today": false,
-      "home_team": "Lorient",
-      "away_team": "Paris FC",
-      "bookmaker": "TippmixPro",
-      "odds_source": "TippmixPro",
-      "pick": "Over 2.5 gól",
-      "short": "O2.5",
-      "market": "Gólok",
-      "prob_pct": 54.3,
-      "fair_odds": 1.84,
-      "tippmix_odds": 1.92,
-      "tippmix_markets": {
-        "1": 3.05,
-        "X": 3.25,
-        "2": 2.31,
-        "O2.5": 1.92,
-        "U2.5": 1.85,
-        "BTTS Igen": 1.7,
-        "BTTS Nem": 2.1
-      },
-      "tippmix_matched": true,
-      "edge_pct": 2.2,
-      "elite_score": 53.1,
-      "confidence_tier": "moderate",
-      "model_agreement": 94.9,
-      "models": {
-        "stat_prob_pct": 55.0,
-        "xg_prob_pct": 52.7,
-        "form_prob_pct": 55.7,
-        "ensemble_prob_pct": 54.3
-      },
-      "staking": {
-        "bankroll": 100000.0,
-        "currency": "HUF",
-        "kelly_full_pct": 4.56,
-        "stake_pct": 1.14,
-        "suggested_stake": 1140.0,
-        "staking_method": "fractional_kelly_0.25"
-      },
-      "suggested_stake": 1140.0,
-      "stake_pct": 1.14,
-      "bankroll": 100000.0,
-      "is_value": true,
-      "odds_in_band": true,
-      "expected_score": "1.19 – 1.66",
-      "home_form": "DLWDL",
-      "away_form": "DWWDW",
-      "home_op_xg": 0.855,
-      "home_op_xga": 1.129,
-      "away_op_xg": 2.082,
-      "away_op_xga": 1.031,
-      "home_attack_balance": 0.431,
-      "away_attack_balance": 0.669,
-      "winner_pick": "X",
-      "winner_prob": 23.6,
-      "btts_pick": "BTTS Igen",
-      "btts_prob": 55.2,
-      "goals_pick": "O2.5",
-      "goals_prob": 54.3,
-      "is_actionable": true,
-      "is_top": true
-    }
-  ],
+  "xg_tips_count": 0,
+  "xg_tips": [],
+  "top_tips": [],
   "matches": [
     {
       "id": "401884781",
@@ -6975,9 +6214,9 @@
       "kickoff_display": "2026-10-09 20:30 (péntek)",
       "is_today": false,
       "kick_date": "2026-10-09",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.27 20:45",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401876447",
@@ -7020,9 +6259,9 @@
       "kickoff_display": "2026-10-09 20:45 (péntek)",
       "is_today": false,
       "kick_date": "2026-10-09",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.09 20:45",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880233",
@@ -7065,8 +6304,8 @@
       "kickoff_display": "2026-10-09 21:00 (péntek)",
       "is_today": false,
       "kick_date": "2026-10-09",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401882851",
@@ -7109,561 +6348,9 @@
       "kickoff_display": "2026-10-09 21:00 (péntek)",
       "is_today": false,
       "kick_date": "2026-10-09",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.09 21:00",
-      "xg_tip": {
-        "bookmaker": "TippmixPro",
-        "home_xg_team": "Malaga",
-        "away_xg_team": "Espanyol",
-        "expected_home_goals": 1.262,
-        "expected_away_goals": 1.489,
-        "expected_total_goals": 2.75,
-        "model_meta": {
-          "stat": {
-            "home_attack": 0.824,
-            "away_attack": 1.249,
-            "home_def": 1.75,
-            "away_def": 1.397
-          },
-          "xg": {
-            "home_op_xg": 0.672,
-            "home_op_xga": 2.348,
-            "away_op_xg": 1.166,
-            "away_op_xga": 1.951,
-            "home_balance": 0.223,
-            "away_balance": 0.374
-          },
-          "form": {
-            "home_form": "LDDLL",
-            "away_form": "LDWLL",
-            "home_form_ppg": 0.4,
-            "away_form_ppg": 0.8,
-            "home_goals_for": 0.5,
-            "away_goals_for": 1.333
-          },
-          "lambdas": {
-            "stat": [
-              1.2,
-              1.499
-            ],
-            "xg": [
-              1.349,
-              1.735
-            ],
-            "form": [
-              1.208,
-              1.15
-            ]
-          },
-          "weights": {
-            "stat": 0.3,
-            "xg": 0.4,
-            "form": 0.3
-          },
-          "home_form": "LDDLL",
-          "away_form": "LDWLL",
-          "home_op_xg": 0.672,
-          "home_op_xga": 2.348,
-          "away_op_xg": 1.166,
-          "away_op_xga": 1.951,
-          "home_attack_balance": 0.223,
-          "away_attack_balance": 0.374,
-          "home_profile": {
-            "venue": "home",
-            "op_xg_for": 0.672,
-            "op_xga": 2.348,
-            "total_xg": 1.044,
-            "total_xga": 2.72,
-            "goals_for": 0.5,
-            "goals_against": 1.5,
-            "attack_balance": 0.223,
-            "form_ppg": 0.4,
-            "form_string": "LDDLL",
-            "attack_strength": 0.603,
-            "defence_weakness": 2.009,
-            "season_xg_for": 0.806,
-            "season_xg_against": 1.999,
-            "season_home_xg": 1.148,
-            "season_away_xg": 0.55
-          },
-          "away_profile": {
-            "venue": "away",
-            "op_xg_for": 1.166,
-            "op_xga": 1.951,
-            "total_xg": 1.166,
-            "total_xga": 1.951,
-            "goals_for": 1.333,
-            "goals_against": 1.333,
-            "attack_balance": 0.374,
-            "form_ppg": 0.8,
-            "form_string": "LDWLL",
-            "attack_strength": 1.233,
-            "defence_weakness": 1.704,
-            "season_xg_for": 1.346,
-            "season_xg_against": 1.462,
-            "season_home_xg": 1.481,
-            "season_away_xg": 1.166
-          },
-          "by_short": {
-            "1": {
-              "stat": 0.30390168167290227,
-              "xg": 0.29938553604326795,
-              "form": 0.37448124694597595,
-              "ensemble": 0.32326909300297063
-            },
-            "X": {
-              "stat": 0.2549012760687866,
-              "xg": 0.23455355079267143,
-              "form": 0.27938168026846144,
-              "ensemble": 0.254106307218243
-            },
-            "2": {
-              "stat": 0.4411970422583111,
-              "xg": 0.4660609131640606,
-              "form": 0.3461370727855626,
-              "ensemble": 0.42262459977878636
-            },
-            "BTTS Igen": {
-              "stat": 0.5427251380433915,
-              "xg": 0.6098759559505338,
-              "form": 0.4791782124489434,
-              "ensemble": 0.550521387527914
-            },
-            "BTTS Nem": {
-              "stat": 0.4572748619566085,
-              "xg": 0.3901240440494662,
-              "form": 0.5208217875510566,
-              "ensemble": 0.449478612472086
-            },
-            "O2.5": {
-              "stat": 0.5061305130864575,
-              "xg": 0.5953636507996233,
-              "form": 0.4192806495266428,
-              "ensemble": 0.5157688091037794
-            },
-            "U2.5": {
-              "stat": 0.49386948691354243,
-              "xg": 0.4046363492003767,
-              "form": 0.5807193504733572,
-              "ensemble": 0.4842311908962206
-            }
-          },
-          "expected_home_goals": 1.262,
-          "expected_away_goals": 1.489
-        },
-        "model_stack": [
-          "stat",
-          "xg",
-          "form",
-          "market",
-          "value",
-          "confidence"
-        ],
-        "home_form": "LDDLL",
-        "away_form": "LDWLL",
-        "home_attack_balance": 0.223,
-        "away_attack_balance": 0.374,
-        "markets": {
-          "1X2": {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Espanyol)",
-            "short": "2",
-            "prob": 0.42262459977878636,
-            "prob_pct": 42.3,
-            "fair_odds": 2.37,
-            "book_odds": 2.68,
-            "implied_prob": 0.3731343283582089,
-            "implied_prob_pct": 37.3,
-            "market_fair_odds": 2.68,
-            "edge": 0.049490271420577436,
-            "edge_pct": 4.9,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 35.2,
-            "confidence_tier": "weak",
-            "model_agreement": 79.3,
-            "tippmix_odds": 2.68,
-            "models": {
-              "stat_prob_pct": 44.1,
-              "xg_prob_pct": 46.6,
-              "form_prob_pct": 34.6,
-              "ensemble_prob_pct": 42.3
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "BTTS": {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.550521387527914,
-            "prob_pct": 55.1,
-            "fair_odds": 1.82,
-            "book_odds": 1.78,
-            "implied_prob": 0.5617977528089888,
-            "implied_prob_pct": 56.2,
-            "market_fair_odds": 1.78,
-            "edge": -0.011276365281074785,
-            "edge_pct": -1.1,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 34.7,
-            "confidence_tier": "weak",
-            "model_agreement": 78.7,
-            "tippmix_odds": 1.78,
-            "models": {
-              "stat_prob_pct": 54.3,
-              "xg_prob_pct": 61.0,
-              "form_prob_pct": 47.9,
-              "ensemble_prob_pct": 55.1
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "Gólok": {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.5157688091037794,
-            "prob_pct": 51.6,
-            "fair_odds": 1.94,
-            "book_odds": 2.04,
-            "implied_prob": 0.49019607843137253,
-            "implied_prob_pct": 49.0,
-            "market_fair_odds": 2.04,
-            "edge": 0.025572730672406896,
-            "edge_pct": 2.6,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 43.5,
-            "confidence_tier": "weak",
-            "model_agreement": 71.2,
-            "tippmix_odds": 2.04,
-            "models": {
-              "stat_prob_pct": 50.6,
-              "xg_prob_pct": 59.5,
-              "form_prob_pct": 41.9,
-              "ensemble_prob_pct": 51.6
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 5.02,
-              "stake_pct": 1.25,
-              "suggested_stake": 1254.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 1254.0,
-            "stake_pct": 1.25
-          }
-        },
-        "recommendation": {
-          "market": "Gólok",
-          "pick": "Over 2.5 gól",
-          "short": "O2.5",
-          "prob": 0.5157688091037794,
-          "prob_pct": 51.6,
-          "fair_odds": 1.94,
-          "book_odds": 2.04,
-          "implied_prob": 0.49019607843137253,
-          "implied_prob_pct": 49.0,
-          "market_fair_odds": 2.04,
-          "edge": 0.025572730672406896,
-          "edge_pct": 2.6,
-          "odds_in_band": true,
-          "is_value": true,
-          "odds_ok": true,
-          "elite_score": 43.5,
-          "confidence_tier": "weak",
-          "model_agreement": 71.2,
-          "tippmix_odds": 2.04,
-          "models": {
-            "stat_prob_pct": 50.6,
-            "xg_prob_pct": 59.5,
-            "form_prob_pct": 41.9,
-            "ensemble_prob_pct": 51.6
-          },
-          "staking": {
-            "bankroll": 100000.0,
-            "currency": "HUF",
-            "kelly_full_pct": 5.02,
-            "stake_pct": 1.25,
-            "suggested_stake": 1254.0,
-            "staking_method": "fractional_kelly_0.25"
-          },
-          "suggested_stake": 1254.0,
-          "stake_pct": 1.25,
-          "is_strong": true
-        },
-        "options": [
-          {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Málaga)",
-            "short": "1",
-            "prob": 0.32326909300297063,
-            "prob_pct": 32.3,
-            "fair_odds": 3.09,
-            "book_odds": 2.68,
-            "implied_prob": 0.3731343283582089,
-            "implied_prob_pct": 37.3,
-            "market_fair_odds": 2.68,
-            "edge": -0.04986523535523829,
-            "edge_pct": -5.0,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 30.2,
-            "confidence_tier": "weak",
-            "model_agreement": 86.2,
-            "tippmix_odds": 2.68,
-            "models": {
-              "stat_prob_pct": 30.4,
-              "xg_prob_pct": 29.9,
-              "form_prob_pct": 37.4,
-              "ensemble_prob_pct": 32.3
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Döntetlen",
-            "short": "X",
-            "prob": 0.254106307218243,
-            "prob_pct": 25.4,
-            "fair_odds": 3.94,
-            "book_odds": 3.15,
-            "implied_prob": 0.31746031746031744,
-            "implied_prob_pct": 31.7,
-            "market_fair_odds": 3.15,
-            "edge": -0.06335401024207443,
-            "edge_pct": -6.3,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 32.4,
-            "confidence_tier": "weak",
-            "model_agreement": 92.7,
-            "tippmix_odds": 3.15,
-            "models": {
-              "stat_prob_pct": 25.5,
-              "xg_prob_pct": 23.5,
-              "form_prob_pct": 27.9,
-              "ensemble_prob_pct": 25.4
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Espanyol)",
-            "short": "2",
-            "prob": 0.42262459977878636,
-            "prob_pct": 42.3,
-            "fair_odds": 2.37,
-            "book_odds": 2.68,
-            "implied_prob": 0.3731343283582089,
-            "implied_prob_pct": 37.3,
-            "market_fair_odds": 2.68,
-            "edge": 0.049490271420577436,
-            "edge_pct": 4.9,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 35.2,
-            "confidence_tier": "weak",
-            "model_agreement": 79.3,
-            "tippmix_odds": 2.68,
-            "models": {
-              "stat_prob_pct": 44.1,
-              "xg_prob_pct": 46.6,
-              "form_prob_pct": 34.6,
-              "ensemble_prob_pct": 42.3
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.550521387527914,
-            "prob_pct": 55.1,
-            "fair_odds": 1.82,
-            "book_odds": 1.78,
-            "implied_prob": 0.5617977528089888,
-            "implied_prob_pct": 56.2,
-            "market_fair_odds": 1.78,
-            "edge": -0.011276365281074785,
-            "edge_pct": -1.1,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 34.7,
-            "confidence_tier": "weak",
-            "model_agreement": 78.7,
-            "tippmix_odds": 1.78,
-            "models": {
-              "stat_prob_pct": 54.3,
-              "xg_prob_pct": 61.0,
-              "form_prob_pct": 47.9,
-              "ensemble_prob_pct": 55.1
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Nem)",
-            "short": "BTTS Nem",
-            "prob": 0.449478612472086,
-            "prob_pct": 44.9,
-            "fair_odds": 2.22,
-            "book_odds": 2.0,
-            "implied_prob": 0.5,
-            "implied_prob_pct": 50.0,
-            "market_fair_odds": 2.0,
-            "edge": -0.05052138752791402,
-            "edge_pct": -5.1,
-            "odds_in_band": true,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 27.5,
-            "confidence_tier": "weak",
-            "model_agreement": 78.7,
-            "tippmix_odds": 2.0,
-            "models": {
-              "stat_prob_pct": 45.7,
-              "xg_prob_pct": 39.0,
-              "form_prob_pct": 52.1,
-              "ensemble_prob_pct": 44.9
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.5157688091037794,
-            "prob_pct": 51.6,
-            "fair_odds": 1.94,
-            "book_odds": 2.04,
-            "implied_prob": 0.49019607843137253,
-            "implied_prob_pct": 49.0,
-            "market_fair_odds": 2.04,
-            "edge": 0.025572730672406896,
-            "edge_pct": 2.6,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 43.5,
-            "confidence_tier": "weak",
-            "model_agreement": 71.2,
-            "tippmix_odds": 2.04,
-            "models": {
-              "stat_prob_pct": 50.6,
-              "xg_prob_pct": 59.5,
-              "form_prob_pct": 41.9,
-              "ensemble_prob_pct": 51.6
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 5.02,
-              "stake_pct": 1.25,
-              "suggested_stake": 1254.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 1254.0,
-            "stake_pct": 1.25
-          },
-          {
-            "market": "Gólok",
-            "pick": "Under 2.5 gól",
-            "short": "U2.5",
-            "prob": 0.4842311908962206,
-            "prob_pct": 48.4,
-            "fair_odds": 2.07,
-            "book_odds": 1.75,
-            "implied_prob": 0.5714285714285714,
-            "implied_prob_pct": 57.1,
-            "market_fair_odds": 1.75,
-            "edge": -0.08719738053235082,
-            "edge_pct": -8.7,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 27.4,
-            "confidence_tier": "weak",
-            "model_agreement": 71.2,
-            "tippmix_odds": 1.75,
-            "models": {
-              "stat_prob_pct": 49.4,
-              "xg_prob_pct": 40.5,
-              "form_prob_pct": 58.1,
-              "ensemble_prob_pct": 48.4
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          }
-        ],
-        "tippmix_odds": 2.04,
-        "tippmix_markets": {
-          "1": 2.68,
-          "X": 3.15,
-          "2": 2.68,
-          "O2.5": 2.04,
-          "U2.5": 1.75,
-          "BTTS Igen": 1.78,
-          "BTTS Nem": 2
-        },
-        "tippmix_matched": true,
-        "prob_pct": 51.6,
-        "fair_odds": 1.94,
-        "edge_pct": 2.6,
-        "elite_score": 43.5,
-        "confidence_tier": "weak",
-        "model_agreement": 71.2,
-        "models": {
-          "stat_prob_pct": 50.6,
-          "xg_prob_pct": 59.5,
-          "form_prob_pct": 41.9,
-          "ensemble_prob_pct": 51.6
-        },
-        "staking": {
-          "bankroll": 100000.0,
-          "currency": "HUF",
-          "kelly_full_pct": 5.02,
-          "stake_pct": 1.25,
-          "suggested_stake": 1254.0,
-          "staking_method": "fractional_kelly_0.25"
-        },
-        "suggested_stake": 1254.0,
-        "stake_pct": 1.25,
-        "is_value": true,
-        "odds_in_band": true,
-        "is_actionable": true,
-        "min_prob_pct": 45.0,
-        "odds_band": [
-          1.8,
-          2.1
-        ],
-        "bankroll": 100000.0,
-        "odds_source": "TippmixPro",
-        "is_top": false
-      }
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880242",
@@ -7706,8 +6393,8 @@
       "kickoff_display": "2026-10-10 13:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880236",
@@ -7750,8 +6437,8 @@
       "kickoff_display": "2026-10-10 13:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880234",
@@ -7794,8 +6481,8 @@
       "kickoff_display": "2026-10-10 13:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401879268",
@@ -7838,561 +6525,9 @@
       "kickoff_display": "2026-10-10 13:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 13:30",
-      "xg_tip": {
-        "bookmaker": "TippmixPro",
-        "home_xg_team": "Arsenal",
-        "away_xg_team": "Leeds",
-        "expected_home_goals": 1.941,
-        "expected_away_goals": 0.953,
-        "expected_total_goals": 2.89,
-        "model_meta": {
-          "stat": {
-            "home_attack": 2.415,
-            "away_attack": 1.175,
-            "home_def": 0.795,
-            "away_def": 0.891
-          },
-          "xg": {
-            "home_op_xg": 2.33,
-            "home_op_xga": 0.494,
-            "away_op_xg": 1.35,
-            "away_op_xga": 1.438,
-            "home_balance": 0.825,
-            "away_balance": 0.484
-          },
-          "form": {
-            "home_form": "WWWWL",
-            "away_form": "WDDWD",
-            "home_form_ppg": 2.4,
-            "away_form_ppg": 1.8,
-            "home_goals_for": 2.5,
-            "away_goals_for": 1.0
-          },
-          "lambdas": {
-            "stat": [
-              1.786,
-              0.985
-            ],
-            "xg": [
-              2.197,
-              0.918
-            ],
-            "form": [
-              1.755,
-              0.968
-            ]
-          },
-          "weights": {
-            "stat": 0.3,
-            "xg": 0.4,
-            "form": 0.3
-          },
-          "home_form": "WWWWL",
-          "away_form": "WDDWD",
-          "home_op_xg": 2.33,
-          "home_op_xga": 0.494,
-          "away_op_xg": 1.35,
-          "away_op_xga": 1.438,
-          "home_attack_balance": 0.825,
-          "away_attack_balance": 0.484,
-          "home_profile": {
-            "venue": "home",
-            "op_xg_for": 2.33,
-            "op_xga": 0.494,
-            "total_xg": 2.33,
-            "total_xga": 0.494,
-            "goals_for": 2.5,
-            "goals_against": 0.5,
-            "attack_balance": 0.825,
-            "form_ppg": 2.4,
-            "form_string": "WWWWL",
-            "attack_strength": 2.398,
-            "defence_weakness": 0.496,
-            "season_xg_for": 1.883,
-            "season_xg_against": 1.091,
-            "season_home_xg": 2.33,
-            "season_away_xg": 1.584
-          },
-          "away_profile": {
-            "venue": "away",
-            "op_xg_for": 1.35,
-            "op_xga": 1.438,
-            "total_xg": 1.35,
-            "total_xga": 1.438,
-            "goals_for": 1.0,
-            "goals_against": 0.5,
-            "attack_balance": 0.484,
-            "form_ppg": 1.8,
-            "form_string": "WDDWD",
-            "attack_strength": 1.21,
-            "defence_weakness": 1.063,
-            "season_xg_for": 1.445,
-            "season_xg_against": 1.283,
-            "season_home_xg": 1.509,
-            "season_away_xg": 1.35
-          },
-          "by_short": {
-            "1": {
-              "stat": 0.5618504803908725,
-              "xg": 0.6646369268851772,
-              "form": 0.5587820715244074,
-              "ensemble": 0.6020445363286548
-            },
-            "X": {
-              "stat": 0.23176755940177607,
-              "xg": 0.19059795719579362,
-              "form": 0.23462384438191974,
-              "ensemble": 0.21615660401342618
-            },
-            "2": {
-              "stat": 0.20638196020735133,
-              "xg": 0.1447651159190293,
-              "form": 0.2065940840936729,
-              "ensemble": 0.18179885965791898
-            },
-            "BTTS Igen": {
-              "stat": 0.5215307993115544,
-              "xg": 0.5339255634604768,
-              "form": 0.5129282211602094,
-              "ensemble": 0.5239079315257199
-            },
-            "BTTS Nem": {
-              "stat": 0.47846920068844556,
-              "xg": 0.4660744365395232,
-              "form": 0.4870717788397906,
-              "ensemble": 0.4760920684742801
-            },
-            "O2.5": {
-              "stat": 0.5236049602568509,
-              "xg": 0.6020751230799888,
-              "form": 0.5119927831445602,
-              "ensemble": 0.5515093722524189
-            },
-            "U2.5": {
-              "stat": 0.4763950397431491,
-              "xg": 0.39792487692001116,
-              "form": 0.4880072168554398,
-              "ensemble": 0.4484906277475811
-            }
-          },
-          "expected_home_goals": 1.941,
-          "expected_away_goals": 0.953
-        },
-        "model_stack": [
-          "stat",
-          "xg",
-          "form",
-          "market",
-          "value",
-          "confidence"
-        ],
-        "home_form": "WWWWL",
-        "away_form": "WDDWD",
-        "home_attack_balance": 0.825,
-        "away_attack_balance": 0.484,
-        "markets": {
-          "1X2": {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Arsenal)",
-            "short": "1",
-            "prob": 0.6020445363286548,
-            "prob_pct": 60.2,
-            "fair_odds": 1.66,
-            "book_odds": 1.37,
-            "implied_prob": 0.7299270072992701,
-            "implied_prob_pct": 73.0,
-            "market_fair_odds": 1.37,
-            "edge": -0.12788247097061523,
-            "edge_pct": -12.8,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 39.0,
-            "confidence_tier": "weak",
-            "model_agreement": 80.3,
-            "tippmix_odds": 1.37,
-            "models": {
-              "stat_prob_pct": 56.2,
-              "xg_prob_pct": 66.5,
-              "form_prob_pct": 55.9,
-              "ensemble_prob_pct": 60.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "BTTS": {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.5239079315257199,
-            "prob_pct": 52.4,
-            "fair_odds": 1.91,
-            "book_odds": 2.02,
-            "implied_prob": 0.49504950495049505,
-            "implied_prob_pct": 49.5,
-            "market_fair_odds": 2.02,
-            "edge": 0.02885842657522486,
-            "edge_pct": 2.9,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 53.4,
-            "confidence_tier": "moderate",
-            "model_agreement": 96.6,
-            "tippmix_odds": 2.02,
-            "models": {
-              "stat_prob_pct": 52.2,
-              "xg_prob_pct": 53.4,
-              "form_prob_pct": 51.3,
-              "ensemble_prob_pct": 52.4
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 5.72,
-              "stake_pct": 1.43,
-              "suggested_stake": 1429.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 1429.0,
-            "stake_pct": 1.43
-          },
-          "Gólok": {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.5515093722524189,
-            "prob_pct": 55.2,
-            "fair_odds": 1.81,
-            "book_odds": 1.7,
-            "implied_prob": 0.5882352941176471,
-            "implied_prob_pct": 58.8,
-            "market_fair_odds": 1.7,
-            "edge": -0.03672592186522816,
-            "edge_pct": -3.7,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 36.6,
-            "confidence_tier": "weak",
-            "model_agreement": 84.0,
-            "tippmix_odds": 1.7,
-            "models": {
-              "stat_prob_pct": 52.4,
-              "xg_prob_pct": 60.2,
-              "form_prob_pct": 51.2,
-              "ensemble_prob_pct": 55.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          }
-        },
-        "recommendation": {
-          "market": "BTTS",
-          "pick": "Mindkét csapat szerez gólt (Igen)",
-          "short": "BTTS Igen",
-          "prob": 0.5239079315257199,
-          "prob_pct": 52.4,
-          "fair_odds": 1.91,
-          "book_odds": 2.02,
-          "implied_prob": 0.49504950495049505,
-          "implied_prob_pct": 49.5,
-          "market_fair_odds": 2.02,
-          "edge": 0.02885842657522486,
-          "edge_pct": 2.9,
-          "odds_in_band": true,
-          "is_value": true,
-          "odds_ok": true,
-          "elite_score": 53.4,
-          "confidence_tier": "moderate",
-          "model_agreement": 96.6,
-          "tippmix_odds": 2.02,
-          "models": {
-            "stat_prob_pct": 52.2,
-            "xg_prob_pct": 53.4,
-            "form_prob_pct": 51.3,
-            "ensemble_prob_pct": 52.4
-          },
-          "staking": {
-            "bankroll": 100000.0,
-            "currency": "HUF",
-            "kelly_full_pct": 5.72,
-            "stake_pct": 1.43,
-            "suggested_stake": 1429.0,
-            "staking_method": "fractional_kelly_0.25"
-          },
-          "suggested_stake": 1429.0,
-          "stake_pct": 1.43,
-          "is_strong": true
-        },
-        "options": [
-          {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Arsenal)",
-            "short": "1",
-            "prob": 0.6020445363286548,
-            "prob_pct": 60.2,
-            "fair_odds": 1.66,
-            "book_odds": 1.37,
-            "implied_prob": 0.7299270072992701,
-            "implied_prob_pct": 73.0,
-            "market_fair_odds": 1.37,
-            "edge": -0.12788247097061523,
-            "edge_pct": -12.8,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 39.0,
-            "confidence_tier": "weak",
-            "model_agreement": 80.3,
-            "tippmix_odds": 1.37,
-            "models": {
-              "stat_prob_pct": 56.2,
-              "xg_prob_pct": 66.5,
-              "form_prob_pct": 55.9,
-              "ensemble_prob_pct": 60.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Döntetlen",
-            "short": "X",
-            "prob": 0.21615660401342618,
-            "prob_pct": 21.6,
-            "fair_odds": 4.63,
-            "book_odds": 4.85,
-            "implied_prob": 0.2061855670103093,
-            "implied_prob_pct": 20.6,
-            "market_fair_odds": 4.85,
-            "edge": 0.009971037003116884,
-            "edge_pct": 1.0,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 33.7,
-            "confidence_tier": "weak",
-            "model_agreement": 92.0,
-            "tippmix_odds": 4.85,
-            "models": {
-              "stat_prob_pct": 23.2,
-              "xg_prob_pct": 19.1,
-              "form_prob_pct": 23.5,
-              "ensemble_prob_pct": 21.6
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Leeds United)",
-            "short": "2",
-            "prob": 0.18179885965791898,
-            "prob_pct": 18.2,
-            "fair_odds": 5.5,
-            "book_odds": 7.5,
-            "implied_prob": 0.13333333333333333,
-            "implied_prob_pct": 13.3,
-            "market_fair_odds": 7.5,
-            "edge": 0.048465526324585645,
-            "edge_pct": 4.8,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 38.2,
-            "confidence_tier": "weak",
-            "model_agreement": 88.4,
-            "tippmix_odds": 7.5,
-            "models": {
-              "stat_prob_pct": 20.6,
-              "xg_prob_pct": 14.5,
-              "form_prob_pct": 20.7,
-              "ensemble_prob_pct": 18.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.5239079315257199,
-            "prob_pct": 52.4,
-            "fair_odds": 1.91,
-            "book_odds": 2.02,
-            "implied_prob": 0.49504950495049505,
-            "implied_prob_pct": 49.5,
-            "market_fair_odds": 2.02,
-            "edge": 0.02885842657522486,
-            "edge_pct": 2.9,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 53.4,
-            "confidence_tier": "moderate",
-            "model_agreement": 96.6,
-            "tippmix_odds": 2.02,
-            "models": {
-              "stat_prob_pct": 52.2,
-              "xg_prob_pct": 53.4,
-              "form_prob_pct": 51.3,
-              "ensemble_prob_pct": 52.4
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 5.72,
-              "stake_pct": 1.43,
-              "suggested_stake": 1429.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 1429.0,
-            "stake_pct": 1.43
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Nem)",
-            "short": "BTTS Nem",
-            "prob": 0.4760920684742801,
-            "prob_pct": 47.6,
-            "fair_odds": 2.1,
-            "book_odds": 1.76,
-            "implied_prob": 0.5681818181818182,
-            "implied_prob_pct": 56.8,
-            "market_fair_odds": 1.76,
-            "edge": -0.09208974970753814,
-            "edge_pct": -9.2,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 35.7,
-            "confidence_tier": "weak",
-            "model_agreement": 96.6,
-            "tippmix_odds": 1.76,
-            "models": {
-              "stat_prob_pct": 47.8,
-              "xg_prob_pct": 46.6,
-              "form_prob_pct": 48.7,
-              "ensemble_prob_pct": 47.6
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.5515093722524189,
-            "prob_pct": 55.2,
-            "fair_odds": 1.81,
-            "book_odds": 1.7,
-            "implied_prob": 0.5882352941176471,
-            "implied_prob_pct": 58.8,
-            "market_fair_odds": 1.7,
-            "edge": -0.03672592186522816,
-            "edge_pct": -3.7,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 36.6,
-            "confidence_tier": "weak",
-            "model_agreement": 84.0,
-            "tippmix_odds": 1.7,
-            "models": {
-              "stat_prob_pct": 52.4,
-              "xg_prob_pct": 60.2,
-              "form_prob_pct": 51.2,
-              "ensemble_prob_pct": 55.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Under 2.5 gól",
-            "short": "U2.5",
-            "prob": 0.4484906277475811,
-            "prob_pct": 44.8,
-            "fair_odds": 2.23,
-            "book_odds": 2.1,
-            "implied_prob": 0.47619047619047616,
-            "implied_prob_pct": 47.6,
-            "market_fair_odds": 2.1,
-            "edge": -0.02769984844289508,
-            "edge_pct": -2.8,
-            "odds_in_band": true,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 29.4,
-            "confidence_tier": "weak",
-            "model_agreement": 84.0,
-            "tippmix_odds": 2.1,
-            "models": {
-              "stat_prob_pct": 47.6,
-              "xg_prob_pct": 39.8,
-              "form_prob_pct": 48.8,
-              "ensemble_prob_pct": 44.8
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          }
-        ],
-        "tippmix_odds": 2.02,
-        "tippmix_markets": {
-          "1": 1.37,
-          "X": 4.85,
-          "2": 7.5,
-          "O2.5": 1.7,
-          "U2.5": 2.1,
-          "BTTS Igen": 2.02,
-          "BTTS Nem": 1.76
-        },
-        "tippmix_matched": true,
-        "prob_pct": 52.4,
-        "fair_odds": 1.91,
-        "edge_pct": 2.9,
-        "elite_score": 53.4,
-        "confidence_tier": "moderate",
-        "model_agreement": 96.6,
-        "models": {
-          "stat_prob_pct": 52.2,
-          "xg_prob_pct": 53.4,
-          "form_prob_pct": 51.3,
-          "ensemble_prob_pct": 52.4
-        },
-        "staking": {
-          "bankroll": 100000.0,
-          "currency": "HUF",
-          "kelly_full_pct": 5.72,
-          "stake_pct": 1.43,
-          "suggested_stake": 1429.0,
-          "staking_method": "fractional_kelly_0.25"
-        },
-        "suggested_stake": 1429.0,
-        "stake_pct": 1.43,
-        "is_value": true,
-        "odds_in_band": true,
-        "is_actionable": true,
-        "min_prob_pct": 45.0,
-        "odds_band": [
-          1.8,
-          2.1
-        ],
-        "bankroll": 100000.0,
-        "odds_source": "TippmixPro",
-        "is_top": true
-      }
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401882849",
@@ -8435,8 +6570,8 @@
       "kickoff_display": "2026-10-10 14:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401874947",
@@ -8479,561 +6614,9 @@
       "kickoff_display": "2026-10-10 15:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 15:00",
-      "xg_tip": {
-        "bookmaker": "TippmixPro",
-        "home_xg_team": "Genoa",
-        "away_xg_team": "Fiorentina",
-        "expected_home_goals": 1.578,
-        "expected_away_goals": 1.628,
-        "expected_total_goals": 3.21,
-        "model_meta": {
-          "stat": {
-            "home_attack": 0.878,
-            "away_attack": 1.855,
-            "home_def": 1.955,
-            "away_def": 2.466
-          },
-          "xg": {
-            "home_op_xg": 0.834,
-            "home_op_xga": 1.637,
-            "away_op_xg": 1.709,
-            "away_op_xga": 2.404,
-            "home_balance": 0.338,
-            "away_balance": 0.416
-          },
-          "form": {
-            "home_form": "LLLDL",
-            "away_form": "LLLWD",
-            "home_form_ppg": 0.2,
-            "away_form_ppg": 0.8,
-            "home_goals_for": 0.667,
-            "away_goals_for": 2.0
-          },
-          "lambdas": {
-            "stat": [
-              1.805,
-              1.905
-            ],
-            "xg": [
-              1.696,
-              1.631
-            ],
-            "form": [
-              1.194,
-              1.346
-            ]
-          },
-          "weights": {
-            "stat": 0.3,
-            "xg": 0.4,
-            "form": 0.3
-          },
-          "home_form": "LLLDL",
-          "away_form": "LLLWD",
-          "home_op_xg": 0.834,
-          "home_op_xga": 1.637,
-          "away_op_xg": 1.709,
-          "away_op_xga": 2.404,
-          "home_attack_balance": 0.338,
-          "away_attack_balance": 0.416,
-          "home_profile": {
-            "venue": "home",
-            "op_xg_for": 0.834,
-            "op_xga": 1.637,
-            "total_xg": 1.088,
-            "total_xga": 1.637,
-            "goals_for": 0.667,
-            "goals_against": 2.333,
-            "attack_balance": 0.338,
-            "form_ppg": 0.2,
-            "form_string": "LLLDL",
-            "attack_strength": 0.767,
-            "defence_weakness": 1.915,
-            "season_xg_for": 0.974,
-            "season_xg_against": 1.577,
-            "season_home_xg": 1.088,
-            "season_away_xg": 0.804
-          },
-          "away_profile": {
-            "venue": "away",
-            "op_xg_for": 1.709,
-            "op_xga": 2.404,
-            "total_xg": 1.709,
-            "total_xga": 2.404,
-            "goals_for": 2.0,
-            "goals_against": 3.0,
-            "attack_balance": 0.416,
-            "form_ppg": 0.8,
-            "form_string": "LLLWD",
-            "attack_strength": 1.825,
-            "defence_weakness": 2.642,
-            "season_xg_for": 1.531,
-            "season_xg_against": 1.932,
-            "season_home_xg": 1.412,
-            "season_away_xg": 1.709
-          },
-          "by_short": {
-            "1": {
-              "stat": 0.3722885790454316,
-              "xg": 0.39908092002381507,
-              "form": 0.33075751187826047,
-              "ensemble": 0.3705461952866337
-            },
-            "X": {
-              "stat": 0.21554068436250307,
-              "xg": 0.22910526638489845,
-              "form": 0.26661237742650945,
-              "ensemble": 0.23628802509066313
-            },
-            "2": {
-              "stat": 0.4121707365920654,
-              "xg": 0.3718138135912865,
-              "form": 0.40263011069523025,
-              "ensemble": 0.39316577962270327
-            },
-            "BTTS Igen": {
-              "stat": 0.7111804240723574,
-              "xg": 0.6567511815603857,
-              "form": 0.5155802918733524,
-              "ensemble": 0.6307286874078673
-            },
-            "BTTS Nem": {
-              "stat": 0.2888195759276426,
-              "xg": 0.3432488184396143,
-              "form": 0.4844197081266476,
-              "ensemble": 0.36927131259213275
-            },
-            "O2.5": {
-              "stat": 0.7162553263588387,
-              "xg": 0.6459670577601135,
-              "form": 0.4664057122962514,
-              "ensemble": 0.6131851347005725
-            },
-            "U2.5": {
-              "stat": 0.2837446736411613,
-              "xg": 0.3540329422398865,
-              "form": 0.5335942877037486,
-              "ensemble": 0.3868148652994276
-            }
-          },
-          "expected_home_goals": 1.578,
-          "expected_away_goals": 1.628
-        },
-        "model_stack": [
-          "stat",
-          "xg",
-          "form",
-          "market",
-          "value",
-          "confidence"
-        ],
-        "home_form": "LLLDL",
-        "away_form": "LLLWD",
-        "home_attack_balance": 0.338,
-        "away_attack_balance": 0.416,
-        "markets": {
-          "1X2": {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Genoa)",
-            "short": "1",
-            "prob": 0.3705461952866337,
-            "prob_pct": 37.1,
-            "fair_odds": 2.7,
-            "book_odds": 3.05,
-            "implied_prob": 0.3278688524590164,
-            "implied_prob_pct": 32.8,
-            "market_fair_odds": 3.05,
-            "edge": 0.04267734282761726,
-            "edge_pct": 4.3,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 37.5,
-            "confidence_tier": "weak",
-            "model_agreement": 88.8,
-            "tippmix_odds": 3.05,
-            "models": {
-              "stat_prob_pct": 37.2,
-              "xg_prob_pct": 39.9,
-              "form_prob_pct": 33.1,
-              "ensemble_prob_pct": 37.1
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "BTTS": {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.6307286874078673,
-            "prob_pct": 63.1,
-            "fair_odds": 1.59,
-            "book_odds": 1.77,
-            "implied_prob": 0.5649717514124294,
-            "implied_prob_pct": 56.5,
-            "market_fair_odds": 1.77,
-            "edge": 0.06575693599543786,
-            "edge_pct": 6.6,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 46.2,
-            "confidence_tier": "moderate",
-            "model_agreement": 67.0,
-            "tippmix_odds": 1.77,
-            "models": {
-              "stat_prob_pct": 71.1,
-              "xg_prob_pct": 65.7,
-              "form_prob_pct": 51.6,
-              "ensemble_prob_pct": 63.1
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "Gólok": {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.6131851347005725,
-            "prob_pct": 61.3,
-            "fair_odds": 1.63,
-            "book_odds": 1.99,
-            "implied_prob": 0.5025125628140703,
-            "implied_prob_pct": 50.3,
-            "market_fair_odds": 1.99,
-            "edge": 0.11067257188650215,
-            "edge_pct": 11.1,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 58.5,
-            "confidence_tier": "moderate",
-            "model_agreement": 57.9,
-            "tippmix_odds": 1.99,
-            "models": {
-              "stat_prob_pct": 71.6,
-              "xg_prob_pct": 64.6,
-              "form_prob_pct": 46.6,
-              "ensemble_prob_pct": 61.3
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 22.25,
-              "stake_pct": 3.0,
-              "suggested_stake": 3000.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 3000.0,
-            "stake_pct": 3.0
-          }
-        },
-        "recommendation": {
-          "market": "Gólok",
-          "pick": "Over 2.5 gól",
-          "short": "O2.5",
-          "prob": 0.6131851347005725,
-          "prob_pct": 61.3,
-          "fair_odds": 1.63,
-          "book_odds": 1.99,
-          "implied_prob": 0.5025125628140703,
-          "implied_prob_pct": 50.3,
-          "market_fair_odds": 1.99,
-          "edge": 0.11067257188650215,
-          "edge_pct": 11.1,
-          "odds_in_band": true,
-          "is_value": true,
-          "odds_ok": true,
-          "elite_score": 58.5,
-          "confidence_tier": "moderate",
-          "model_agreement": 57.9,
-          "tippmix_odds": 1.99,
-          "models": {
-            "stat_prob_pct": 71.6,
-            "xg_prob_pct": 64.6,
-            "form_prob_pct": 46.6,
-            "ensemble_prob_pct": 61.3
-          },
-          "staking": {
-            "bankroll": 100000.0,
-            "currency": "HUF",
-            "kelly_full_pct": 22.25,
-            "stake_pct": 3.0,
-            "suggested_stake": 3000.0,
-            "staking_method": "fractional_kelly_0.25"
-          },
-          "suggested_stake": 3000.0,
-          "stake_pct": 3.0,
-          "is_strong": true
-        },
-        "options": [
-          {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Genoa)",
-            "short": "1",
-            "prob": 0.3705461952866337,
-            "prob_pct": 37.1,
-            "fair_odds": 2.7,
-            "book_odds": 3.05,
-            "implied_prob": 0.3278688524590164,
-            "implied_prob_pct": 32.8,
-            "market_fair_odds": 3.05,
-            "edge": 0.04267734282761726,
-            "edge_pct": 4.3,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 37.5,
-            "confidence_tier": "weak",
-            "model_agreement": 88.8,
-            "tippmix_odds": 3.05,
-            "models": {
-              "stat_prob_pct": 37.2,
-              "xg_prob_pct": 39.9,
-              "form_prob_pct": 33.1,
-              "ensemble_prob_pct": 37.1
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Döntetlen",
-            "short": "X",
-            "prob": 0.23628802509066313,
-            "prob_pct": 23.6,
-            "fair_odds": 4.23,
-            "book_odds": 3.3,
-            "implied_prob": 0.30303030303030304,
-            "implied_prob_pct": 30.3,
-            "market_fair_odds": 3.3,
-            "edge": -0.06674227793963991,
-            "edge_pct": -6.7,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 32.0,
-            "confidence_tier": "weak",
-            "model_agreement": 91.4,
-            "tippmix_odds": 3.3,
-            "models": {
-              "stat_prob_pct": 21.6,
-              "xg_prob_pct": 22.9,
-              "form_prob_pct": 26.7,
-              "ensemble_prob_pct": 23.6
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Fiorentina)",
-            "short": "2",
-            "prob": 0.39316577962270327,
-            "prob_pct": 39.3,
-            "fair_odds": 2.54,
-            "book_odds": 2.3,
-            "implied_prob": 0.4347826086956522,
-            "implied_prob_pct": 43.5,
-            "market_fair_odds": 2.3,
-            "edge": -0.041616829072948947,
-            "edge_pct": -4.2,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 32.6,
-            "confidence_tier": "weak",
-            "model_agreement": 93.1,
-            "tippmix_odds": 2.3,
-            "models": {
-              "stat_prob_pct": 41.2,
-              "xg_prob_pct": 37.2,
-              "form_prob_pct": 40.3,
-              "ensemble_prob_pct": 39.3
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.6307286874078673,
-            "prob_pct": 63.1,
-            "fair_odds": 1.59,
-            "book_odds": 1.77,
-            "implied_prob": 0.5649717514124294,
-            "implied_prob_pct": 56.5,
-            "market_fair_odds": 1.77,
-            "edge": 0.06575693599543786,
-            "edge_pct": 6.6,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 46.2,
-            "confidence_tier": "moderate",
-            "model_agreement": 67.0,
-            "tippmix_odds": 1.77,
-            "models": {
-              "stat_prob_pct": 71.1,
-              "xg_prob_pct": 65.7,
-              "form_prob_pct": 51.6,
-              "ensemble_prob_pct": 63.1
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Nem)",
-            "short": "BTTS Nem",
-            "prob": 0.36927131259213275,
-            "prob_pct": 36.9,
-            "fair_odds": 2.71,
-            "book_odds": 2.01,
-            "implied_prob": 0.49751243781094534,
-            "implied_prob_pct": 49.8,
-            "market_fair_odds": 2.01,
-            "edge": -0.1282411252188126,
-            "edge_pct": -12.8,
-            "odds_in_band": true,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 23.5,
-            "confidence_tier": "weak",
-            "model_agreement": 67.0,
-            "tippmix_odds": 2.01,
-            "models": {
-              "stat_prob_pct": 28.9,
-              "xg_prob_pct": 34.3,
-              "form_prob_pct": 48.4,
-              "ensemble_prob_pct": 36.9
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.6131851347005725,
-            "prob_pct": 61.3,
-            "fair_odds": 1.63,
-            "book_odds": 1.99,
-            "implied_prob": 0.5025125628140703,
-            "implied_prob_pct": 50.3,
-            "market_fair_odds": 1.99,
-            "edge": 0.11067257188650215,
-            "edge_pct": 11.1,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 58.5,
-            "confidence_tier": "moderate",
-            "model_agreement": 57.9,
-            "tippmix_odds": 1.99,
-            "models": {
-              "stat_prob_pct": 71.6,
-              "xg_prob_pct": 64.6,
-              "form_prob_pct": 46.6,
-              "ensemble_prob_pct": 61.3
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 22.25,
-              "stake_pct": 3.0,
-              "suggested_stake": 3000.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 3000.0,
-            "stake_pct": 3.0
-          },
-          {
-            "market": "Gólok",
-            "pick": "Under 2.5 gól",
-            "short": "U2.5",
-            "prob": 0.3868148652994276,
-            "prob_pct": 38.7,
-            "fair_odds": 2.59,
-            "book_odds": 1.79,
-            "implied_prob": 0.5586592178770949,
-            "implied_prob_pct": 55.9,
-            "market_fair_odds": 1.79,
-            "edge": -0.17184435257766734,
-            "edge_pct": -17.2,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 20.3,
-            "confidence_tier": "weak",
-            "model_agreement": 57.9,
-            "tippmix_odds": 1.79,
-            "models": {
-              "stat_prob_pct": 28.4,
-              "xg_prob_pct": 35.4,
-              "form_prob_pct": 53.4,
-              "ensemble_prob_pct": 38.7
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          }
-        ],
-        "tippmix_odds": 1.99,
-        "tippmix_markets": {
-          "1": 3.05,
-          "X": 3.3,
-          "2": 2.3,
-          "O2.5": 1.99,
-          "U2.5": 1.79,
-          "BTTS Igen": 1.77,
-          "BTTS Nem": 2.01
-        },
-        "tippmix_matched": true,
-        "prob_pct": 61.3,
-        "fair_odds": 1.63,
-        "edge_pct": 11.1,
-        "elite_score": 58.5,
-        "confidence_tier": "moderate",
-        "model_agreement": 57.9,
-        "models": {
-          "stat_prob_pct": 71.6,
-          "xg_prob_pct": 64.6,
-          "form_prob_pct": 46.6,
-          "ensemble_prob_pct": 61.3
-        },
-        "staking": {
-          "bankroll": 100000.0,
-          "currency": "HUF",
-          "kelly_full_pct": 22.25,
-          "stake_pct": 3.0,
-          "suggested_stake": 3000.0,
-          "staking_method": "fractional_kelly_0.25"
-        },
-        "suggested_stake": 3000.0,
-        "stake_pct": 3.0,
-        "is_value": true,
-        "odds_in_band": true,
-        "is_actionable": true,
-        "min_prob_pct": 45.0,
-        "odds_band": [
-          1.8,
-          2.1
-        ],
-        "bankroll": 100000.0,
-        "odds_source": "TippmixPro",
-        "is_top": true
-      }
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401884775",
@@ -9076,9 +6659,9 @@
       "kickoff_display": "2026-10-10 15:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 15:30",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401884777",
@@ -9121,8 +6704,8 @@
       "kickoff_display": "2026-10-10 15:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401884776",
@@ -9165,9 +6748,9 @@
       "kickoff_display": "2026-10-10 15:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 15:30",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401884773",
@@ -9210,8 +6793,8 @@
       "kickoff_display": "2026-10-10 15:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401884779",
@@ -9228,9 +6811,9 @@
       "kickoff_display": "2026-10-10 15:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 15:30",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880244",
@@ -9273,8 +6856,8 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880243",
@@ -9317,8 +6900,8 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880241",
@@ -9361,8 +6944,8 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880240",
@@ -9405,8 +6988,8 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880239",
@@ -9449,8 +7032,8 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880238",
@@ -9493,8 +7076,8 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401880235",
@@ -9537,8 +7120,8 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401878776",
@@ -9581,9 +7164,9 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 16:00",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401878775",
@@ -9626,9 +7209,9 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 16:00",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401879265",
@@ -9671,561 +7254,9 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 16:00",
-      "xg_tip": {
-        "bookmaker": "TippmixPro",
-        "home_xg_team": "Ipswich",
-        "away_xg_team": "Fulham",
-        "expected_home_goals": 1.368,
-        "expected_away_goals": 0.993,
-        "expected_total_goals": 2.36,
-        "model_meta": {
-          "stat": {
-            "home_attack": 1.046,
-            "away_attack": 0.486,
-            "home_def": 1.781,
-            "away_def": 1.293
-          },
-          "xg": {
-            "home_op_xg": 1.091,
-            "home_op_xga": 0.961,
-            "away_op_xg": 0.973,
-            "away_op_xga": 1.68,
-            "home_balance": 0.532,
-            "away_balance": 0.367
-          },
-          "form": {
-            "home_form": "WLLWL",
-            "away_form": "LLLDD",
-            "home_form_ppg": 1.2,
-            "away_form_ppg": 0.4,
-            "home_goals_for": 1.0,
-            "away_goals_for": 0.0
-          },
-          "lambdas": {
-            "stat": [
-              1.263,
-              1.134
-            ],
-            "xg": [
-              1.511,
-              0.928
-            ],
-            "form": [
-              1.283,
-              0.938
-            ]
-          },
-          "weights": {
-            "stat": 0.3,
-            "xg": 0.4,
-            "form": 0.3
-          },
-          "home_form": "WLLWL",
-          "away_form": "LLLDD",
-          "home_op_xg": 1.091,
-          "home_op_xga": 0.961,
-          "away_op_xg": 0.973,
-          "away_op_xga": 1.68,
-          "home_attack_balance": 0.532,
-          "away_attack_balance": 0.367,
-          "home_profile": {
-            "venue": "home",
-            "op_xg_for": 1.091,
-            "op_xga": 0.961,
-            "total_xg": 1.091,
-            "total_xga": 0.961,
-            "goals_for": 1.0,
-            "goals_against": 1.5,
-            "attack_balance": 0.532,
-            "form_ppg": 1.2,
-            "form_string": "WLLWL",
-            "attack_strength": 1.055,
-            "defence_weakness": 1.177,
-            "season_xg_for": 1.425,
-            "season_xg_against": 2.062,
-            "season_home_xg": 1.091,
-            "season_away_xg": 1.647
-          },
-          "away_profile": {
-            "venue": "away",
-            "op_xg_for": 0.973,
-            "op_xga": 1.68,
-            "total_xg": 0.973,
-            "total_xga": 1.68,
-            "goals_for": 0.0,
-            "goals_against": 0.5,
-            "attack_balance": 0.367,
-            "form_ppg": 0.4,
-            "form_string": "LLLDD",
-            "attack_strength": 0.584,
-            "defence_weakness": 1.208,
-            "season_xg_for": 1.593,
-            "season_xg_against": 2.086,
-            "season_home_xg": 2.006,
-            "season_away_xg": 0.973
-          },
-          "by_short": {
-            "1": {
-              "stat": 0.3932277090166791,
-              "xg": 0.5084392979267933,
-              "form": 0.44399405892737215,
-              "ensemble": 0.45454224955393263
-            },
-            "X": {
-              "stat": 0.2761065766725508,
-              "xg": 0.25978375353334376,
-              "form": 0.2840318075029635,
-              "ensemble": 0.2719550166659918
-            },
-            "2": {
-              "stat": 0.33066571431077013,
-              "xg": 0.2317769485398629,
-              "form": 0.2719741335696644,
-              "ensemble": 0.2735027337800755
-            },
-            "BTTS Igen": {
-              "stat": 0.4864424719803336,
-              "xg": 0.4712152700827009,
-              "form": 0.43988624272712745,
-              "ensemble": 0.4663847224453187
-            },
-            "BTTS Nem": {
-              "stat": 0.5135575280196665,
-              "xg": 0.5287847299172991,
-              "form": 0.5601137572728725,
-              "ensemble": 0.5336152775546813
-            },
-            "O2.5": {
-              "stat": 0.4295072546512665,
-              "xg": 0.4404467645352793,
-              "form": 0.3829117249043099,
-              "ensemble": 0.4199043996807847
-            },
-            "U2.5": {
-              "stat": 0.5704927453487335,
-              "xg": 0.5595532354647207,
-              "form": 0.6170882750956901,
-              "ensemble": 0.5800956003192154
-            }
-          },
-          "expected_home_goals": 1.368,
-          "expected_away_goals": 0.993
-        },
-        "model_stack": [
-          "stat",
-          "xg",
-          "form",
-          "market",
-          "value",
-          "confidence"
-        ],
-        "home_form": "WLLWL",
-        "away_form": "LLLDD",
-        "home_attack_balance": 0.532,
-        "away_attack_balance": 0.367,
-        "markets": {
-          "1X2": {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Ipswich Town)",
-            "short": "1",
-            "prob": 0.45454224955393263,
-            "prob_pct": 45.5,
-            "fair_odds": 2.2,
-            "book_odds": 2.7,
-            "implied_prob": 0.37037037037037035,
-            "implied_prob_pct": 37.0,
-            "market_fair_odds": 2.7,
-            "edge": 0.08417187918356228,
-            "edge_pct": 8.4,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 41.3,
-            "confidence_tier": "weak",
-            "model_agreement": 81.1,
-            "tippmix_odds": 2.7,
-            "models": {
-              "stat_prob_pct": 39.3,
-              "xg_prob_pct": 50.8,
-              "form_prob_pct": 44.4,
-              "ensemble_prob_pct": 45.5
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "BTTS": {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Nem)",
-            "short": "BTTS Nem",
-            "prob": 0.5336152775546813,
-            "prob_pct": 53.4,
-            "fair_odds": 1.87,
-            "book_odds": 2.26,
-            "implied_prob": 0.4424778761061947,
-            "implied_prob_pct": 44.2,
-            "market_fair_odds": 2.26,
-            "edge": 0.09113740144848659,
-            "edge_pct": 9.1,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 51.9,
-            "confidence_tier": "moderate",
-            "model_agreement": 92.2,
-            "tippmix_odds": 2.26,
-            "models": {
-              "stat_prob_pct": 51.4,
-              "xg_prob_pct": 52.9,
-              "form_prob_pct": 56.0,
-              "ensemble_prob_pct": 53.4
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "Gólok": {
-            "market": "Gólok",
-            "pick": "Under 2.5 gól",
-            "short": "U2.5",
-            "prob": 0.5800956003192154,
-            "prob_pct": 58.0,
-            "fair_odds": 1.72,
-            "book_odds": 2.05,
-            "implied_prob": 0.48780487804878053,
-            "implied_prob_pct": 48.8,
-            "market_fair_odds": 2.05,
-            "edge": 0.09229072227043483,
-            "edge_pct": 9.2,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 64.6,
-            "confidence_tier": "strong",
-            "model_agreement": 90.0,
-            "tippmix_odds": 2.05,
-            "models": {
-              "stat_prob_pct": 57.0,
-              "xg_prob_pct": 56.0,
-              "form_prob_pct": 61.7,
-              "ensemble_prob_pct": 58.0
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 18.02,
-              "stake_pct": 3.0,
-              "suggested_stake": 3000.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 3000.0,
-            "stake_pct": 3.0
-          }
-        },
-        "recommendation": {
-          "market": "Gólok",
-          "pick": "Under 2.5 gól",
-          "short": "U2.5",
-          "prob": 0.5800956003192154,
-          "prob_pct": 58.0,
-          "fair_odds": 1.72,
-          "book_odds": 2.05,
-          "implied_prob": 0.48780487804878053,
-          "implied_prob_pct": 48.8,
-          "market_fair_odds": 2.05,
-          "edge": 0.09229072227043483,
-          "edge_pct": 9.2,
-          "odds_in_band": true,
-          "is_value": true,
-          "odds_ok": true,
-          "elite_score": 64.6,
-          "confidence_tier": "strong",
-          "model_agreement": 90.0,
-          "tippmix_odds": 2.05,
-          "models": {
-            "stat_prob_pct": 57.0,
-            "xg_prob_pct": 56.0,
-            "form_prob_pct": 61.7,
-            "ensemble_prob_pct": 58.0
-          },
-          "staking": {
-            "bankroll": 100000.0,
-            "currency": "HUF",
-            "kelly_full_pct": 18.02,
-            "stake_pct": 3.0,
-            "suggested_stake": 3000.0,
-            "staking_method": "fractional_kelly_0.25"
-          },
-          "suggested_stake": 3000.0,
-          "stake_pct": 3.0,
-          "is_strong": true
-        },
-        "options": [
-          {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Ipswich Town)",
-            "short": "1",
-            "prob": 0.45454224955393263,
-            "prob_pct": 45.5,
-            "fair_odds": 2.2,
-            "book_odds": 2.7,
-            "implied_prob": 0.37037037037037035,
-            "implied_prob_pct": 37.0,
-            "market_fair_odds": 2.7,
-            "edge": 0.08417187918356228,
-            "edge_pct": 8.4,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 41.3,
-            "confidence_tier": "weak",
-            "model_agreement": 81.1,
-            "tippmix_odds": 2.7,
-            "models": {
-              "stat_prob_pct": 39.3,
-              "xg_prob_pct": 50.8,
-              "form_prob_pct": 44.4,
-              "ensemble_prob_pct": 45.5
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Döntetlen",
-            "short": "X",
-            "prob": 0.2719550166659918,
-            "prob_pct": 27.2,
-            "fair_odds": 3.68,
-            "book_odds": 3.45,
-            "implied_prob": 0.2898550724637681,
-            "implied_prob_pct": 29.0,
-            "market_fair_odds": 3.45,
-            "edge": -0.017900055797776315,
-            "edge_pct": -1.8,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 33.6,
-            "confidence_tier": "weak",
-            "model_agreement": 96.0,
-            "tippmix_odds": 3.45,
-            "models": {
-              "stat_prob_pct": 27.6,
-              "xg_prob_pct": 26.0,
-              "form_prob_pct": 28.4,
-              "ensemble_prob_pct": 27.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Fulham)",
-            "short": "2",
-            "prob": 0.2735027337800755,
-            "prob_pct": 27.4,
-            "fair_odds": 3.66,
-            "book_odds": 2.46,
-            "implied_prob": 0.4065040650406504,
-            "implied_prob_pct": 40.7,
-            "market_fair_odds": 2.46,
-            "edge": -0.1330013312605749,
-            "edge_pct": -13.3,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 29.3,
-            "confidence_tier": "weak",
-            "model_agreement": 83.8,
-            "tippmix_odds": 2.46,
-            "models": {
-              "stat_prob_pct": 33.1,
-              "xg_prob_pct": 23.2,
-              "form_prob_pct": 27.2,
-              "ensemble_prob_pct": 27.4
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.4663847224453187,
-            "prob_pct": 46.6,
-            "fair_odds": 2.14,
-            "book_odds": 1.61,
-            "implied_prob": 0.6211180124223602,
-            "implied_prob_pct": 62.1,
-            "market_fair_odds": 1.61,
-            "edge": -0.1547332899770415,
-            "edge_pct": -15.5,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 33.5,
-            "confidence_tier": "weak",
-            "model_agreement": 92.2,
-            "tippmix_odds": 1.61,
-            "models": {
-              "stat_prob_pct": 48.6,
-              "xg_prob_pct": 47.1,
-              "form_prob_pct": 44.0,
-              "ensemble_prob_pct": 46.6
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Nem)",
-            "short": "BTTS Nem",
-            "prob": 0.5336152775546813,
-            "prob_pct": 53.4,
-            "fair_odds": 1.87,
-            "book_odds": 2.26,
-            "implied_prob": 0.4424778761061947,
-            "implied_prob_pct": 44.2,
-            "market_fair_odds": 2.26,
-            "edge": 0.09113740144848659,
-            "edge_pct": 9.1,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 51.9,
-            "confidence_tier": "moderate",
-            "model_agreement": 92.2,
-            "tippmix_odds": 2.26,
-            "models": {
-              "stat_prob_pct": 51.4,
-              "xg_prob_pct": 52.9,
-              "form_prob_pct": 56.0,
-              "ensemble_prob_pct": 53.4
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.4199043996807847,
-            "prob_pct": 42.0,
-            "fair_odds": 2.38,
-            "book_odds": 1.74,
-            "implied_prob": 0.5747126436781609,
-            "implied_prob_pct": 57.5,
-            "market_fair_odds": 1.74,
-            "edge": -0.1548082439973762,
-            "edge_pct": -15.5,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 31.5,
-            "confidence_tier": "weak",
-            "model_agreement": 90.0,
-            "tippmix_odds": 1.74,
-            "models": {
-              "stat_prob_pct": 43.0,
-              "xg_prob_pct": 44.0,
-              "form_prob_pct": 38.3,
-              "ensemble_prob_pct": 42.0
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Under 2.5 gól",
-            "short": "U2.5",
-            "prob": 0.5800956003192154,
-            "prob_pct": 58.0,
-            "fair_odds": 1.72,
-            "book_odds": 2.05,
-            "implied_prob": 0.48780487804878053,
-            "implied_prob_pct": 48.8,
-            "market_fair_odds": 2.05,
-            "edge": 0.09229072227043483,
-            "edge_pct": 9.2,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 64.6,
-            "confidence_tier": "strong",
-            "model_agreement": 90.0,
-            "tippmix_odds": 2.05,
-            "models": {
-              "stat_prob_pct": 57.0,
-              "xg_prob_pct": 56.0,
-              "form_prob_pct": 61.7,
-              "ensemble_prob_pct": 58.0
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 18.02,
-              "stake_pct": 3.0,
-              "suggested_stake": 3000.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 3000.0,
-            "stake_pct": 3.0
-          }
-        ],
-        "tippmix_odds": 2.05,
-        "tippmix_markets": {
-          "1": 2.7,
-          "X": 3.45,
-          "2": 2.46,
-          "O2.5": 1.74,
-          "U2.5": 2.05,
-          "BTTS Igen": 1.61,
-          "BTTS Nem": 2.26
-        },
-        "tippmix_matched": true,
-        "prob_pct": 58.0,
-        "fair_odds": 1.72,
-        "edge_pct": 9.2,
-        "elite_score": 64.6,
-        "confidence_tier": "strong",
-        "model_agreement": 90.0,
-        "models": {
-          "stat_prob_pct": 57.0,
-          "xg_prob_pct": 56.0,
-          "form_prob_pct": 61.7,
-          "ensemble_prob_pct": 58.0
-        },
-        "staking": {
-          "bankroll": 100000.0,
-          "currency": "HUF",
-          "kelly_full_pct": 18.02,
-          "stake_pct": 3.0,
-          "suggested_stake": 3000.0,
-          "staking_method": "fractional_kelly_0.25"
-        },
-        "suggested_stake": 3000.0,
-        "stake_pct": 3.0,
-        "is_value": true,
-        "odds_in_band": true,
-        "is_actionable": true,
-        "min_prob_pct": 45.0,
-        "odds_band": [
-          1.8,
-          2.1
-        ],
-        "bankroll": 100000.0,
-        "odds_source": "TippmixPro",
-        "is_top": true
-      }
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401878772",
@@ -10268,9 +7299,9 @@
       "kickoff_display": "2026-10-10 16:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 16:00",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401882856",
@@ -10313,8 +7344,8 @@
       "kickoff_display": "2026-10-10 16:15 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401876446",
@@ -10357,561 +7388,9 @@
       "kickoff_display": "2026-10-10 17:15 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 17:15",
-      "xg_tip": {
-        "bookmaker": "TippmixPro",
-        "home_xg_team": "Lille",
-        "away_xg_team": "Le Havre",
-        "expected_home_goals": 2.031,
-        "expected_away_goals": 1.327,
-        "expected_total_goals": 3.36,
-        "model_meta": {
-          "stat": {
-            "home_attack": 1.804,
-            "away_attack": 1.565,
-            "home_def": 1.389,
-            "away_def": 2.029
-          },
-          "xg": {
-            "home_op_xg": 1.607,
-            "home_op_xga": 1.067,
-            "away_op_xg": 1.63,
-            "away_op_xga": 2.19,
-            "home_balance": 0.601,
-            "away_balance": 0.427
-          },
-          "form": {
-            "home_form": "WDWWL",
-            "away_form": "LDLDL",
-            "home_form_ppg": 2.0,
-            "away_form_ppg": 0.4,
-            "home_goals_for": 2.0,
-            "away_goals_for": 1.5
-          },
-          "lambdas": {
-            "stat": [
-              2.07,
-              1.477
-            ],
-            "xg": [
-              2.165,
-              1.319
-            ],
-            "form": [
-              1.813,
-              1.189
-            ]
-          },
-          "weights": {
-            "stat": 0.3,
-            "xg": 0.4,
-            "form": 0.3
-          },
-          "home_form": "WDWWL",
-          "away_form": "LDLDL",
-          "home_op_xg": 1.607,
-          "home_op_xga": 1.067,
-          "away_op_xg": 1.63,
-          "away_op_xga": 2.19,
-          "home_attack_balance": 0.601,
-          "away_attack_balance": 0.427,
-          "home_profile": {
-            "venue": "home",
-            "op_xg_for": 1.607,
-            "op_xga": 1.067,
-            "total_xg": 1.607,
-            "total_xga": 1.067,
-            "goals_for": 2.0,
-            "goals_against": 1.0,
-            "attack_balance": 0.601,
-            "form_ppg": 2.0,
-            "form_string": "WDWWL",
-            "attack_strength": 1.764,
-            "defence_weakness": 1.04,
-            "season_xg_for": 1.481,
-            "season_xg_against": 1.779,
-            "season_home_xg": 1.607,
-            "season_away_xg": 1.397
-          },
-          "away_profile": {
-            "venue": "away",
-            "op_xg_for": 1.63,
-            "op_xga": 2.19,
-            "total_xg": 1.63,
-            "total_xga": 2.57,
-            "goals_for": 1.5,
-            "goals_against": 2.0,
-            "attack_balance": 0.427,
-            "form_ppg": 0.4,
-            "form_string": "LDLDL",
-            "attack_strength": 1.578,
-            "defence_weakness": 2.114,
-            "season_xg_for": 1.312,
-            "season_xg_against": 2.058,
-            "season_home_xg": 1.1,
-            "season_away_xg": 1.63
-          },
-          "by_short": {
-            "1": {
-              "stat": 0.5132547158898976,
-              "xg": 0.5670395597562012,
-              "form": 0.5198819712755451,
-              "ensemble": 0.5367568300521133
-            },
-            "X": {
-              "stat": 0.21212114374670718,
-              "xg": 0.2047805530024761,
-              "form": 0.2304064887126607,
-              "ensemble": 0.2146705109388008
-            },
-            "2": {
-              "stat": 0.27462414036339516,
-              "xg": 0.2281798872413226,
-              "form": 0.2497115400117942,
-              "ensemble": 0.24857265900908587
-            },
-            "BTTS Igen": {
-              "stat": 0.6743035344146994,
-              "xg": 0.6485319220423446,
-              "form": 0.5819980461467764,
-              "ensemble": 0.6363032429853805
-            },
-            "BTTS Nem": {
-              "stat": 0.32569646558530063,
-              "xg": 0.35146807795765544,
-              "form": 0.4180019538532236,
-              "ensemble": 0.36369675701461945
-            },
-            "O2.5": {
-              "stat": 0.6877583948901957,
-              "xg": 0.6761833087786823,
-              "form": 0.5772578530941206,
-              "ensemble": 0.6499781979067678
-            },
-            "U2.5": {
-              "stat": 0.3122416051098042,
-              "xg": 0.32381669122131773,
-              "form": 0.4227421469058794,
-              "ensemble": 0.3500218020932322
-            }
-          },
-          "expected_home_goals": 2.031,
-          "expected_away_goals": 1.327
-        },
-        "model_stack": [
-          "stat",
-          "xg",
-          "form",
-          "market",
-          "value",
-          "confidence"
-        ],
-        "home_form": "WDWWL",
-        "away_form": "LDLDL",
-        "home_attack_balance": 0.601,
-        "away_attack_balance": 0.427,
-        "markets": {
-          "1X2": {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Le Havre AC)",
-            "short": "2",
-            "prob": 0.24857265900908587,
-            "prob_pct": 24.9,
-            "fair_odds": 4.02,
-            "book_odds": 6.25,
-            "implied_prob": 0.16,
-            "implied_prob_pct": 16.0,
-            "market_fair_odds": 6.25,
-            "edge": 0.08857265900908587,
-            "edge_pct": 8.9,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 45.6,
-            "confidence_tier": "moderate",
-            "model_agreement": 92.4,
-            "tippmix_odds": 6.25,
-            "models": {
-              "stat_prob_pct": 27.5,
-              "xg_prob_pct": 22.8,
-              "form_prob_pct": 25.0,
-              "ensemble_prob_pct": 24.9
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "BTTS": {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.6363032429853805,
-            "prob_pct": 63.6,
-            "fair_odds": 1.57,
-            "book_odds": 1.83,
-            "implied_prob": 0.5464480874316939,
-            "implied_prob_pct": 54.6,
-            "market_fair_odds": 1.83,
-            "edge": 0.08985515555368662,
-            "edge_pct": 9.0,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 66.3,
-            "confidence_tier": "strong",
-            "model_agreement": 84.4,
-            "tippmix_odds": 1.83,
-            "models": {
-              "stat_prob_pct": 67.4,
-              "xg_prob_pct": 64.9,
-              "form_prob_pct": 58.2,
-              "ensemble_prob_pct": 63.6
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 19.81,
-              "stake_pct": 3.0,
-              "suggested_stake": 3000.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 3000.0,
-            "stake_pct": 3.0
-          },
-          "Gólok": {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.6499781979067678,
-            "prob_pct": 65.0,
-            "fair_odds": 1.54,
-            "book_odds": 1.62,
-            "implied_prob": 0.6172839506172839,
-            "implied_prob_pct": 61.7,
-            "market_fair_odds": 1.62,
-            "edge": 0.03269424728948389,
-            "edge_pct": 3.3,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 47.2,
-            "confidence_tier": "moderate",
-            "model_agreement": 80.2,
-            "tippmix_odds": 1.62,
-            "models": {
-              "stat_prob_pct": 68.8,
-              "xg_prob_pct": 67.6,
-              "form_prob_pct": 57.7,
-              "ensemble_prob_pct": 65.0
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          }
-        },
-        "recommendation": {
-          "market": "BTTS",
-          "pick": "Mindkét csapat szerez gólt (Igen)",
-          "short": "BTTS Igen",
-          "prob": 0.6363032429853805,
-          "prob_pct": 63.6,
-          "fair_odds": 1.57,
-          "book_odds": 1.83,
-          "implied_prob": 0.5464480874316939,
-          "implied_prob_pct": 54.6,
-          "market_fair_odds": 1.83,
-          "edge": 0.08985515555368662,
-          "edge_pct": 9.0,
-          "odds_in_band": true,
-          "is_value": true,
-          "odds_ok": true,
-          "elite_score": 66.3,
-          "confidence_tier": "strong",
-          "model_agreement": 84.4,
-          "tippmix_odds": 1.83,
-          "models": {
-            "stat_prob_pct": 67.4,
-            "xg_prob_pct": 64.9,
-            "form_prob_pct": 58.2,
-            "ensemble_prob_pct": 63.6
-          },
-          "staking": {
-            "bankroll": 100000.0,
-            "currency": "HUF",
-            "kelly_full_pct": 19.81,
-            "stake_pct": 3.0,
-            "suggested_stake": 3000.0,
-            "staking_method": "fractional_kelly_0.25"
-          },
-          "suggested_stake": 3000.0,
-          "stake_pct": 3.0,
-          "is_strong": true
-        },
-        "options": [
-          {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Lille)",
-            "short": "1",
-            "prob": 0.5367568300521133,
-            "prob_pct": 53.7,
-            "fair_odds": 1.86,
-            "book_odds": 1.45,
-            "implied_prob": 0.6896551724137931,
-            "implied_prob_pct": 69.0,
-            "market_fair_odds": 1.45,
-            "edge": -0.15289834236167987,
-            "edge_pct": -15.3,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 37.8,
-            "confidence_tier": "weak",
-            "model_agreement": 90.4,
-            "tippmix_odds": 1.45,
-            "models": {
-              "stat_prob_pct": 51.3,
-              "xg_prob_pct": 56.7,
-              "form_prob_pct": 52.0,
-              "ensemble_prob_pct": 53.7
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Döntetlen",
-            "short": "X",
-            "prob": 0.2146705109388008,
-            "prob_pct": 21.5,
-            "fair_odds": 4.66,
-            "book_odds": 4.7,
-            "implied_prob": 0.2127659574468085,
-            "implied_prob_pct": 21.3,
-            "market_fair_odds": 4.7,
-            "edge": 0.0019045534919922835,
-            "edge_pct": 0.2,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 33.8,
-            "confidence_tier": "weak",
-            "model_agreement": 95.7,
-            "tippmix_odds": 4.7,
-            "models": {
-              "stat_prob_pct": 21.2,
-              "xg_prob_pct": 20.5,
-              "form_prob_pct": 23.0,
-              "ensemble_prob_pct": 21.5
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Le Havre AC)",
-            "short": "2",
-            "prob": 0.24857265900908587,
-            "prob_pct": 24.9,
-            "fair_odds": 4.02,
-            "book_odds": 6.25,
-            "implied_prob": 0.16,
-            "implied_prob_pct": 16.0,
-            "market_fair_odds": 6.25,
-            "edge": 0.08857265900908587,
-            "edge_pct": 8.9,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 45.6,
-            "confidence_tier": "moderate",
-            "model_agreement": 92.4,
-            "tippmix_odds": 6.25,
-            "models": {
-              "stat_prob_pct": 27.5,
-              "xg_prob_pct": 22.8,
-              "form_prob_pct": 25.0,
-              "ensemble_prob_pct": 24.9
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.6363032429853805,
-            "prob_pct": 63.6,
-            "fair_odds": 1.57,
-            "book_odds": 1.83,
-            "implied_prob": 0.5464480874316939,
-            "implied_prob_pct": 54.6,
-            "market_fair_odds": 1.83,
-            "edge": 0.08985515555368662,
-            "edge_pct": 9.0,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 66.3,
-            "confidence_tier": "strong",
-            "model_agreement": 84.4,
-            "tippmix_odds": 1.83,
-            "models": {
-              "stat_prob_pct": 67.4,
-              "xg_prob_pct": 64.9,
-              "form_prob_pct": 58.2,
-              "ensemble_prob_pct": 63.6
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 19.81,
-              "stake_pct": 3.0,
-              "suggested_stake": 3000.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 3000.0,
-            "stake_pct": 3.0
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Nem)",
-            "short": "BTTS Nem",
-            "prob": 0.36369675701461945,
-            "prob_pct": 36.4,
-            "fair_odds": 2.75,
-            "book_odds": 1.94,
-            "implied_prob": 0.5154639175257733,
-            "implied_prob_pct": 51.5,
-            "market_fair_odds": 1.94,
-            "edge": -0.1517671605111538,
-            "edge_pct": -15.2,
-            "odds_in_band": true,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 29.6,
-            "confidence_tier": "weak",
-            "model_agreement": 84.4,
-            "tippmix_odds": 1.94,
-            "models": {
-              "stat_prob_pct": 32.6,
-              "xg_prob_pct": 35.1,
-              "form_prob_pct": 41.8,
-              "ensemble_prob_pct": 36.4
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.6499781979067678,
-            "prob_pct": 65.0,
-            "fair_odds": 1.54,
-            "book_odds": 1.62,
-            "implied_prob": 0.6172839506172839,
-            "implied_prob_pct": 61.7,
-            "market_fair_odds": 1.62,
-            "edge": 0.03269424728948389,
-            "edge_pct": 3.3,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 47.2,
-            "confidence_tier": "moderate",
-            "model_agreement": 80.2,
-            "tippmix_odds": 1.62,
-            "models": {
-              "stat_prob_pct": 68.8,
-              "xg_prob_pct": 67.6,
-              "form_prob_pct": 57.7,
-              "ensemble_prob_pct": 65.0
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Under 2.5 gól",
-            "short": "U2.5",
-            "prob": 0.3500218020932322,
-            "prob_pct": 35.0,
-            "fair_odds": 2.86,
-            "book_odds": 2.25,
-            "implied_prob": 0.4444444444444444,
-            "implied_prob_pct": 44.4,
-            "market_fair_odds": 2.25,
-            "edge": -0.09442264235121223,
-            "edge_pct": -9.4,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 28.1,
-            "confidence_tier": "weak",
-            "model_agreement": 80.2,
-            "tippmix_odds": 2.25,
-            "models": {
-              "stat_prob_pct": 31.2,
-              "xg_prob_pct": 32.4,
-              "form_prob_pct": 42.3,
-              "ensemble_prob_pct": 35.0
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          }
-        ],
-        "tippmix_odds": 1.83,
-        "tippmix_markets": {
-          "1": 1.45,
-          "X": 4.7,
-          "2": 6.25,
-          "O2.5": 1.62,
-          "U2.5": 2.25,
-          "BTTS Igen": 1.83,
-          "BTTS Nem": 1.94
-        },
-        "tippmix_matched": true,
-        "prob_pct": 63.6,
-        "fair_odds": 1.57,
-        "edge_pct": 9.0,
-        "elite_score": 66.3,
-        "confidence_tier": "strong",
-        "model_agreement": 84.4,
-        "models": {
-          "stat_prob_pct": 67.4,
-          "xg_prob_pct": 64.9,
-          "form_prob_pct": 58.2,
-          "ensemble_prob_pct": 63.6
-        },
-        "staking": {
-          "bankroll": 100000.0,
-          "currency": "HUF",
-          "kelly_full_pct": 19.81,
-          "stake_pct": 3.0,
-          "suggested_stake": 3000.0,
-          "staking_method": "fractional_kelly_0.25"
-        },
-        "suggested_stake": 3000.0,
-        "stake_pct": 3.0,
-        "is_value": true,
-        "odds_in_band": true,
-        "is_actionable": true,
-        "min_prob_pct": 45.0,
-        "odds_band": [
-          1.8,
-          2.1
-        ],
-        "bankroll": 100000.0,
-        "odds_source": "TippmixPro",
-        "is_top": true
-      }
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401875021",
@@ -10954,9 +7433,9 @@
       "kickoff_display": "2026-10-10 18:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 18:00",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401884780",
@@ -10999,9 +7478,9 @@
       "kickoff_display": "2026-10-10 18:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 18:30",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401878773",
@@ -11044,8 +7523,8 @@
       "kickoff_display": "2026-10-10 18:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401882853",
@@ -11088,9 +7567,9 @@
       "kickoff_display": "2026-10-10 18:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 18:30",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401874754",
@@ -11133,9 +7612,9 @@
       "kickoff_display": "2026-10-10 20:45 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 20:45",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401876444",
@@ -11178,9 +7657,9 @@
       "kickoff_display": "2026-10-10 20:45 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 20:45",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401876448",
@@ -11223,9 +7702,9 @@
       "kickoff_display": "2026-10-10 20:45 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 20:45",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401876445",
@@ -11268,561 +7747,9 @@
       "kickoff_display": "2026-10-10 20:45 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 20:45",
-      "xg_tip": {
-        "bookmaker": "TippmixPro",
-        "home_xg_team": "Lorient",
-        "away_xg_team": "Paris FC",
-        "expected_home_goals": 1.188,
-        "expected_away_goals": 1.664,
-        "expected_total_goals": 2.85,
-        "model_meta": {
-          "stat": {
-            "home_attack": 1.177,
-            "away_attack": 1.981,
-            "home_def": 1.617,
-            "away_def": 0.829
-          },
-          "xg": {
-            "home_op_xg": 0.855,
-            "home_op_xga": 1.129,
-            "away_op_xg": 2.082,
-            "away_op_xga": 1.031,
-            "home_balance": 0.431,
-            "away_balance": 0.669
-          },
-          "form": {
-            "home_form": "DLWDL",
-            "away_form": "DWWDW",
-            "home_form_ppg": 1.0,
-            "away_form_ppg": 2.2,
-            "home_goals_for": 1.5,
-            "away_goals_for": 1.5
-          },
-          "lambdas": {
-            "stat": [
-              1.083,
-              1.799
-            ],
-            "xg": [
-              0.997,
-              1.787
-            ],
-            "form": [
-              1.547,
-              1.365
-            ]
-          },
-          "weights": {
-            "stat": 0.3,
-            "xg": 0.4,
-            "form": 0.3
-          },
-          "home_form": "DLWDL",
-          "away_form": "DWWDW",
-          "home_op_xg": 0.855,
-          "home_op_xga": 1.129,
-          "away_op_xg": 2.082,
-          "away_op_xga": 1.031,
-          "home_attack_balance": 0.431,
-          "away_attack_balance": 0.669,
-          "home_profile": {
-            "venue": "home",
-            "op_xg_for": 0.855,
-            "op_xga": 1.129,
-            "total_xg": 0.855,
-            "total_xga": 1.509,
-            "goals_for": 1.5,
-            "goals_against": 2.0,
-            "attack_balance": 0.431,
-            "form_ppg": 1.0,
-            "form_string": "DLWDL",
-            "attack_strength": 1.113,
-            "defence_weakness": 1.477,
-            "season_xg_for": 1.16,
-            "season_xg_against": 1.233,
-            "season_home_xg": 0.855,
-            "season_away_xg": 1.362
-          },
-          "away_profile": {
-            "venue": "away",
-            "op_xg_for": 2.082,
-            "op_xga": 1.031,
-            "total_xg": 2.462,
-            "total_xga": 1.031,
-            "goals_for": 1.5,
-            "goals_against": 1.0,
-            "attack_balance": 0.669,
-            "form_ppg": 2.2,
-            "form_string": "DWWDW",
-            "attack_strength": 1.849,
-            "defence_weakness": 1.019,
-            "season_xg_for": 1.885,
-            "season_xg_against": 0.657,
-            "season_home_xg": 1.501,
-            "season_away_xg": 2.462
-          },
-          "by_short": {
-            "1": {
-              "stat": 0.2272813654143171,
-              "xg": 0.2090285256461216,
-              "form": 0.41747031770686727,
-              "ensemble": 0.27703691519480395
-            },
-            "X": {
-              "stat": 0.2313886678317162,
-              "xg": 0.2318076838205954,
-              "form": 0.24605461128166434,
-              "ensemble": 0.23595605726225233
-            },
-            "2": {
-              "stat": 0.5413299667539667,
-              "xg": 0.559163790533283,
-              "form": 0.33647507101146834,
-              "ensemble": 0.4870070275429437
-            },
-            "BTTS Igen": {
-              "stat": 0.5519800699955378,
-              "xg": 0.5253443101369933,
-              "form": 0.5861005374802973,
-              "ensemble": 0.551561906297548
-            },
-            "BTTS Nem": {
-              "stat": 0.44801993000446216,
-              "xg": 0.47465568986300666,
-              "form": 0.41389946251970267,
-              "ensemble": 0.44843809370245213
-            },
-            "O2.5": {
-              "stat": 0.5498604936409403,
-              "xg": 0.5267236201501648,
-              "form": 0.5568080937872435,
-              "ensemble": 0.5426900242885211
-            },
-            "U2.5": {
-              "stat": 0.45013950635905975,
-              "xg": 0.4732763798498352,
-              "form": 0.4431919062127565,
-              "ensemble": 0.45730997571147897
-            }
-          },
-          "expected_home_goals": 1.188,
-          "expected_away_goals": 1.664
-        },
-        "model_stack": [
-          "stat",
-          "xg",
-          "form",
-          "market",
-          "value",
-          "confidence"
-        ],
-        "home_form": "DLWDL",
-        "away_form": "DWWDW",
-        "home_attack_balance": 0.431,
-        "away_attack_balance": 0.669,
-        "markets": {
-          "1X2": {
-            "market": "1X2",
-            "pick": "Döntetlen",
-            "short": "X",
-            "prob": 0.23595605726225233,
-            "prob_pct": 23.6,
-            "fair_odds": 4.24,
-            "book_odds": 3.25,
-            "implied_prob": 0.3076923076923077,
-            "implied_prob_pct": 30.8,
-            "market_fair_odds": 3.25,
-            "edge": -0.07173625043005538,
-            "edge_pct": -7.2,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 35.0,
-            "confidence_tier": "weak",
-            "model_agreement": 100.0,
-            "tippmix_odds": 3.25,
-            "models": {
-              "stat_prob_pct": 23.1,
-              "xg_prob_pct": 23.2,
-              "form_prob_pct": 24.6,
-              "ensemble_prob_pct": 23.6
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "BTTS": {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.551561906297548,
-            "prob_pct": 55.2,
-            "fair_odds": 1.81,
-            "book_odds": 1.7,
-            "implied_prob": 0.5882352941176471,
-            "implied_prob_pct": 58.8,
-            "market_fair_odds": 1.7,
-            "edge": -0.0366733878200991,
-            "edge_pct": -3.7,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 38.8,
-            "confidence_tier": "weak",
-            "model_agreement": 90.1,
-            "tippmix_odds": 1.7,
-            "models": {
-              "stat_prob_pct": 55.2,
-              "xg_prob_pct": 52.5,
-              "form_prob_pct": 58.6,
-              "ensemble_prob_pct": 55.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          "Gólok": {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.5426900242885211,
-            "prob_pct": 54.3,
-            "fair_odds": 1.84,
-            "book_odds": 1.92,
-            "implied_prob": 0.5208333333333334,
-            "implied_prob_pct": 52.1,
-            "market_fair_odds": 1.92,
-            "edge": 0.02185669095518772,
-            "edge_pct": 2.2,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 53.1,
-            "confidence_tier": "moderate",
-            "model_agreement": 94.9,
-            "tippmix_odds": 1.92,
-            "models": {
-              "stat_prob_pct": 55.0,
-              "xg_prob_pct": 52.7,
-              "form_prob_pct": 55.7,
-              "ensemble_prob_pct": 54.3
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 4.56,
-              "stake_pct": 1.14,
-              "suggested_stake": 1140.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 1140.0,
-            "stake_pct": 1.14
-          }
-        },
-        "recommendation": {
-          "market": "Gólok",
-          "pick": "Over 2.5 gól",
-          "short": "O2.5",
-          "prob": 0.5426900242885211,
-          "prob_pct": 54.3,
-          "fair_odds": 1.84,
-          "book_odds": 1.92,
-          "implied_prob": 0.5208333333333334,
-          "implied_prob_pct": 52.1,
-          "market_fair_odds": 1.92,
-          "edge": 0.02185669095518772,
-          "edge_pct": 2.2,
-          "odds_in_band": true,
-          "is_value": true,
-          "odds_ok": true,
-          "elite_score": 53.1,
-          "confidence_tier": "moderate",
-          "model_agreement": 94.9,
-          "tippmix_odds": 1.92,
-          "models": {
-            "stat_prob_pct": 55.0,
-            "xg_prob_pct": 52.7,
-            "form_prob_pct": 55.7,
-            "ensemble_prob_pct": 54.3
-          },
-          "staking": {
-            "bankroll": 100000.0,
-            "currency": "HUF",
-            "kelly_full_pct": 4.56,
-            "stake_pct": 1.14,
-            "suggested_stake": 1140.0,
-            "staking_method": "fractional_kelly_0.25"
-          },
-          "suggested_stake": 1140.0,
-          "stake_pct": 1.14,
-          "is_strong": true
-        },
-        "options": [
-          {
-            "market": "1X2",
-            "pick": "Hazai győzelem (Lorient)",
-            "short": "1",
-            "prob": 0.27703691519480395,
-            "prob_pct": 27.7,
-            "fair_odds": 3.61,
-            "book_odds": 3.05,
-            "implied_prob": 0.3278688524590164,
-            "implied_prob_pct": 32.8,
-            "market_fair_odds": 3.05,
-            "edge": -0.05083193726421248,
-            "edge_pct": -5.1,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 21.8,
-            "confidence_tier": "weak",
-            "model_agreement": 62.3,
-            "tippmix_odds": 3.05,
-            "models": {
-              "stat_prob_pct": 22.7,
-              "xg_prob_pct": 20.9,
-              "form_prob_pct": 41.7,
-              "ensemble_prob_pct": 27.7
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Döntetlen",
-            "short": "X",
-            "prob": 0.23595605726225233,
-            "prob_pct": 23.6,
-            "fair_odds": 4.24,
-            "book_odds": 3.25,
-            "implied_prob": 0.3076923076923077,
-            "implied_prob_pct": 30.8,
-            "market_fair_odds": 3.25,
-            "edge": -0.07173625043005538,
-            "edge_pct": -7.2,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 35.0,
-            "confidence_tier": "weak",
-            "model_agreement": 100.0,
-            "tippmix_odds": 3.25,
-            "models": {
-              "stat_prob_pct": 23.1,
-              "xg_prob_pct": 23.2,
-              "form_prob_pct": 24.6,
-              "ensemble_prob_pct": 23.6
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "1X2",
-            "pick": "Vendég győzelem (Paris FC)",
-            "short": "2",
-            "prob": 0.4870070275429437,
-            "prob_pct": 48.7,
-            "fair_odds": 2.05,
-            "book_odds": 2.31,
-            "implied_prob": 0.4329004329004329,
-            "implied_prob_pct": 43.3,
-            "market_fair_odds": 2.31,
-            "edge": 0.05410659464251083,
-            "edge_pct": 5.4,
-            "odds_in_band": false,
-            "is_value": true,
-            "odds_ok": false,
-            "elite_score": 31.6,
-            "confidence_tier": "weak",
-            "model_agreement": 59.6,
-            "tippmix_odds": 2.31,
-            "models": {
-              "stat_prob_pct": 54.1,
-              "xg_prob_pct": 55.9,
-              "form_prob_pct": 33.6,
-              "ensemble_prob_pct": 48.7
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Igen)",
-            "short": "BTTS Igen",
-            "prob": 0.551561906297548,
-            "prob_pct": 55.2,
-            "fair_odds": 1.81,
-            "book_odds": 1.7,
-            "implied_prob": 0.5882352941176471,
-            "implied_prob_pct": 58.8,
-            "market_fair_odds": 1.7,
-            "edge": -0.0366733878200991,
-            "edge_pct": -3.7,
-            "odds_in_band": false,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 38.8,
-            "confidence_tier": "weak",
-            "model_agreement": 90.1,
-            "tippmix_odds": 1.7,
-            "models": {
-              "stat_prob_pct": 55.2,
-              "xg_prob_pct": 52.5,
-              "form_prob_pct": 58.6,
-              "ensemble_prob_pct": 55.2
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "BTTS",
-            "pick": "Mindkét csapat szerez gólt (Nem)",
-            "short": "BTTS Nem",
-            "prob": 0.44843809370245213,
-            "prob_pct": 44.8,
-            "fair_odds": 2.23,
-            "book_odds": 2.1,
-            "implied_prob": 0.47619047619047616,
-            "implied_prob_pct": 47.6,
-            "market_fair_odds": 2.1,
-            "edge": -0.02775238248802403,
-            "edge_pct": -2.8,
-            "odds_in_band": true,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 31.5,
-            "confidence_tier": "weak",
-            "model_agreement": 90.1,
-            "tippmix_odds": 2.1,
-            "models": {
-              "stat_prob_pct": 44.8,
-              "xg_prob_pct": 47.5,
-              "form_prob_pct": 41.4,
-              "ensemble_prob_pct": 44.8
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          },
-          {
-            "market": "Gólok",
-            "pick": "Over 2.5 gól",
-            "short": "O2.5",
-            "prob": 0.5426900242885211,
-            "prob_pct": 54.3,
-            "fair_odds": 1.84,
-            "book_odds": 1.92,
-            "implied_prob": 0.5208333333333334,
-            "implied_prob_pct": 52.1,
-            "market_fair_odds": 1.92,
-            "edge": 0.02185669095518772,
-            "edge_pct": 2.2,
-            "odds_in_band": true,
-            "is_value": true,
-            "odds_ok": true,
-            "elite_score": 53.1,
-            "confidence_tier": "moderate",
-            "model_agreement": 94.9,
-            "tippmix_odds": 1.92,
-            "models": {
-              "stat_prob_pct": 55.0,
-              "xg_prob_pct": 52.7,
-              "form_prob_pct": 55.7,
-              "ensemble_prob_pct": 54.3
-            },
-            "staking": {
-              "bankroll": 100000.0,
-              "currency": "HUF",
-              "kelly_full_pct": 4.56,
-              "stake_pct": 1.14,
-              "suggested_stake": 1140.0,
-              "staking_method": "fractional_kelly_0.25"
-            },
-            "suggested_stake": 1140.0,
-            "stake_pct": 1.14
-          },
-          {
-            "market": "Gólok",
-            "pick": "Under 2.5 gól",
-            "short": "U2.5",
-            "prob": 0.45730997571147897,
-            "prob_pct": 45.7,
-            "fair_odds": 2.19,
-            "book_odds": 1.85,
-            "implied_prob": 0.5405405405405405,
-            "implied_prob_pct": 54.1,
-            "market_fair_odds": 1.85,
-            "edge": -0.08323056482906149,
-            "edge_pct": -8.3,
-            "odds_in_band": true,
-            "is_value": false,
-            "odds_ok": false,
-            "elite_score": 33.7,
-            "confidence_tier": "weak",
-            "model_agreement": 94.9,
-            "tippmix_odds": 1.85,
-            "models": {
-              "stat_prob_pct": 45.0,
-              "xg_prob_pct": 47.3,
-              "form_prob_pct": 44.3,
-              "ensemble_prob_pct": 45.7
-            },
-            "staking": {},
-            "suggested_stake": null,
-            "stake_pct": null
-          }
-        ],
-        "tippmix_odds": 1.92,
-        "tippmix_markets": {
-          "1": 3.05,
-          "X": 3.25,
-          "2": 2.31,
-          "O2.5": 1.92,
-          "U2.5": 1.85,
-          "BTTS Igen": 1.7,
-          "BTTS Nem": 2.1
-        },
-        "tippmix_matched": true,
-        "prob_pct": 54.3,
-        "fair_odds": 1.84,
-        "edge_pct": 2.2,
-        "elite_score": 53.1,
-        "confidence_tier": "moderate",
-        "model_agreement": 94.9,
-        "models": {
-          "stat_prob_pct": 55.0,
-          "xg_prob_pct": 52.7,
-          "form_prob_pct": 55.7,
-          "ensemble_prob_pct": 54.3
-        },
-        "staking": {
-          "bankroll": 100000.0,
-          "currency": "HUF",
-          "kelly_full_pct": 4.56,
-          "stake_pct": 1.14,
-          "suggested_stake": 1140.0,
-          "staking_method": "fractional_kelly_0.25"
-        },
-        "suggested_stake": 1140.0,
-        "stake_pct": 1.14,
-        "is_value": true,
-        "odds_in_band": true,
-        "is_actionable": true,
-        "min_prob_pct": 45.0,
-        "odds_band": [
-          1.8,
-          2.1
-        ],
-        "bankroll": 100000.0,
-        "odds_source": "TippmixPro",
-        "is_top": true
-      }
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401876442",
@@ -11865,8 +7792,8 @@
       "kickoff_display": "2026-10-10 20:45 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401882848",
@@ -11909,9 +7836,9 @@
       "kickoff_display": "2026-10-10 21:00 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
-      "on_slate": true,
       "tippmix_kickoff_local": "10.10 21:00",
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915418",
@@ -11954,8 +7881,8 @@
       "kickoff_display": "2026-10-13 18:45 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915436",
@@ -11998,8 +7925,8 @@
       "kickoff_display": "2026-10-13 18:45 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915417",
@@ -12042,8 +7969,8 @@
       "kickoff_display": "2026-10-13 21:00 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915412",
@@ -12086,8 +8013,8 @@
       "kickoff_display": "2026-10-13 21:00 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915435",
@@ -12130,8 +8057,8 @@
       "kickoff_display": "2026-10-13 21:00 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915413",
@@ -12174,8 +8101,8 @@
       "kickoff_display": "2026-10-13 21:00 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915434",
@@ -12218,8 +8145,8 @@
       "kickoff_display": "2026-10-13 21:00 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915411",
@@ -12262,8 +8189,8 @@
       "kickoff_display": "2026-10-13 21:00 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915410",
@@ -12306,8 +8233,8 @@
       "kickoff_display": "2026-10-13 21:00 (kedd)",
       "is_today": false,
       "kick_date": "2026-10-13",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915573",
@@ -12350,8 +8277,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915576",
@@ -12394,8 +8321,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915566",
@@ -12438,8 +8365,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915577",
@@ -12482,8 +8409,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915568",
@@ -12526,8 +8453,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915567",
@@ -12570,8 +8497,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915575",
@@ -12614,8 +8541,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915574",
@@ -12658,8 +8585,8 @@
       "kickoff_display": "2026-10-15 18:45 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915571",
@@ -12702,8 +8629,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915562",
@@ -12746,8 +8673,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915560",
@@ -12790,8 +8717,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915549",
@@ -12834,8 +8761,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915564",
@@ -12878,8 +8805,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915561",
@@ -12922,8 +8849,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915550",
@@ -12966,8 +8893,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915565",
@@ -13010,8 +8937,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915572",
@@ -13054,8 +8981,8 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     },
     {
       "id": "401915563",
@@ -13098,8 +9025,183 @@
       "kickoff_display": "2026-10-15 21:00 (csütörtök)",
       "is_today": false,
       "kick_date": "2026-10-15",
-      "on_slate": true,
-      "xg_tip": null
+      "xg_tip": null,
+      "on_slate": false
     }
-  ]
+  ],
+  "today_date": "2026-10-05",
+  "today_only": true,
+  "tippmix_today": [
+    {
+      "home_team": "Franciaország",
+      "away_team": "Belgium",
+      "teams_raw": "Franciaország Belgium",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 1.53,
+      "odds_x": 4.9,
+      "odds_2": 6,
+      "over_25": 1.53,
+      "under_25": 2.45,
+      "btts_yes": 1.66,
+      "btts_no": 2.17,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Olaszország",
+      "away_team": "Törökország",
+      "teams_raw": "Olaszország Törökország",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 1.48,
+      "odds_x": 4.85,
+      "odds_2": 7,
+      "over_25": 1.56,
+      "under_25": 2.36,
+      "btts_yes": 1.73,
+      "btts_no": 2.06,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Észak-Írország",
+      "away_team": "Georgia",
+      "teams_raw": "Észak-Írország Georgia",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 2.5,
+      "odds_x": 3,
+      "odds_2": 3.45,
+      "over_25": 2.7,
+      "under_25": 1.44,
+      "btts_yes": 2.17,
+      "btts_no": 1.63,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Ukrajna",
+      "away_team": "Magyarország",
+      "teams_raw": "Ukrajna Magyarország",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 2.95,
+      "odds_x": 3.15,
+      "odds_2": 2.75,
+      "over_25": 2.31,
+      "under_25": 1.59,
+      "btts_yes": 1.92,
+      "btts_no": 1.81,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Bosznia-Hercegovina",
+      "away_team": "Lengyelország",
+      "teams_raw": "Bosznia-Hercegovina Lengyelország",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 3.35,
+      "odds_x": 3.55,
+      "odds_2": 2.25,
+      "over_25": 1.96,
+      "under_25": 1.81,
+      "btts_yes": 1.73,
+      "btts_no": 2.01,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Románia",
+      "away_team": "Svédország",
+      "teams_raw": "Románia Svédország",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 3.8,
+      "odds_x": 3.8,
+      "odds_2": 1.93,
+      "over_25": 1.62,
+      "under_25": 2.25,
+      "btts_yes": 1.55,
+      "btts_no": 2.33,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Montenegró",
+      "away_team": "Örményország",
+      "teams_raw": "Montenegró Örményország",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 1.48,
+      "odds_x": 4.6,
+      "odds_2": 6.5,
+      "over_25": 1.68,
+      "under_25": 2.14,
+      "btts_yes": 1.89,
+      "btts_no": 1.87,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Carshalton Athletic",
+      "away_team": "Eastbourne Borogh",
+      "teams_raw": "Carshalton Athletic Eastbourne Borogh",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 2.63,
+      "odds_x": 3.55,
+      "odds_2": 2.23,
+      "over_25": 1.44,
+      "under_25": 2.39,
+      "btts_yes": 1.42,
+      "btts_no": 2.47,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Redbridge Concord",
+      "away_team": "Rangers",
+      "teams_raw": "Redbridge Concord Rangers",
+      "date": "10.05",
+      "time": "20:45",
+      "odds_1": 1.91,
+      "odds_x": 3.55,
+      "odds_2": 3.25,
+      "over_25": 1.44,
+      "under_25": 2.39,
+      "btts_yes": 1.44,
+      "btts_no": 2.4,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
+      "source": "tippmixpro"
+    },
+    {
+      "home_team": "Cordoba",
+      "away_team": "Tenerife",
+      "teams_raw": "Cordoba Tenerife",
+      "date": "10.05",
+      "time": "20:30",
+      "odds_1": 1.92,
+      "odds_x": 3.55,
+      "odds_2": 3.75,
+      "over_25": 1.79,
+      "under_25": 1.94,
+      "btts_yes": 1.69,
+      "btts_no": 2.07,
+      "kickoff_local": "10.05 20:30",
+      "commence_time": "2026-10-05T20:30:00+02:00",
+      "source": "tippmixpro"
+    }
+  ],
+  "tippmix_today_count": 10
 }

@@ -73,23 +73,24 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
     lines: list[str] = [
         "# TippmixPro – ensemble tippek + stake",
         "",
-        f"**Ma (BUÉK):** `{today_label}`  ",
+        f"**Ma (BUÉK):** `{today_label}` · **csak mai meccsek**  ",
+        f"**Mai meccsek a listán:** {len(today_matches)}  ",
         f"**Frissítve (UTC):** `{payload.get('updated_at')}`  ",
         f"**Bankroll:** `{int(bankroll):,} {currency}` · stake: **{kelly:.0%} Kelly** (max {float(config.get('max_stake_pct', 0.03))*100:.0f}%/tipp)  ",
         f"**Odds sáv:** `{odds_min:.1f}` – `{odds_max:.1f}`  ",
-        f"**Value tippek:** {len(all_tips)}  ",
-        f"**Meccsek:** {len(slate)}  ",
+        f"**Mai value tippek:** {len(all_tips)}  ",
+        f"**Top tippek:** {len(top_tips)}",
         "",
         "> **Stat** – szezon teljesítmény · **xG** – open-play xG/xGA · **Form** – utolsó 5 meccs  ",
         "> **Market** – bookmaker implicit esély · **Value** – ensemble vs piac · **Elite** – egyetértés + edge  ",
-        "> Nem pénzügyi tanács.",
+        "> Mindig az **aktuális nap** (Budapest) tippjei. Nem pénzügyi tanács.",
         "",
-        "## Top tippek (elite score)",
+        f"## Mai top tippek ({today_label})",
         "",
     ]
 
     if not top_tips:
-        lines.append("_Nincs value tipp a sávban._")
+        lines.append(f"_Ma ({today_label}) nincs value tipp a 1.8–2.1 sávban._")
         lines.append("")
     else:
         lines.extend(
@@ -111,7 +112,7 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
 
     lines.extend(
         [
-            f"## Összes value tipp (odds {odds_min:.1f}–{odds_max:.1f})",
+            f"## Mai value tippek ({today_label}, odds {odds_min:.1f}–{odds_max:.1f})",
             "",
             "| Kezdés | Meccs | Forma | Tipp | Ensemble | Implied | Edge | Elite | Stake |",
             "| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |",
@@ -119,7 +120,7 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
     )
 
     if not all_tips:
-        lines.append("| – | _Nincs tipp_ | – | – | – | – | – | – | – |")
+        lines.append(f"| – | _Ma nincs tipp_ | – | – | – | – | – | – | – |")
     else:
         for t in sorted(all_tips, key=lambda x: x.get("commence_time") or ""):
             star = "⭐ " if t.get("is_top") else ""
@@ -136,22 +137,33 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
     lines.append("")
 
     tippmix_events = payload.get("tippmix_events") or []
-    if tippmix_events:
+    # csak mai Tippmix meccsek
+    today_mmdd = datetime.now(BUDAPEST).strftime("%m.%d")
+    tippmix_today = []
+    for e in tippmix_events:
+        kick_local = e.get("kickoff_local") or ""
+        commence = e.get("commence_time") or ""
+        if kick_local.startswith(today_mmdd) or commence.startswith(today_label):
+            tippmix_today.append(e)
+    if tippmix_today:
         lines.extend(
             [
-                "## TippmixPro – szorzók (minta)",
+                f"## TippmixPro – mai szorzók ({today_label})",
                 "",
                 "| Kezdés | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS I | BTTS N |",
                 "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
             ]
         )
-        for e in tippmix_events[:25]:
+        for e in tippmix_today[:30]:
             kick = format_kickoff_hu(e.get("commence_time")) or e.get("kickoff_local") or "?"
             lines.append(
                 f"| {kick} | {e.get('home_team')} – {e.get('away_team')} | "
                 f"{e.get('odds_1')} | {e.get('odds_x')} | {e.get('odds_2')} | "
                 f"{e.get('over_25')} | {e.get('under_25')} | {e.get('btts_yes')} | {e.get('btts_no')} |"
             )
+        lines.append("")
+    elif tippmix_events:
+        lines.append(f"_Ma ({today_label}) nincs TippmixPro meccs a scrapelt listán._")
         lines.append("")
 
     upcoming = [m for m in matches if not m.get("on_slate")]

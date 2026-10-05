@@ -70,9 +70,24 @@ def main() -> None:
 
     today_count = sum(1 for m in analyzed if m.get("is_today"))
     matched = sum(1 for t in xg_tips if t.get("tippmix_matched"))
+    from zoneinfo import ZoneInfo
+    from datetime import timedelta as _td
+
+    budapest = ZoneInfo("Europe/Budapest")
+    now_bp = datetime.now(budapest)
+    today_date = (now_bp.date() if now_bp.hour >= 3 else (now_bp - _td(days=1)).date()).isoformat()
+    today_mmdd = now_bp.strftime("%m.%d")
+    tippmix_today = [
+        e
+        for e in tippmix_events
+        if str(e.get("kickoff_local") or "").startswith(today_mmdd)
+        or str(e.get("commence_time") or "").startswith(today_date)
+    ]
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "source": "espn + understat + tippmixpro + ensemble-models",
+        "today_date": today_date,
+        "today_only": bool(config.get("today_only", True)),
         "odds_band": [float(config.get("odds_min", 1.8)), float(config.get("odds_max", 2.1))],
         "bankroll": float(config.get("bankroll", 100_000)),
         "currency": str(config.get("currency", "HUF")),
@@ -88,8 +103,10 @@ def main() -> None:
         "today_count": today_count,
         "with_odds": sum(1 for e in analyzed if e.get("best_odds")),
         "tippmix_event_count": len(tippmix_events),
+        "tippmix_today_count": len(tippmix_today),
         "tippmix_matched_tips": matched,
         "tippmix_events": tippmix_events,
+        "tippmix_today": tippmix_today,
         "xg_tips_count": len(xg_tips),
         "xg_tips": xg_tips,
         "top_tips": top_tips,

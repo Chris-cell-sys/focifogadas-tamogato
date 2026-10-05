@@ -38,7 +38,8 @@ model_weights:
   form: 0.30
 
 bookmaker: TippmixPro
-today_only: false
+# Mindig csak a mai nap (Europe/Budapest) – nincs átugrás a következő fordulóra
+today_only: true
 top_tips: 5
 xg_home_advantage: 1.08
 xg_min_team_games: 4

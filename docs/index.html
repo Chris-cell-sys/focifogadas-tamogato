@@ -151,7 +151,7 @@
 <body>
   <header>
     <h1>TippmixPro tippek – forma + xG</h1>
-    <p>Stat · xG · Form · Market · Value · Elite · negyed-Kelly stake</p>
+    <p>Mai nap (Budapest) · Stat · xG · Form · Value · Elite · negyed-Kelly stake</p>
     <div class="toolbar">
       <button type="button" id="refreshBtn">Frissítés</button>
       <a class="btn-link" href="https://www.tippmixpro.hu/hu/fogadas" target="_blank" rel="noopener">TippmixPro megnyitása</a>
@@ -168,12 +168,12 @@
     <p id="status">Betöltés…</p>
 
     <section>
-      <h2>Top tippek (legnagyobb edge)</h2>
+      <h2 id="topHeading">Mai top tippek</h2>
       <div id="top"></div>
     </section>
 
     <section>
-      <h2>TippmixPro – aktuális szorzók</h2>
+      <h2 id="tmpHeading">TippmixPro – mai szorzók</h2>
       <div class="table-wrap">
         <table>
           <thead>
@@ -195,7 +195,7 @@
     </section>
 
     <section>
-      <h2>Value tippek (odds 1.8–2.1)</h2>
+      <h2 id="tipsHeading">Mai value tippek (odds 1.8–2.1)</h2>
       <div class="table-wrap">
         <table>
           <thead>
@@ -266,12 +266,33 @@
       } catch { return iso; }
     }
 
+    function todayParts(data) {
+      if (data?.today_date) return data.today_date;
+      try {
+        return new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Budapest" });
+      } catch {
+        return new Date().toISOString().slice(0, 10);
+      }
+    }
+
+    function isTodayEvent(e, todayIso) {
+      const commence = e?.commence_time || "";
+      if (commence.startsWith(todayIso)) return true;
+      const local = e?.kickoff_local || "";
+      // Tippmix: MM.DD
+      const mmdd = todayIso.slice(5, 7) + "." + todayIso.slice(8, 10);
+      return local.startsWith(mmdd);
+    }
+
     function renderTop(tips, data) {
       const box = document.getElementById("top");
       const bankroll = getBankroll(data);
       const cur = data?.currency || "HUF";
+      const day = todayParts(data);
+      const heading = document.getElementById("topHeading");
+      if (heading) heading.textContent = `Mai top tippek (${day})`;
       if (!tips || !tips.length) {
-        box.innerHTML = "<p class=\"hint\">Nincs value tipp a 1.8–2.1 odds sávban. A bankroll mezőből a stake akkor jelenik meg, ha van tipp.</p>";
+        box.innerHTML = `<p class="hint">Ma (${day}) nincs value tipp a 1.8–2.1 odds sávban. A bankroll mezőből a stake akkor jelenik meg, ha van tipp.</p>`;
         return;
       }
       box.innerHTML = tips.map((t, i) => {
@@ -298,14 +319,20 @@
       }).join("");
     }
 
-    function renderTippmix(events) {
+    function renderTippmix(events, data) {
       const body = document.getElementById("tmpRows");
       if (!body) return;
-      if (!events || !events.length) {
-        body.innerHTML = "<tr><td colspan=\"9\">Nincs TippmixPro adat (vagy az oldal nem töltött).</td></tr>";
+      const day = todayParts(data);
+      const heading = document.getElementById("tmpHeading");
+      if (heading) heading.textContent = `TippmixPro – mai szorzók (${day})`;
+      const todayEvents = (data?.tippmix_today && data.tippmix_today.length)
+        ? data.tippmix_today
+        : (events || []).filter((e) => isTodayEvent(e, day));
+      if (!todayEvents.length) {
+        body.innerHTML = `<tr><td colspan="9">Ma (${day}) nincs TippmixPro meccs.</td></tr>`;
         return;
       }
-      body.innerHTML = events.slice(0, 30).map((e) => `
+      body.innerHTML = todayEvents.slice(0, 40).map((e) => `
         <tr>
           <td>${fmtTime(e.commence_time, e.kickoff_local)}</td>
           <td>${e.home_team} – ${e.away_team}</td>
@@ -324,8 +351,11 @@
       const body = document.getElementById("rows");
       const bankroll = getBankroll(data);
       const cur = data?.currency || "HUF";
+      const day = todayParts(data);
+      const heading = document.getElementById("tipsHeading");
+      if (heading) heading.textContent = `Mai value tippek (${day}, odds 1.8–2.1)`;
       if (!tips || !tips.length) {
-        body.innerHTML = "<tr><td colspan=\"10\">Nincs value tipp a 1.8–2.1 sávban.</td></tr>";
+        body.innerHTML = `<tr><td colspan="10">Ma (${day}) nincs value tipp a 1.8–2.1 sávban.</td></tr>`;
         return;
       }
       const sorted = [...tips].sort((a, b) => (a.commence_time || "").localeCompare(b.commence_time || ""));
@@ -351,6 +381,7 @@
       if (!lastData) return;
       renderTop(lastData.top_tips || [], lastData);
       renderTable(lastData.xg_tips || [], lastData);
+      renderTippmix(lastData.tippmix_today || lastData.tippmix_events || [], lastData);
     }
 
     async function load({ manual = false } = {}) {
@@ -371,14 +402,15 @@
           }
           renderTop(data.top_tips || [], data);
           renderTable(data.xg_tips || [], data);
-          renderTippmix(data.tippmix_events || []);
+          renderTippmix(data.tippmix_today || data.tippmix_events || [], data);
           const br = getBankroll(data);
           const kf = Math.round(((data.staking || {}).kelly_fraction || 0.25) * 100);
           const maxP = Math.round(((data.staking || {}).max_stake_pct || 0.03) * 100);
           const meta = document.getElementById("bankrollMeta");
-          if (meta) meta.textContent = `${kf}% Kelly · max ${maxP}% / tipp · tippek: ${data.xg_tips_count || 0}`;
+          const day = todayParts(data);
+          if (meta) meta.textContent = `${day} · ${kf}% Kelly · max ${maxP}% / tipp · tippek: ${data.xg_tips_count || 0}`;
           status.textContent =
-            `Ensemble · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Odds 1.8–2.1 · Tippek: ${data.xg_tips_count || 0} · Mentve: ${data.updated_at || "?"}`;
+            `Ma: ${day} · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Mai tippek: ${data.xg_tips_count || 0} · Mai Tippmix: ${data.tippmix_today_count ?? "?"} · Mentve: ${data.updated_at || "?"}`;
         } else {
           renderTop([]);
           renderTable([]);
