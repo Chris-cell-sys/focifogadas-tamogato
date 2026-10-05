@@ -151,10 +151,12 @@ def fetch_tippmixpro_events(timeout_ms: int = 60000) -> list[dict[str, Any]]:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             locale="hu-HU",
+            timezone_id="Europe/Budapest",
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             ),
+            extra_http_headers={"Accept-Language": "hu-HU,hu;q=0.9,en;q=0.8"},
         )
         page = context.new_page()
 

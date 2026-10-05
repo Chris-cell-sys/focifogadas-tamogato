@@ -47,5 +47,6 @@ jobs:
             echo "Nincs változás a commitoláshoz."
           else
             git commit -m "chore: frissített focioddsok $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin HEAD || true
             git push
           fi
