@@ -1,11 +1,15 @@
-"""xG alapú meccs-model és fogadási tippek."""
+"""xG alapú TippmixPro-piac tippek: 1X2, BTTS, Over/Under 2.5."""
 
 from __future__ import annotations
 
 import math
+from datetime import datetime, timedelta
 from typing import Any
+from zoneinfo import ZoneInfo
 
 from src.fetch_xg import resolve_team
+
+BUDAPEST = ZoneInfo("Europe/Budapest")
 
 
 def _poisson_pmf(k: int, lam: float) -> float:
@@ -25,10 +29,27 @@ def match_outcome_probs(home_lambda: float, away_lambda: float, max_goals: int =
                 p_draw += p
             else:
                 p_away += p
-    total = p_home + p_draw + p_away
-    if total <= 0:
-        return 1 / 3, 1 / 3, 1 / 3
+    total = p_home + p_draw + p_away or 1.0
     return p_home / total, p_draw / total, p_away / total
+
+
+def over_under_25_probs(home_lambda: float, away_lambda: float, max_goals: int = 8) -> tuple[float, float]:
+    under = 0.0
+    for h in range(max_goals + 1):
+        for a in range(max_goals + 1):
+            if h + a <= 2:
+                under += _poisson_pmf(h, home_lambda) * _poisson_pmf(a, away_lambda)
+    under = min(1.0, max(0.0, under))
+    return 1.0 - under, under
+
+
+def btts_probs(home_lambda: float, away_lambda: float, max_goals: int = 8) -> tuple[float, float]:
+    """BTTS igen = mindkét csapat legalább 1 gólt szerez."""
+    p_home_score = 1.0 - _poisson_pmf(0, home_lambda)
+    p_away_score = 1.0 - _poisson_pmf(0, away_lambda)
+    # független közelítés (Poisson)
+    yes = p_home_score * p_away_score
+    return yes, 1.0 - yes
 
 
 def expected_lambdas(
@@ -47,20 +68,120 @@ def expected_lambdas(
     return round(lam_home, 3), round(lam_away, 3)
 
 
-def _ev_pct(prob: float, odds: float | None) -> float | None:
-    if odds is None or odds <= 1 or prob <= 0:
+def parse_kickoff(iso: str | None) -> datetime | None:
+    if not iso:
         return None
-    return round((prob * odds - 1.0) * 100.0, 2)
+    try:
+        raw = iso.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(raw)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=ZoneInfo("UTC"))
+        return dt.astimezone(BUDAPEST)
+    except Exception:
+        return None
+
+
+def is_today_match(iso: str | None, *, now: datetime | None = None) -> bool:
+    """Mai nap (BUÉK), hajnali 03:00-ig még az előző esti meccsek is 'mai'."""
+    kick = parse_kickoff(iso)
+    if not kick:
+        return False
+    now = now or datetime.now(BUDAPEST)
+    day = now.date() if now.hour >= 3 else (now - timedelta(days=1)).date()
+    return kick.date() == day
+
+
+def is_near_term(iso: str | None, *, now: datetime | None = None, hours: int = 36) -> bool:
+    """Következő N órában kezdődő meccs (ha ma üres a nap)."""
+    kick = parse_kickoff(iso)
+    if not kick:
+        return False
+    now = now or datetime.now(BUDAPEST)
+    return now <= kick <= now + timedelta(hours=hours)
+
+
+def build_market_options(
+    home_name: str,
+    away_name: str,
+    lam_h: float,
+    lam_a: float,
+) -> list[dict[str, Any]]:
+    p1, px, p2 = match_outcome_probs(lam_h, lam_a)
+    over, under = over_under_25_probs(lam_h, lam_a)
+    btts_yes, btts_no = btts_probs(lam_h, lam_a)
+
+    options = [
+        {
+            "market": "1X2",
+            "pick": f"Hazai győzelem ({home_name})",
+            "short": "1",
+            "prob": p1,
+        },
+        {
+            "market": "1X2",
+            "pick": "Döntetlen",
+            "short": "X",
+            "prob": px,
+        },
+        {
+            "market": "1X2",
+            "pick": f"Vendég győzelem ({away_name})",
+            "short": "2",
+            "prob": p2,
+        },
+        {
+            "market": "BTTS",
+            "pick": "Mindkét csapat szerez gólt (Igen)",
+            "short": "BTTS Igen",
+            "prob": btts_yes,
+        },
+        {
+            "market": "BTTS",
+            "pick": "Mindkét csapat szerez gólt (Nem)",
+            "short": "BTTS Nem",
+            "prob": btts_no,
+        },
+        {
+            "market": "Gólok",
+            "pick": "Over 2.5 gól",
+            "short": "O2.5",
+            "prob": over,
+        },
+        {
+            "market": "Gólok",
+            "pick": "Under 2.5 gól",
+            "short": "U2.5",
+            "prob": under,
+        },
+    ]
+
+    for o in options:
+        prob = float(o["prob"])
+        o["prob_pct"] = round(prob * 100, 1)
+        o["fair_odds"] = round(1.0 / prob, 2) if prob > 0.01 else None
+        o["confidence"] = round(prob * 100, 1)
+    return options
+
+
+def pick_best_option(options: list[dict[str, Any]], min_prob_pct: float) -> dict[str, Any] | None:
+    ranked = sorted(options, key=lambda o: o.get("prob") or 0, reverse=True)
+    if not ranked:
+        return None
+    best = ranked[0]
+    best = {
+        **best,
+        "is_strong": (best.get("prob_pct") or 0) >= min_prob_pct,
+    }
+    return best
 
 
 def build_xg_tip_for_match(
     match: dict[str, Any],
     league_xg: dict[str, dict[str, Any]],
     *,
-    min_edge_pct: float = 3.0,
     home_advantage: float = 1.08,
     min_team_games: int = 4,
-    max_odds: float = 8.0,
+    min_prob_pct: float = 52.0,
 ) -> dict[str, Any] | None:
     home_name = match.get("home_team") or ""
     away_name = match.get("away_team") or ""
@@ -72,64 +193,27 @@ def build_xg_tip_for_match(
         return None
 
     lam_h, lam_a = expected_lambdas(home_stats, away_stats, home_advantage=home_advantage)
-    p1, px, p2 = match_outcome_probs(lam_h, lam_a)
+    options = build_market_options(home_name, away_name, lam_h, lam_a)
+    best = pick_best_option(options, min_prob_pct)
+    if not best:
+        return None
 
-    best_odds = match.get("best_odds") or {}
-    outcomes = [
-        ("1 (Hazai)", home_name, p1, (best_odds.get(home_name) or {}).get("odds")),
-        ("X (Döntetlen)", "Draw", px, (best_odds.get("Draw") or {}).get("odds")),
-        ("2 (Vendég)", away_name, p2, (best_odds.get(away_name) or {}).get("odds")),
-    ]
+    # piaconkénti győztes (1X2 / BTTS / O-U)
+    by_market: dict[str, dict[str, Any]] = {}
+    for o in options:
+        mkt = o["market"]
+        if mkt not in by_market or (o.get("prob") or 0) > (by_market[mkt].get("prob") or 0):
+            by_market[mkt] = o
 
-    options = []
-    for label, key, prob, odds in outcomes:
-        ev = _ev_pct(prob, odds)
-        fair = round(1.0 / prob, 2) if prob > 0 else None
-        book = None
-        if key == home_name:
-            book = (best_odds.get(home_name) or {}).get("bookmaker")
-        elif key == away_name:
-            book = (best_odds.get(away_name) or {}).get("bookmaker")
-        elif key == "Draw":
-            book = (best_odds.get("Draw") or {}).get("bookmaker")
-        options.append(
-            {
-                "pick": label,
-                "prob_pct": round(prob * 100, 1),
-                "fair_odds": fair,
-                "odds": odds,
-                "bookmaker": book,
-                "ev_pct": ev,
-            }
-        )
-
-    viable = [
-        o
-        for o in options
-        if o.get("ev_pct") is not None
-        and o["ev_pct"] >= min_edge_pct
-        and (o.get("odds") is None or o["odds"] <= max_odds)
-    ]
-    if not viable:
-        best_pick = max(
-            (o for o in options if o.get("ev_pct") is not None),
-            key=lambda o: o["ev_pct"],
-            default=None,
-        )
-        recommendation = best_pick
-        is_actionable = False
-    else:
-        recommendation = max(viable, key=lambda o: o["ev_pct"])
-        is_actionable = True
-
-    over25_prob = 1.0 - (
-        _poisson_pmf(0, lam_h) * _poisson_pmf(0, lam_a)
-        + _poisson_pmf(1, lam_h) * _poisson_pmf(0, lam_a)
-        + _poisson_pmf(0, lam_h) * _poisson_pmf(1, lam_a)
-        + _poisson_pmf(1, lam_h) * _poisson_pmf(1, lam_a)
-    )
+    over = next(o for o in options if o["short"] == "O2.5")
+    under = next(o for o in options if o["short"] == "U2.5")
+    btts_yes = next(o for o in options if o["short"] == "BTTS Igen")
+    p1 = next(o for o in options if o["short"] == "1")
+    px = next(o for o in options if o["short"] == "X")
+    p2 = next(o for o in options if o["short"] == "2")
 
     return {
+        "bookmaker": "TippmixPro",
         "home_xg_team": home_stats.get("name"),
         "away_xg_team": away_stats.get("name"),
         "home_xg_for": home_stats.get("xg_for"),
@@ -137,14 +221,21 @@ def build_xg_tip_for_match(
         "expected_home_goals": lam_h,
         "expected_away_goals": lam_a,
         "expected_total_goals": round(lam_h + lam_a, 2),
-        "prob_home_pct": round(p1 * 100, 1),
-        "prob_draw_pct": round(px * 100, 1),
-        "prob_away_pct": round(p2 * 100, 1),
-        "over25_prob_pct": round(over25_prob * 100, 1),
-        "recommendation": recommendation,
+        "prob_home_pct": p1["prob_pct"],
+        "prob_draw_pct": px["prob_pct"],
+        "prob_away_pct": p2["prob_pct"],
+        "over25_prob_pct": over["prob_pct"],
+        "under25_prob_pct": under["prob_pct"],
+        "btts_yes_prob_pct": btts_yes["prob_pct"],
+        "markets": {
+            "1X2": by_market.get("1X2"),
+            "BTTS": by_market.get("BTTS"),
+            "Gólok": by_market.get("Gólok"),
+        },
+        "recommendation": best,
         "options": options,
-        "is_actionable": is_actionable,
-        "min_edge_pct": min_edge_pct,
+        "is_actionable": bool(best.get("is_strong")),
+        "min_prob_pct": min_prob_pct,
     }
 
 
@@ -152,48 +243,104 @@ def attach_xg_tips(
     matches: list[dict[str, Any]],
     xg_by_league: dict[str, dict[str, dict[str, Any]]],
     config: dict,
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    min_edge = float(config.get("xg_min_edge_pct", 3.0))
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
     home_adv = float(config.get("xg_home_advantage", 1.08))
     min_games = int(config.get("xg_min_team_games", 4))
-    max_odds = float(config.get("xg_max_odds", 8.0))
+    min_prob = float(config.get("xg_min_prob_pct", 52.0))
+    top_n = int(config.get("top_tips", 5))
+    today_only = bool(config.get("today_only", True))
 
+    now = datetime.now(BUDAPEST)
     all_tips: list[dict[str, Any]] = []
+
     for m in matches:
         league = m.get("league") or ""
+        kick = parse_kickoff(m.get("commence_time"))
+        m["kickoff_local"] = kick.strftime("%Y-%m-%d %H:%M") if kick else None
+        m["is_today"] = is_today_match(m.get("commence_time"), now=now)
+        m["kick_date"] = kick.date().isoformat() if kick else None
+
+    # ha ma nincs meccs: a legközelebbi fordulónap meccsei
+    has_today = any(m.get("is_today") for m in matches)
+    target_date = None
+    if today_only and not has_today:
+        future_dates = sorted(
+            {
+                m["kick_date"]
+                for m in matches
+                if m.get("kick_date") and parse_kickoff(m.get("commence_time")) and parse_kickoff(m.get("commence_time")) >= now
+            }
+        )
+        target_date = future_dates[0] if future_dates else None
+
+    for m in matches:
+        league = m.get("league") or ""
+        on_slate = True
+        if today_only:
+            if has_today:
+                on_slate = bool(m.get("is_today"))
+            else:
+                on_slate = bool(target_date and m.get("kick_date") == target_date)
+        if not on_slate:
+            m["xg_tip"] = None
+            m["on_slate"] = False
+            continue
+        m["on_slate"] = True
+
         league_xg = xg_by_league.get(league) or {}
         if not league_xg:
-            continue
+            merged: dict[str, dict[str, Any]] = {}
+            for lg in xg_by_league.values():
+                merged.update(lg)
+            league_xg = merged
+
         tip = build_xg_tip_for_match(
             m,
             league_xg,
-            min_edge_pct=min_edge,
             home_advantage=home_adv,
             min_team_games=min_games,
-            max_odds=max_odds,
+            min_prob_pct=min_prob,
         )
-        if not tip:
-            m["xg_tip"] = None
-            continue
         m["xg_tip"] = tip
-        rec = tip.get("recommendation")
-        if rec and tip.get("is_actionable"):
-            all_tips.append(
-                {
-                    "match_id": m.get("id"),
-                    "league": league,
-                    "commence_time": m.get("commence_time"),
-                    "home_team": m.get("home_team"),
-                    "away_team": m.get("away_team"),
-                    "pick": rec.get("pick"),
-                    "odds": rec.get("odds"),
-                    "bookmaker": rec.get("bookmaker"),
-                    "prob_pct": rec.get("prob_pct"),
-                    "ev_pct": rec.get("ev_pct"),
-                    "expected_score": f"{tip['expected_home_goals']:.2f} – {tip['expected_away_goals']:.2f}",
-                    "over25_prob_pct": tip.get("over25_prob_pct"),
-                }
-            )
+        if not tip:
+            continue
 
-    all_tips.sort(key=lambda t: t.get("ev_pct") or 0, reverse=True)
-    return matches, all_tips
+        rec = tip.get("recommendation") or {}
+        markets = tip.get("markets") or {}
+        row = {
+            "match_id": m.get("id"),
+            "league": league,
+            "sport_title": m.get("sport_title"),
+            "commence_time": m.get("commence_time"),
+            "kickoff_local": m.get("kickoff_local"),
+            "is_today": m.get("is_today"),
+            "home_team": m.get("home_team"),
+            "away_team": m.get("away_team"),
+            "bookmaker": "TippmixPro",
+            "pick": rec.get("pick"),
+            "short": rec.get("short"),
+            "market": rec.get("market"),
+            "prob_pct": rec.get("prob_pct"),
+            "fair_odds": rec.get("fair_odds"),
+            "expected_score": f"{tip['expected_home_goals']:.2f} – {tip['expected_away_goals']:.2f}",
+            "winner_pick": (markets.get("1X2") or {}).get("short"),
+            "winner_prob": (markets.get("1X2") or {}).get("prob_pct"),
+            "btts_pick": (markets.get("BTTS") or {}).get("short"),
+            "btts_prob": (markets.get("BTTS") or {}).get("prob_pct"),
+            "goals_pick": (markets.get("Gólok") or {}).get("short"),
+            "goals_prob": (markets.get("Gólok") or {}).get("prob_pct"),
+            "is_actionable": tip.get("is_actionable"),
+        }
+        all_tips.append(row)
+
+    all_tips.sort(key=lambda t: t.get("prob_pct") or 0, reverse=True)
+    top_tips = all_tips[:top_n]
+    top_ids = {t["match_id"] for t in top_tips}
+    for t in all_tips:
+        t["is_top"] = t["match_id"] in top_ids
+    for m in matches:
+        mid = m.get("id")
+        if m.get("xg_tip"):
+            m["xg_tip"]["is_top"] = mid in top_ids
+
+    return matches, all_tips, top_tips

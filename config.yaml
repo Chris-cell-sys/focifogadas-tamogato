@@ -20,12 +20,13 @@ leagues:
 # Hány napra előre kérje a meccseket
 lookahead_days: 7
 
-# Value tipp: ha a legjobb odds ennyivel jobb az átlagnál (pl. 1.05 = 5%)
-# ESPN gyakran 1 irodát ad → value tipp csak több iroda esetén jelenik meg
+# Value tipp küszöb (odds összehasonlítás)
 value_threshold: 1.05
 
-# xG tippek (Understat, nyilvános)
-xg_min_edge_pct: 3.0
+# TippmixPro xG tippek
+bookmaker: TippmixPro
+today_only: true
+top_tips: 5
 xg_home_advantage: 1.08
 xg_min_team_games: 4
-xg_max_odds: 8.0
+xg_min_prob_pct: 52.0

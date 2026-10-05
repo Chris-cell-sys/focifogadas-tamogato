@@ -1,4 +1,4 @@
-"""Markdown jelentés generálása a frissített oddsokból."""
+"""Markdown jelentés – mai TippmixPro tippek."""
 
 from __future__ import annotations
 
@@ -18,6 +18,8 @@ LEAGUE_NAMES = {
     "eng.2": "Championship",
 }
 
+BUDAPEST = ZoneInfo("Europe/Budapest")
+
 
 def _fmt_time(iso: str | None) -> str:
     if not iso:
@@ -27,135 +29,114 @@ def _fmt_time(iso: str | None) -> str:
         dt = datetime.fromisoformat(raw)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=ZoneInfo("UTC"))
-        local = dt.astimezone(ZoneInfo("Europe/Budapest"))
-        return local.strftime("%Y-%m-%d %H:%M")
+        return dt.astimezone(BUDAPEST).strftime("%H:%M")
     except Exception:
         return iso
 
 
 def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
     matches = payload.get("matches") or []
-    threshold = float(config.get("value_threshold", 1.05))
-    edge_pct = round((threshold - 1) * 100)
+    today_matches = [m for m in matches if m.get("is_today")]
+    slate = [m for m in matches if m.get("on_slate")]
+    top_tips = payload.get("top_tips") or []
+    all_tips = payload.get("xg_tips") or []
+    min_prob = float(config.get("xg_min_prob_pct", 52.0))
 
-    # liga név a configból, ha van
     config_names = {}
     for league in config.get("leagues") or []:
         if isinstance(league, dict):
             config_names[league.get("key")] = league.get("name")
 
+    today_label = datetime.now(BUDAPEST).strftime("%Y-%m-%d")
+    slate_label = "Mai meccsek" if today_matches else "Aktuális forduló (legközelebbi nap)"
+    if all_tips and all_tips[0].get("kickoff_local"):
+        slate_day = (all_tips[0].get("kickoff_local") or "")[:10]
+    else:
+        slate_day = today_label
+
     lines: list[str] = [
-        "# Focifogadás – élő odds jelentés",
+        "# TippmixPro tippek (xG)",
         "",
+        f"**Ma (BUÉK):** `{today_label}`  ",
+        f"**Mutatott nap:** `{slate_day}`  ",
         f"**Frissítve (UTC):** `{payload.get('updated_at')}`  ",
-        f"**Forrás:** `{payload.get('source')}` (nyilvános net, API kulcs nélkül)  ",
-        f"**Meccsek:** {payload.get('match_count', 0)}  ",
-        f"**Odds-szal:** {payload.get('with_odds', 0)}  ",
-        f"**Value tippek (>={edge_pct}% edge):** {payload.get('value_bets', 0)}  ",
-        f"**xG tippek (>= {float(config.get('xg_min_edge_pct', 3))}% EV):** {payload.get('xg_tips_count', 0)}",
+        f"**Bukméker:** TippmixPro  ",
+        f"**Meccsek a listán:** {len(slate)}  ",
+        f"**Tippek:** {len(all_tips)}  ",
+        f"**Top tippek:** {len(top_tips)}",
         "",
-        "> Ez egy döntéstámogató eszköz, nem pénzügyi tanács. Fogadj felelősen.",
+        "> TippmixPro piacokra: **1X2**, **BTTS**, **Over/Under 2.5**. "
+        "A *fair odds* a modell szerinti szorzó – nézd meg TippmixPron, van-e jobb/rosszabb ár. "
+        "Nem pénzügyi tanács.",
         "",
-        "## xG alapú fogadási tippek",
+        "## Top 5 legesélyesebb tipp",
         "",
     ]
 
-    xg_tips = payload.get("xg_tips") or []
-    if not xg_tips:
-        lines.append("_Nincs a küszöböt elérő xG tipp (vagy nincs xG adat a ligához)._")
+    if not top_tips:
+        lines.append("_Nincs elég erős tipp a mai napra._")
         lines.append("")
     else:
         lines.extend(
             [
-                "| Meccs | Tipp | Odds | EV | Modell % | Várható gólok | O2.5 % |",
-                "| --- | --- | ---: | ---: | ---: | --- | ---: |",
+                "| # | Idő | Meccs | Mire fogadj | Esély | Fair odds | Várható gól |",
+                "| -: | --- | --- | --- | ---: | ---: | --- |",
             ]
         )
-        for t in xg_tips:
-            odds_txt = f"**{t['odds']:.2f}**" if t.get("odds") else "–"
+        for i, t in enumerate(top_tips, 1):
             lines.append(
-                f"| {t['home_team']} – {t['away_team']} | **{t['pick']}** | "
-                f"{odds_txt} | +{t['ev_pct']:.1f}% | {t['prob_pct']:.1f}% | "
-                f"{t.get('expected_score', '–')} | {t.get('over25_prob_pct', 0):.0f}% |"
+                f"| **{i}** | {_fmt_time(t.get('commence_time'))} | "
+                f"**{t['home_team']} – {t['away_team']}** | "
+                f"**{t.get('short')}** ({t.get('market')}) | "
+                f"**{t.get('prob_pct', 0):.0f}%** | {t.get('fair_odds') or '–'} | "
+                f"{t.get('expected_score', '–')} |"
             )
         lines.append("")
 
-    lines.extend(["## Value tippek (odds összehasonlítás)", ""])
+    lines.extend(
+        [
+            f"## {slate_label} – mire érdemes fogadni",
+            "",
+            "| Idő | Meccs | Győztes | BTTS | Gólok 2.5 | Fő tipp | Esély | Fair |",
+            "| --- | --- | --- | --- | --- | --- | ---: | ---: |",
+        ]
+    )
 
-    value_rows = []
-    for m in matches:
-        for vb in m.get("value_bets") or []:
-            value_rows.append((m, vb))
-
-    if not value_rows:
-        lines.append(
-            "_Jelenleg nincs a küszöböt elérő value tipp "
-            "(több fogadóiroda kell az összehasonlításhoz)._"
-        )
+    if not all_tips:
+        lines.append("| – | _Nincs mai meccs tippelhető xG-vel_ | – | – | – | – | – | – |")
         lines.append("")
     else:
+        for t in sorted(all_tips, key=lambda x: x.get("commence_time") or ""):
+            star = "⭐ " if t.get("is_top") else ""
+            lines.append(
+                f"| {_fmt_time(t.get('commence_time'))} | {star}{t['home_team']} – {t['away_team']} | "
+                f"{t.get('winner_pick')} ({t.get('winner_prob', 0):.0f}%) | "
+                f"{t.get('btts_pick')} ({t.get('btts_prob', 0):.0f}%) | "
+                f"{t.get('goals_pick')} ({t.get('goals_prob', 0):.0f}%) | "
+                f"**{t.get('short')}** | {t.get('prob_pct', 0):.0f}% | {t.get('fair_odds') or '–'} |"
+            )
+        lines.append("")
+
+    # ha nincs mai meccs, mutassuk a közelit is röviden
+    upcoming = [m for m in matches if not m.get("is_today")]
+    if upcoming:
+        lines.extend(["## Közelgő meccsek (nem ma)", ""])
         lines.extend(
             [
-                "| Meccs | Kimenet | Odds | Iroda | Átlag | Edge |",
-                "| --- | --- | ---: | --- | ---: | ---: |",
+                "| Dátum | Meccs | Liga |",
+                "| --- | --- | --- |",
             ]
         )
-        for m, vb in value_rows:
-            label = (m.get("labels") or {}).get(vb["outcome"], vb["outcome"])
-            lines.append(
-                f"| {m['home_team']} – {m['away_team']} | {label} | "
-                f"**{vb['odds']:.2f}** | {vb['bookmaker']} | {vb['avg_odds']:.2f} | "
-                f"+{vb['edge_pct']:.1f}% |"
-            )
+        for m in upcoming[:20]:
+            league = config_names.get(m.get("league")) or LEAGUE_NAMES.get(m.get("league"), m.get("league"))
+            kick = m.get("kickoff_local") or m.get("commence_time") or "?"
+            lines.append(f"| {kick} | {m['home_team']} – {m['away_team']} | {league} |")
         lines.append("")
-
-    lines.extend(["## Közelgő meccsek – legjobb 1X2 oddsok", ""])
-
-    by_league: dict[str, list] = {}
-    for m in matches:
-        by_league.setdefault(m.get("league") or "egyéb", []).append(m)
-
-    if not by_league:
-        lines.append("_Nincs elérhető meccs._")
-        lines.append("")
-    else:
-        for league, items in by_league.items():
-            title = config_names.get(league) or LEAGUE_NAMES.get(league, league)
-            lines.append(f"### {title}")
-            lines.append("")
-            lines.extend(
-                [
-                    "| Idő (BUÉK) | Meccs | 1 | X | 2 | Forrás |",
-                    "| --- | --- | ---: | ---: | ---: | --- |",
-                ]
-            )
-            for m in items:
-                best = m.get("best_odds") or {}
-                home, away = m["home_team"], m["away_team"]
-
-                def cell(name: str) -> str:
-                    info = best.get(name)
-                    if not info:
-                        return "–"
-                    return f"{info['odds']:.2f}"
-
-                providers = []
-                for info in best.values():
-                    book = info.get("bookmaker")
-                    if book and book not in providers:
-                        providers.append(book)
-                provider_txt = ", ".join(providers) if providers else "–"
-
-                lines.append(
-                    f"| {_fmt_time(m.get('commence_time'))} | {home} – {away} | "
-                    f"{cell(home)} | {cell('Draw')} | {cell(away)} | {provider_txt} |"
-                )
-            lines.append("")
 
     lines.extend(
         [
             "---",
-            f"_Automatikusan generálva · forrás: ESPN public · value küszöb: {threshold}_",
+            f"_Modell: Understat xG + Poisson · min. esély: {min_prob}% · TippmixPro piacok_",
             "",
         ]
     )
