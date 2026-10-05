@@ -1,11 +1,11 @@
 # Focifogadás – élő odds jelentés
 
-**Frissítve (UTC):** `2026-10-05T16:47:49.067128+00:00`  
+**Frissítve (UTC):** `2026-10-05T16:52:00.028864+00:00`  
 **Forrás:** `espn-public + understat-xg` (nyilvános net, API kulcs nélkül)  
 **Meccsek:** 65  
 **Odds-szal:** 64  
 **Value tippek (>=5% edge):** 0  
-**xG tippek (>= 3.0% EV):** 23
+**xG tippek (>= 3.0% EV):** 21
 
 > Ez egy döntéstámogató eszköz, nem pénzügyi tanács. Fogadj felelősen.
 
@@ -13,8 +13,6 @@
 
 | Meccs | Tipp | Odds | EV | Modell % | Várható gólok | O2.5 % |
 | --- | --- | ---: | ---: | ---: | --- | ---: |
-| Paris Saint-Germain – Le Mans | **2 (Vendég)** | **19.00** | +479.2% | 30.5% | 1.98 – 1.55 | 78% |
-| FC Augsburg – Bayern Munich | **1 (Hazai)** | **8.50** | +208.9% | 36.3% | 2.13 – 2.35 | 88% |
 | Lille – Le Havre AC | **2 (Vendég)** | **6.50** | +119.5% | 33.8% | 1.98 – 1.70 | 80% |
 | SC Paderborn 07 – VfB Stuttgart | **1 (Hazai)** | **4.60** | +106.0% | 44.8% | 2.18 – 1.92 | 85% |
 | Real Madrid – Villarreal | **2 (Vendég)** | **7.00** | +80.3% | 25.8% | 2.65 – 1.81 | 88% |
@@ -22,8 +20,8 @@
 | Alavés – Atlético Madrid | **1 (Hazai)** | **4.10** | +77.0% | 43.2% | 1.48 – 1.22 | 63% |
 | Napoli – Frosinone | **2 (Vendég)** | **5.75** | +70.8% | 29.7% | 2.07 – 1.59 | 80% |
 | Lens – Lyon | **1 (Hazai)** | **2.40** | +53.9% | 64.1% | 2.32 – 1.12 | 77% |
+| FC Augsburg – Bayern Munich | **X (Döntetlen)** | **7.50** | +45.6% | 19.4% | 2.13 – 2.35 | 88% |
 | AS Monaco – Toulouse | **2 (Vendég)** | **5.00** | +45.3% | 29.1% | 1.75 – 1.32 | 70% |
-| Barcelona – Getafe | **X (Döntetlen)** | **15.00** | +43.8% | 9.6% | 3.42 – 0.84 | 88% |
 | Lorient – Paris FC | **2 (Vendég)** | **2.30** | +42.1% | 61.8% | 0.82 – 1.85 | 64% |
 | Chelsea – AFC Bournemouth | **2 (Vendég)** | **4.30** | +27.6% | 29.7% | 2.12 – 1.62 | 80% |
 | Aston Villa – Brentford | **2 (Vendég)** | **2.55** | +25.7% | 49.3% | 1.18 – 1.69 | 67% |
@@ -66,16 +64,6 @@ _Jelenleg nincs a küszöböt elérő value tipp (több fogadóiroda kell az ös
 | 2026-10-10 20:45 | Lorient – Paris FC | 3.00 | 3.25 | 2.30 | DraftKings |
 | 2026-10-10 20:45 | Paris Saint-Germain – Le Mans | 1.07 | 12.00 | 19.00 | DraftKings |
 
-### La Liga
-
-| Idő (BUÉK) | Meccs | 1 | X | 2 | Forrás |
-| --- | --- | ---: | ---: | ---: | --- |
-| 2026-10-09 21:00 | Málaga – Espanyol | 2.60 | 3.25 | 2.75 | DraftKings |
-| 2026-10-10 14:00 | Rayo Vallecano – Athletic Club | 2.95 | 3.45 | 2.35 | DraftKings |
-| 2026-10-10 16:15 | Alavés – Atlético Madrid | 4.10 | 3.75 | 1.83 | DraftKings |
-| 2026-10-10 18:30 | Barcelona – Getafe | 1.06 | 15.00 | 21.00 | DraftKings |
-| 2026-10-10 21:00 | Real Madrid – Villarreal | 1.34 | 5.75 | 7.00 | DraftKings |
-
 ### Championship
 
 | Idő (BUÉK) | Meccs | 1 | X | 2 | Forrás |
@@ -91,6 +79,16 @@ _Jelenleg nincs a küszöböt elérő value tipp (több fogadóiroda kell az ös
 | 2026-10-10 16:00 | Preston North End – Millwall | 2.75 | 3.45 | 2.45 | DraftKings |
 | 2026-10-10 16:00 | Sheffield United – Lincoln City | 2.05 | 3.55 | 3.55 | DraftKings |
 | 2026-10-10 16:00 | Watford – Burnley | 2.95 | 3.60 | 2.25 | DraftKings |
+
+### La Liga
+
+| Idő (BUÉK) | Meccs | 1 | X | 2 | Forrás |
+| --- | --- | ---: | ---: | ---: | --- |
+| 2026-10-09 21:00 | Málaga – Espanyol | 2.60 | 3.25 | 2.75 | DraftKings |
+| 2026-10-10 14:00 | Rayo Vallecano – Athletic Club | 2.95 | 3.45 | 2.35 | DraftKings |
+| 2026-10-10 16:15 | Alavés – Atlético Madrid | 4.10 | 3.75 | 1.83 | DraftKings |
+| 2026-10-10 18:30 | Barcelona – Getafe | 1.06 | 15.00 | 21.00 | DraftKings |
+| 2026-10-10 21:00 | Real Madrid – Villarreal | 1.34 | 5.75 | 7.00 | DraftKings |
 
 ### Premier League
 
