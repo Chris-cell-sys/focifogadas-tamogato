@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Focifogadás – élő odds</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1419;
+      --card: #1a2332;
+      --text: #e7ecf3;
+      --muted: #9aa7b8;
+      --accent: #3dd68c;
+      --border: #2a3544;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f6f9;
+        --card: #fff;
+        --text: #1a2332;
+        --muted: #5c6b7f;
+        --accent: #0d7a4a;
+        --border: #dde3ea;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--card);
+    }
+    header h1 { margin: 0; font-size: 1.35rem; }
+    header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.9rem; }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    #status { color: var(--muted); margin-bottom: 1rem; }
+    #content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      overflow-x: auto;
+    }
+    #content h1 { font-size: 1.4rem; margin-top: 0; }
+    #content h2 { font-size: 1.15rem; margin-top: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+    #content h3 { font-size: 1rem; margin-top: 1.25rem; }
+    #content table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin: 0.75rem 0 1rem;
+    }
+    #content th, #content td {
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.55rem;
+      text-align: left;
+    }
+    #content th { background: rgba(127,127,127,0.08); }
+    #content blockquote {
+      margin: 1rem 0;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid var(--accent);
+      background: rgba(61, 214, 140, 0.08);
+      color: var(--muted);
+    }
+    #content code { font-size: 0.85em; }
+    .err { color: #f87171; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Focifogadás – élő odds</h1>
+    <p>Friss adat az internetről · API kulcs nélkül · automatikus frissítés</p>
+  </header>
+  <main>
+    <p id="status">Jelentés betöltése…</p>
+    <article id="content"></article>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const REPORT_URL =
+      "https://raw.githubusercontent.com/Chris-cell-sys/focifogadas-tamogato/main/reports/latest.md";
+
+    async function load() {
+      const status = document.getElementById("status");
+      const content = document.getElementById("content");
+      try {
+        const res = await fetch(REPORT_URL, { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const md = await res.text();
+        content.innerHTML = marked.parse(md);
+        status.textContent = "Utolsó betöltés: " + new Date().toLocaleString("hu-HU");
+      } catch (e) {
+        status.innerHTML = '<span class="err">Nem sikerült betölteni a jelentést.</span>';
+        content.innerHTML =
+          "<p>Próbáld újra pár perc múlva, vagy nézd meg a " +
+          '<a href="https://github.com/Chris-cell-sys/focifogadas-tamogato/blob/main/reports/latest.md">GitHub jelentést</a>.</p>';
+        console.error(e);
+      }
+    }
+    load();
+    setInterval(load, 5 * 60 * 1000);
+  </script>
+</body>
+</html>

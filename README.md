@@ -15,6 +15,12 @@ GitHub Actions naponta többször lefuttatja, és commitolja:
 2. Kiolvassa a fogadóirodai 1X2 oddsokat (decimal formában).
 3. Markdown jelentést és JSON-t ment a repóba.
 
+## Sima link (weboldal)
+
+**https://chris-cell-sys.github.io/focifogadas-tamogato/**
+
+Ezt bookmarkolhatod; a lap a legfrissebb jelentést tölti be.
+
 ## GitHub-on futtatás
 
 1. **Actions** fül → *Frissítsd a focioddsokat* → **Run workflow**
