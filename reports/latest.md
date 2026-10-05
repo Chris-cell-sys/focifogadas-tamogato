@@ -1,6 +1,6 @@
 # Focifogadás – élő odds jelentés
 
-**Frissítve (UTC):** `2026-10-05T16:47:26.478908+00:00`  
+**Frissítve (UTC):** `2026-10-05T16:47:49.067128+00:00`  
 **Forrás:** `espn-public + understat-xg` (nyilvános net, API kulcs nélkül)  
 **Meccsek:** 65  
 **Odds-szal:** 64  
