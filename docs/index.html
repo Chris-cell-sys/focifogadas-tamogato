@@ -112,6 +112,40 @@
     a { color: var(--accent); }
     #md { margin-top: 1rem; }
     #md h1, #md h2 { display: none; }
+    .bankroll-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .bankroll-box label { font-weight: 600; }
+    .bankroll-box input {
+      width: 8rem;
+      padding: 0.45rem 0.6rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .bankroll-meta { color: var(--muted); font-size: 0.85rem; }
+    .stake-badge {
+      display: inline-block;
+      margin-top: 0.45rem;
+      background: rgba(61, 214, 140, 0.15);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 0.35rem 0.65rem;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
@@ -119,8 +153,6 @@
     <h1>TippmixPro tippek – forma + xG</h1>
     <p>Stat · xG · Form · Market · Value · Elite · negyed-Kelly stake</p>
     <div class="toolbar">
-      <label class="hint" for="bankrollInput">Bankroll (HUF):</label>
-      <input type="number" id="bankrollInput" min="1000" step="1000" value="100000" style="width:7rem;padding:0.35rem 0.5rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text)" />
       <button type="button" id="refreshBtn">Frissítés</button>
       <a class="btn-link" href="https://www.tippmixpro.hu/hu/fogadas" target="_blank" rel="noopener">TippmixPro megnyitása</a>
       <a class="btn-link" href="https://github.com/Chris-cell-sys/focifogadas-tamogato/actions/workflows/update-odds.yml" target="_blank" rel="noopener">Új adat letöltése</a>
@@ -128,6 +160,11 @@
     <p class="hint">A zöld gomb újratölti a mentett jelentést. „Új adat letöltése”: GitHub Actions → Run workflow → ~1 perc → Frissítés.</p>
   </header>
   <main>
+    <div class="bankroll-box">
+      <label for="bankrollInput">Bankroll (HUF)</label>
+      <input type="number" id="bankrollInput" min="1000" step="1000" value="100000" />
+      <span class="bankroll-meta" id="bankrollMeta">negyed-Kelly stake · max 3% / tipp</span>
+    </div>
     <p id="status">Betöltés…</p>
 
     <section>
@@ -247,6 +284,7 @@
             · ${t.home_team} – ${t.away_team}
             · Elite <strong>${t.elite_score ?? "–"}</strong>
           </div>
+          <div class="stake-badge">Javasolt stake: ${fmtStake(stake, cur)}</div>
           <div class="tip-meta">
             <strong>${fmtTime(t.commence_time, t.kickoff_display)}</strong>
             · Forma: <code>${t.home_form || "?"} / ${t.away_form || "?"}</code>
@@ -254,7 +292,6 @@
             · Esély: <strong>${t.prob_pct}%</strong>
             · Odds: <strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong>
             · Edge: <strong>${t.edge_pct != null ? t.edge_pct + "%" : "–"}</strong>
-            · Stake: <strong>${fmtStake(stake, cur)}</strong>
             · Várható: ${t.expected_score || "–"}
           </div>
         </div>`;
@@ -336,6 +373,10 @@
           renderTable(data.xg_tips || [], data);
           renderTippmix(data.tippmix_events || []);
           const br = getBankroll(data);
+          const kf = Math.round(((data.staking || {}).kelly_fraction || 0.25) * 100);
+          const maxP = Math.round(((data.staking || {}).max_stake_pct || 0.03) * 100);
+          const meta = document.getElementById("bankrollMeta");
+          if (meta) meta.textContent = `${kf}% Kelly · max ${maxP}% / tipp · tippek: ${data.xg_tips_count || 0}`;
           status.textContent =
             `Ensemble · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Odds 1.8–2.1 · Tippek: ${data.xg_tips_count || 0} · Mentve: ${data.updated_at || "?"}`;
         } else {
