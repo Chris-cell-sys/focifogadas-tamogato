@@ -243,6 +243,8 @@
         </tr>
       `).join("");
     }
+
+    function renderTable(tips) {
       const body = document.getElementById("rows");
       if (!tips || !tips.length) {
         body.innerHTML = "<tr><td colspan=\"9\">Nincs aktuális tippelhető meccs.</td></tr>";
