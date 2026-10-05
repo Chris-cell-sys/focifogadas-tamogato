@@ -1,7 +1,7 @@
 # TippmixPro – ensemble tippek + stake
 
 **Ma (BUÉK):** `2026-10-05`  
-**Frissítve (UTC):** `2026-10-05T18:06:56.074260+00:00`  
+**Frissítve (UTC):** `2026-10-05T18:14:00.480841+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
 **Value tippek:** 0  
