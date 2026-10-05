@@ -17,22 +17,29 @@ leagues:
   - key: eng.2
     name: Championship
 
-# Hány napra előre kérje a meccseket
 lookahead_days: 7
 
-# Value tipp: TippmixPro odds >= fair_odds * value_threshold és pozitív edge
+# Value: ensemble esély vs bookmaker implicit
 value_threshold: 1.02
-
-# Csak ebben a szorzósávban jelenjen meg tipp
 odds_min: 1.8
 odds_max: 2.1
 
-# TippmixPro xG tippek
+# Bankroll + profi stake (negyed-Kelly, max 3% / tipp)
+bankroll: 100000
+currency: HUF
+kelly_fraction: 0.25
+max_stake_pct: 0.03
+min_stake: 500
+
+# Ensemble súlyok: stat + xG + form
+model_weights:
+  stat: 0.30
+  xg: 0.40
+  form: 0.30
+
 bookmaker: TippmixPro
-# false = teljes lookahead (value+odds sáv); true = csak mai/legközelebbi nap
 today_only: false
 top_tips: 5
 xg_home_advantage: 1.08
 xg_min_team_games: 4
-# Alsó esélyküszöb a value+sávos tippeknél (edge a döntő)
 xg_min_prob_pct: 45.0

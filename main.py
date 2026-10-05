@@ -57,8 +57,17 @@ def main() -> None:
     matched = sum(1 for t in xg_tips if t.get("tippmix_matched"))
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "espn-public + understat-form-opxg + tippmixpro-value",
+        "source": "espn + understat + tippmixpro + ensemble-models",
         "odds_band": [float(config.get("odds_min", 1.8)), float(config.get("odds_max", 2.1))],
+        "bankroll": float(config.get("bankroll", 100_000)),
+        "currency": str(config.get("currency", "HUF")),
+        "staking": {
+            "method": "fractional_kelly",
+            "kelly_fraction": float(config.get("kelly_fraction", 0.25)),
+            "max_stake_pct": float(config.get("max_stake_pct", 0.03)),
+            "min_stake": float(config.get("min_stake", 500)),
+        },
+        "model_weights": config.get("model_weights"),
         "bookmaker": "TippmixPro",
         "match_count": len(analyzed),
         "today_count": today_count,

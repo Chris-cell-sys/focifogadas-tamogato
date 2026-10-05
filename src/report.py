@@ -1,4 +1,4 @@
-"""Markdown jelentés – TippmixPro value tippek (1.8–2.1)."""
+"""Markdown jelentés – ensemble modellek + stake."""
 
 from __future__ import annotations
 
@@ -35,9 +35,19 @@ def _tmp_odds(t: dict[str, Any]) -> str:
 
 
 def _form(t: dict[str, Any]) -> str:
-    h = t.get("home_form") or "?"
-    a = t.get("away_form") or "?"
-    return f"{h} / {a}"
+    return f"{t.get('home_form') or '?'} / {t.get('away_form') or '?'}"
+
+
+def _stake(t: dict[str, Any], currency: str) -> str:
+    val = t.get("suggested_stake")
+    if val is None:
+        return "–"
+    return f"**{int(val):,} {currency}**".replace(",", " ")
+
+
+def _models_line(t: dict[str, Any]) -> str:
+    m = t.get("models") or {}
+    return f"S:{m.get('stat_prob_pct', '–')}% · X:{m.get('xg_prob_pct', '–')}% · F:{m.get('form_prob_pct', '–')}%"
 
 
 def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
@@ -49,6 +59,9 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
     min_prob = float(config.get("xg_min_prob_pct", 45.0))
     odds_min = float(config.get("odds_min", 1.8))
     odds_max = float(config.get("odds_max", 2.1))
+    bankroll = float(config.get("bankroll", 100_000))
+    currency = str(config.get("currency", "HUF"))
+    kelly = float(config.get("kelly_fraction", 0.25))
 
     config_names = {}
     for league in config.get("leagues") or []:
@@ -56,118 +69,104 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
             config_names[league.get("key")] = league.get("name")
 
     today_label = datetime.now(BUDAPEST).strftime("%Y-%m-%d")
-    slate_label = "Mai meccsek" if today_matches else "Aktuális forduló (legközelebbi nap)"
-    if all_tips and all_tips[0].get("kickoff_local"):
-        slate_day = (all_tips[0].get("kickoff_local") or "")[:10]
-    else:
-        slate_day = today_label
 
     lines: list[str] = [
-        "# TippmixPro value tippek (forma + open-play xG)",
+        "# TippmixPro – ensemble tippek + stake",
         "",
         f"**Ma (BUÉK):** `{today_label}`  ",
-        f"**Mutatott nap:** `{slate_day}`  ",
         f"**Frissítve (UTC):** `{payload.get('updated_at')}`  ",
-        f"**Bukméker:** TippmixPro  ",
+        f"**Bankroll:** `{int(bankroll):,} {currency}` · stake: **{kelly:.0%} Kelly** (max {float(config.get('max_stake_pct', 0.03))*100:.0f}%/tipp)  ",
         f"**Odds sáv:** `{odds_min:.1f}` – `{odds_max:.1f}`  ",
-        f"**TippmixPro meccsek:** {payload.get('tippmix_event_count', 0)}  ",
         f"**Value tippek:** {len(all_tips)}  ",
-        f"**Meccsek a listán:** {len(slate)}  ",
-        f"**Top tippek:** {len(top_tips)}",
+        f"**Meccsek:** {len(slate)}  ",
         "",
-        "> Modell: utolsó 5 meccs forma, hazai/vendég góltermelés, open-play xG/xGA (npxG), összes xG, támadási egyensúly.  ",
-        "> Csak akkor jelenik meg tipp, ha a TippmixPro szorzó **1.8–2.1** között van **és** value (jobb, mint a fair odds).  ",
+        "> **Stat** – szezon teljesítmény · **xG** – open-play xG/xGA · **Form** – utolsó 5 meccs  ",
+        "> **Market** – bookmaker implicit esély · **Value** – ensemble vs piac · **Elite** – egyetértés + edge  ",
         "> Nem pénzügyi tanács.",
         "",
-        "## Top tippek (legnagyobb edge)",
+        "## Top tippek (elite score)",
         "",
     ]
 
     if not top_tips:
-        lines.append("_Nincs value tipp a 1.8–2.1 sávban._")
+        lines.append("_Nincs value tipp a sávban._")
         lines.append("")
     else:
         lines.extend(
             [
-                "| # | Kezdés | Meccs | Forma (H/V) | Tipp | Esély | Tippmix | Fair | Edge |",
-                "| -: | --- | --- | --- | --- | ---: | ---: | ---: | ---: |",
+                "| # | Kezdés | Meccs | Modell (S/X/F) | Tipp | Esély | Odds | Edge | Elite | Stake |",
+                "| -: | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |",
             ]
         )
         for i, t in enumerate(top_tips, 1):
             edge = t.get("edge_pct")
-            edge_s = f"**{edge:.1f}%**" if edge is not None else "–"
+            edge_s = f"{edge:.1f}%" if edge is not None else "–"
+            elite = t.get("elite_score")
             lines.append(
-                f"| **{i}** | {_kick(t)} | "
-                f"**{t['home_team']} – {t['away_team']}** | "
-                f"`{_form(t)}` | "
-                f"**{t.get('short')}** ({t.get('market')}) | "
-                f"**{t.get('prob_pct', 0):.0f}%** | {_tmp_odds(t)} | "
-                f"{t.get('fair_odds') or '–'} | {edge_s} |"
+                f"| **{i}** | {_kick(t)} | **{t['home_team']} – {t['away_team']}** | "
+                f"`{_models_line(t)}` | **{t.get('short')}** | {t.get('prob_pct', 0):.0f}% | "
+                f"{_tmp_odds(t)} | {edge_s} | **{elite}** | {_stake(t, currency)} |"
             )
         lines.append("")
 
     lines.extend(
         [
-            f"## {slate_label} – value tippek (odds {odds_min:.1f}–{odds_max:.1f})",
+            f"## Összes value tipp (odds {odds_min:.1f}–{odds_max:.1f})",
             "",
-            "| Kezdés | Meccs | Forma | OP xG H/V | Egyensúly | Tipp | Esély | Tippmix | Fair | Edge |",
-            "| --- | --- | --- | --- | --- | --- | ---: | ---: | ---: | ---: |",
+            "| Kezdés | Meccs | Forma | Tipp | Ensemble | Implied | Edge | Elite | Stake |",
+            "| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |",
         ]
     )
 
     if not all_tips:
-        lines.append("| – | _Nincs tipp a sávban_ | – | – | – | – | – | – | – | – |")
-        lines.append("")
+        lines.append("| – | _Nincs tipp_ | – | – | – | – | – | – | – |")
     else:
         for t in sorted(all_tips, key=lambda x: x.get("commence_time") or ""):
             star = "⭐ " if t.get("is_top") else ""
-            op = f"{t.get('home_op_xg', '–')} / {t.get('away_op_xg', '–')}"
-            bal = f"{t.get('home_attack_balance', '–')} / {t.get('away_attack_balance', '–')}"
-            edge = t.get("edge_pct")
-            edge_s = f"{edge:.1f}%" if edge is not None else "–"
+            implied = (t.get("models") or {}).get("ensemble_prob_pct")
+            # implied from market stored on recommendation path - use staking inverse if needed
+            imp = t.get("implied_prob_pct")
+            if imp is None and t.get("tippmix_odds"):
+                imp = round(100.0 / float(t["tippmix_odds"]), 1)
             lines.append(
-                f"| {_kick(t)} | {star}{t['home_team']} – {t['away_team']} | "
-                f"`{_form(t)}` | {op} | {bal} | "
-                f"**{t.get('short')}** | {t.get('prob_pct', 0):.0f}% | "
-                f"{_tmp_odds(t)} | {t.get('fair_odds') or '–'} | {edge_s} |"
+                f"| {_kick(t)} | {star}{t['home_team']} – {t['away_team']} | `{_form(t)}` | "
+                f"**{t.get('short')}** | {t.get('prob_pct', 0):.0f}% | {imp or '–'}% | "
+                f"{t.get('edge_pct') or '–'}% | {t.get('elite_score') or '–'} | {_stake(t, currency)} |"
             )
-        lines.append("")
+    lines.append("")
 
     tippmix_events = payload.get("tippmix_events") or []
     if tippmix_events:
         lines.extend(
             [
-                "## TippmixPro – aktuális szorzók (élő oldal)",
+                "## TippmixPro – szorzók (minta)",
                 "",
-                "| Kezdés (BUÉK) | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS Igen | BTTS Nem |",
+                "| Kezdés | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS I | BTTS N |",
                 "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
             ]
         )
-        for e in tippmix_events[:30]:
+        for e in tippmix_events[:25]:
             kick = format_kickoff_hu(e.get("commence_time")) or e.get("kickoff_local") or "?"
             lines.append(
                 f"| {kick} | {e.get('home_team')} – {e.get('away_team')} | "
                 f"{e.get('odds_1')} | {e.get('odds_x')} | {e.get('odds_2')} | "
-                f"{e.get('over_25')} | {e.get('under_25')} | "
-                f"{e.get('btts_yes')} | {e.get('btts_no')} |"
+                f"{e.get('over_25')} | {e.get('under_25')} | {e.get('btts_yes')} | {e.get('btts_no')} |"
             )
         lines.append("")
 
     upcoming = [m for m in matches if not m.get("on_slate")]
     if upcoming:
-        lines.extend(["## Közelgő meccsek (nem a listán)", ""])
-        lines.extend(["| Kezdés (BUÉK) | Meccs | Liga |", "| --- | --- | --- |"])
-        for m in upcoming[:20]:
+        lines.extend(["## Közelgő (nem a listán)", ""])
+        for m in upcoming[:15]:
             league = config_names.get(m.get("league")) or LEAGUE_NAMES.get(m.get("league"), m.get("league"))
             kick = m.get("kickoff_display") or format_kickoff_hu(m.get("commence_time")) or "?"
-            lines.append(f"| {kick} | {m['home_team']} – {m['away_team']} | {league} |")
+            lines.append(f"- {kick} · {m['home_team']} – {m['away_team']} ({league})")
         lines.append("")
 
     lines.extend(
         [
             "---",
-            f"_Modell: utolsó 5 forma + open-play xG (npxG) + góltermelés + egyensúly · "
-            f"odds sáv {odds_min:.1f}–{odds_max:.1f} · value · min. esély {min_prob}%_",
+            f"_Ensemble: stat + xG + form · odds {odds_min:.1f}–{odds_max:.1f} · min. esély {min_prob}% · bankroll {int(bankroll)} {currency}_",
             "",
         ]
     )

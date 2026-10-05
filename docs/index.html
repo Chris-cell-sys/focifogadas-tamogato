@@ -117,8 +117,10 @@
 <body>
   <header>
     <h1>TippmixPro tippek – forma + xG</h1>
-    <p>Utolsó 5 forma · open-play xG · value tippek · odds 1.8–2.1</p>
+    <p>Stat · xG · Form · Market · Value · Elite · negyed-Kelly stake</p>
     <div class="toolbar">
+      <label class="hint" for="bankrollInput">Bankroll (HUF):</label>
+      <input type="number" id="bankrollInput" min="1000" step="1000" value="100000" style="width:7rem;padding:0.35rem 0.5rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text)" />
       <button type="button" id="refreshBtn">Frissítés</button>
       <a class="btn-link" href="https://www.tippmixpro.hu/hu/fogadas" target="_blank" rel="noopener">TippmixPro megnyitása</a>
       <a class="btn-link" href="https://github.com/Chris-cell-sys/focifogadas-tamogato/actions/workflows/update-odds.yml" target="_blank" rel="noopener">Új adat letöltése</a>
@@ -169,6 +171,8 @@
               <th>TippmixPro</th>
               <th>Fair</th>
               <th>Edge</th>
+              <th>Elite</th>
+              <th>Stake</th>
             </tr>
           </thead>
           <tbody id="rows"></tbody>
@@ -185,6 +189,33 @@
     const REPORT_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/reports/latest.md`;
     const JSON_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/odds.json`;
     const bust = () => `?t=${Date.now()}`;
+    let lastData = null;
+
+    function getBankroll(data) {
+      const input = document.getElementById("bankrollInput");
+      const v = Number(input?.value);
+      if (v > 0) return v;
+      return Number(data?.bankroll) || 100000;
+    }
+
+    function calcStake(probPct, odds, bankroll, staking) {
+      if (!odds || odds <= 1 || !probPct) return null;
+      const p = probPct / 100;
+      const b = odds - 1;
+      const fullKelly = Math.max(0, (b * p - (1 - p)) / b);
+      const kf = Number(staking?.kelly_fraction) || 0.25;
+      const maxPct = Number(staking?.max_stake_pct) || 0.03;
+      const minStake = Number(staking?.min_stake) || 500;
+      let pct = Math.min(maxPct, fullKelly * kf);
+      let amount = Math.round(bankroll * pct);
+      if (amount > 0 && amount < minStake) amount = minStake;
+      return amount > 0 ? amount : null;
+    }
+
+    function fmtStake(amount, currency) {
+      if (amount == null) return "–";
+      return `${Number(amount).toLocaleString("hu-HU")} ${currency || "HUF"}`;
+    }
 
     function fmtTime(iso, display) {
       if (display) return display;
@@ -198,30 +229,36 @@
       } catch { return iso; }
     }
 
-    function renderTop(tips) {
+    function renderTop(tips, data) {
       const box = document.getElementById("top");
+      const bankroll = getBankroll(data);
+      const cur = data?.currency || "HUF";
       if (!tips || !tips.length) {
         box.innerHTML = "<p class=\"hint\">Nincs value tipp a 1.8–2.1 odds sávban.</p>";
         return;
       }
-      box.innerHTML = tips.map((t, i) => `
+      box.innerHTML = tips.map((t, i) => {
+        const stake = calcStake(t.prob_pct, t.tippmix_odds, bankroll, data?.staking) ?? t.suggested_stake;
+        const m = t.models || {};
+        return `
         <div class="tip-card">
           <div><span class="rank">#${i + 1}</span>
             <strong class="pick">${t.short || t.pick}</strong>
             · ${t.home_team} – ${t.away_team}
+            · Elite <strong>${t.elite_score ?? "–"}</strong>
           </div>
           <div class="tip-meta">
             <strong>${fmtTime(t.commence_time, t.kickoff_display)}</strong>
             · Forma: <code>${t.home_form || "?"} / ${t.away_form || "?"}</code>
-            · ${t.market || ""} · Esély: <strong>${t.prob_pct}%</strong>
-            · TippmixPro: <strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong>
-            · Fair: ${t.fair_odds ?? "–"}
+            · Modell S/X/F: <code>${m.stat_prob_pct ?? "?"}% / ${m.xg_prob_pct ?? "?"}% / ${m.form_prob_pct ?? "?"}%</code>
+            · Esély: <strong>${t.prob_pct}%</strong>
+            · Odds: <strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong>
             · Edge: <strong>${t.edge_pct != null ? t.edge_pct + "%" : "–"}</strong>
-            · Forrás: ${t.odds_source || t.bookmaker || "–"}
+            · Stake: <strong>${fmtStake(stake, cur)}</strong>
             · Várható: ${t.expected_score || "–"}
           </div>
-        </div>
-      `).join("");
+        </div>`;
+      }).join("");
     }
 
     function renderTippmix(events) {
@@ -246,14 +283,18 @@
       `).join("");
     }
 
-    function renderTable(tips) {
+    function renderTable(tips, data) {
       const body = document.getElementById("rows");
+      const bankroll = getBankroll(data);
+      const cur = data?.currency || "HUF";
       if (!tips || !tips.length) {
-        body.innerHTML = "<tr><td colspan=\"8\">Nincs value tipp a 1.8–2.1 sávban.</td></tr>";
+        body.innerHTML = "<tr><td colspan=\"10\">Nincs value tipp a 1.8–2.1 sávban.</td></tr>";
         return;
       }
       const sorted = [...tips].sort((a, b) => (a.commence_time || "").localeCompare(b.commence_time || ""));
-      body.innerHTML = sorted.map((t) => `
+      body.innerHTML = sorted.map((t) => {
+        const stake = calcStake(t.prob_pct, t.tippmix_odds, bankroll, data?.staking) ?? t.suggested_stake;
+        return `
         <tr class="${t.is_top ? "top" : ""}">
           <td>${fmtTime(t.commence_time, t.kickoff_display)}</td>
           <td>${t.is_top ? "⭐ " : ""}${t.home_team} – ${t.away_team}</td>
@@ -263,8 +304,16 @@
           <td><strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong></td>
           <td>${t.fair_odds ?? "–"}</td>
           <td><strong>${t.edge_pct != null ? t.edge_pct + "%" : "–"}</strong></td>
-        </tr>
-      `).join("");
+          <td><strong>${t.elite_score ?? "–"}</strong></td>
+          <td><strong>${fmtStake(stake, cur)}</strong></td>
+        </tr>`;
+      }).join("");
+    }
+
+    function rerenderFromCache() {
+      if (!lastData) return;
+      renderTop(lastData.top_tips || [], lastData);
+      renderTable(lastData.xg_tips || [], lastData);
     }
 
     async function load({ manual = false } = {}) {
@@ -279,11 +328,16 @@
         ]);
         if (jsonRes.ok) {
           const data = await jsonRes.json();
-          renderTop(data.top_tips || []);
-          renderTable(data.xg_tips || []);
+          lastData = data;
+          if (data.bankroll && document.getElementById("bankrollInput")) {
+            document.getElementById("bankrollInput").placeholder = String(data.bankroll);
+          }
+          renderTop(data.top_tips || [], data);
+          renderTable(data.xg_tips || [], data);
           renderTippmix(data.tippmix_events || []);
+          const br = getBankroll(data);
           status.textContent =
-            `Bukméker: TippmixPro · Odds 1.8–2.1 + value · Mentve: ${data.updated_at || "?"} · Tippek: ${data.xg_tips_count || 0} · Tippmix: ${data.tippmix_event_count || 0}`;
+            `Ensemble · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Odds 1.8–2.1 · Tippek: ${data.xg_tips_count || 0} · Mentve: ${data.updated_at || "?"}`;
         } else {
           renderTop([]);
           renderTable([]);
@@ -301,6 +355,7 @@
     }
 
     document.getElementById("refreshBtn").addEventListener("click", () => load({ manual: true }));
+    document.getElementById("bankrollInput")?.addEventListener("input", rerenderFromCache);
     load();
   </script>
 </body>
