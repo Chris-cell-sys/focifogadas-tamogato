@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T17:31:49.383373+00:00",
+  "updated_at": "2026-10-05T17:33:34.441955+00:00",
   "source": "espn-public + understat-xg + tippmixpro",
   "bookmaker": "TippmixPro",
   "match_count": 65,
@@ -13,16 +13,16 @@
       "away_team": "Magyarország",
       "teams_raw": "Ukrajna Magyarország",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 2.75,
-      "odds_x": 3.1,
+      "odds_x": 3.15,
       "odds_2": 2.95,
       "over_25": 2.31,
       "under_25": 1.58,
       "btts_yes": 1.92,
-      "btts_no": 1.8,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "btts_no": 1.81,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -30,7 +30,7 @@
       "away_team": "Georgia",
       "teams_raw": "Észak-Írország Georgia",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 2.48,
       "odds_x": 3,
       "odds_2": 3.5,
@@ -38,8 +38,8 @@
       "under_25": 1.42,
       "btts_yes": 2.21,
       "btts_no": 1.61,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -47,7 +47,7 @@
       "away_team": "Belgium",
       "teams_raw": "Franciaország Belgium",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 1.5,
       "odds_x": 4.9,
       "odds_2": 6.5,
@@ -55,8 +55,8 @@
       "under_25": 2.41,
       "btts_yes": 1.69,
       "btts_no": 2.12,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -64,7 +64,7 @@
       "away_team": "Törökország",
       "teams_raw": "Olaszország Törökország",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 1.41,
       "odds_x": 5.25,
       "odds_2": 8,
@@ -72,8 +72,8 @@
       "under_25": 2.41,
       "btts_yes": 1.8,
       "btts_no": 1.97,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -81,7 +81,7 @@
       "away_team": "Svédország",
       "teams_raw": "Románia Svédország",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 4.65,
       "odds_x": 4.15,
       "odds_2": 1.71,
@@ -89,8 +89,8 @@
       "under_25": 2.36,
       "btts_yes": 1.58,
       "btts_no": 2.26,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -98,16 +98,16 @@
       "away_team": "Lengyelország",
       "teams_raw": "Bosznia-Hercegovina Lengyelország",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 3.15,
       "odds_x": 3.45,
       "odds_2": 2.41,
       "over_25": 2.02,
       "under_25": 1.76,
       "btts_yes": 1.76,
-      "btts_no": 1.98,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "btts_no": 1.97,
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -115,7 +115,7 @@
       "away_team": "Örményország",
       "teams_raw": "Montenegró Örményország",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 1.43,
       "odds_x": 4.9,
       "odds_2": 7,
@@ -123,8 +123,8 @@
       "under_25": 2.26,
       "btts_yes": 1.83,
       "btts_no": 1.94,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -132,7 +132,7 @@
       "away_team": "Gibraltár",
       "teams_raw": "Liechtenstein Gibraltár",
       "date": "10.05",
-      "time": "18:45",
+      "time": "20:45",
       "odds_1": 3.3,
       "odds_x": 2.8,
       "odds_2": 2.34,
@@ -140,8 +140,8 @@
       "under_25": 1.32,
       "btts_yes": 2.44,
       "btts_no": 1.48,
-      "kickoff_local": "10.05 18:45",
-      "commence_time": "2026-10-05T18:45:00+02:00",
+      "kickoff_local": "10.05 20:45",
+      "commence_time": "2026-10-05T20:45:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -149,7 +149,7 @@
       "away_team": "Üzbegisztán",
       "teams_raw": "Dél-Korea Üzbegisztán",
       "date": "10.06",
-      "time": "11:00",
+      "time": "13:00",
       "odds_1": 1.67,
       "odds_x": 3.65,
       "odds_2": 4.45,
@@ -157,8 +157,8 @@
       "under_25": 1.84,
       "btts_yes": 1.84,
       "btts_no": 1.84,
-      "kickoff_local": "10.06 11:00",
-      "commence_time": "2026-10-06T11:00:00+02:00",
+      "kickoff_local": "10.06 13:00",
+      "commence_time": "2026-10-06T13:00:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -166,7 +166,7 @@
       "away_team": "Tadzsikisztán",
       "teams_raw": "Kína Tadzsikisztán",
       "date": "10.06",
-      "time": "11:35",
+      "time": "13:35",
       "odds_1": 1.61,
       "odds_x": 3.65,
       "odds_2": 4.95,
@@ -174,8 +174,8 @@
       "under_25": 1.73,
       "btts_yes": 1.97,
       "btts_no": 1.72,
-      "kickoff_local": "10.06 11:35",
-      "commence_time": "2026-10-06T11:35:00+02:00",
+      "kickoff_local": "10.06 13:35",
+      "commence_time": "2026-10-06T13:35:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -183,7 +183,7 @@
       "away_team": "Tenerife",
       "teams_raw": "Cordoba Tenerife",
       "date": "10.05",
-      "time": "18:30",
+      "time": "20:30",
       "odds_1": 1.92,
       "odds_x": 3.55,
       "odds_2": 3.8,
@@ -191,8 +191,8 @@
       "under_25": 1.95,
       "btts_yes": 1.69,
       "btts_no": 2.07,
-      "kickoff_local": "10.05 18:30",
-      "commence_time": "2026-10-05T18:30:00+02:00",
+      "kickoff_local": "10.05 20:30",
+      "commence_time": "2026-10-05T20:30:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -200,7 +200,7 @@
       "away_team": "Cordoba SDE",
       "teams_raw": "Dep. Riestra Central Cordoba SDE",
       "date": "10.05",
-      "time": "19:45",
+      "time": "21:45",
       "odds_1": 1.81,
       "odds_x": 2.95,
       "odds_2": 4.5,
@@ -208,16 +208,16 @@
       "under_25": 1.37,
       "btts_yes": 2.28,
       "btts_no": 1.49,
-      "kickoff_local": "10.05 19:45",
-      "commence_time": "2026-10-05T19:45:00+02:00",
+      "kickoff_local": "10.05 21:45",
+      "commence_time": "2026-10-05T21:45:00+02:00",
       "source": "tippmixpro"
     },
     {
       "home_team": "Vélez Sarsfield",
       "away_team": "Atl. Platense",
       "teams_raw": "Vélez Sarsfield Atl. Platense",
-      "date": "10.05",
-      "time": "22:00",
+      "date": "10.06",
+      "time": "00:00",
       "odds_1": 1.82,
       "odds_x": 2.95,
       "odds_2": 4.4,
@@ -225,8 +225,8 @@
       "under_25": 1.38,
       "btts_yes": 2.27,
       "btts_no": 1.49,
-      "kickoff_local": "10.05 22:00",
-      "commence_time": "2026-10-05T22:00:00+02:00",
+      "kickoff_local": "10.06 00:00",
+      "commence_time": "2026-10-06T00:00:00+02:00",
       "source": "tippmixpro"
     },
     {
@@ -234,7 +234,7 @@
       "away_team": "Central",
       "teams_raw": "Banfield Rosario Central",
       "date": "10.06",
-      "time": "00:15",
+      "time": "02:15",
       "odds_1": 3.95,
       "odds_x": 3.15,
       "odds_2": 1.84,
@@ -242,16 +242,16 @@
       "under_25": 1.57,
       "btts_yes": 1.9,
       "btts_no": 1.71,
-      "kickoff_local": "10.06 00:15",
-      "commence_time": "2026-10-06T00:15:00+02:00",
+      "kickoff_local": "10.06 02:15",
+      "commence_time": "2026-10-06T02:15:00+02:00",
       "source": "tippmixpro"
     },
     {
       "home_team": "Estudiantes LP",
       "away_team": "Gimnasia Mendoza",
       "teams_raw": "Estudiantes LP Gimnasia Mendoza",
-      "date": "10.05",
-      "time": "22:00",
+      "date": "10.06",
+      "time": "00:00",
       "odds_1": 1.61,
       "odds_x": 3.4,
       "odds_2": 5,
@@ -259,16 +259,16 @@
       "under_25": 1.59,
       "btts_yes": 2,
       "btts_no": 1.64,
-      "kickoff_local": "10.05 22:00",
-      "commence_time": "2026-10-05T22:00:00+02:00",
+      "kickoff_local": "10.06 00:00",
+      "commence_time": "2026-10-06T00:00:00+02:00",
       "source": "tippmixpro"
     },
     {
       "home_team": "Martinique",
       "away_team": "Salvador",
       "teams_raw": "Martinique Salvador",
-      "date": "10.05",
-      "time": "22:00",
+      "date": "10.06",
+      "time": "00:00",
       "odds_1": 2.37,
       "odds_x": 3.15,
       "odds_2": 2.67,
@@ -276,8 +276,8 @@
       "under_25": 1.86,
       "btts_yes": 1.61,
       "btts_no": 2.05,
-      "kickoff_local": "10.05 22:00",
-      "commence_time": "2026-10-05T22:00:00+02:00",
+      "kickoff_local": "10.06 00:00",
+      "commence_time": "2026-10-06T00:00:00+02:00",
       "source": "tippmixpro"
     }
   ],
@@ -469,6 +469,13 @@
       "home_team": "Borussia Dortmund",
       "away_team": "Werder Bremen",
       "best_odds": {
+        "Borussia Dortmund": {
+          "bookmaker": "DraftKings",
+          "odds": 1.37,
+          "avg_odds": 1.37,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "Draw": {
           "bookmaker": "DraftKings",
           "odds": 5.0,
@@ -482,19 +489,12 @@
           "avg_odds": 6.0,
           "edge": 1.0,
           "books_count": 1
-        },
-        "Borussia Dortmund": {
-          "bookmaker": "DraftKings",
-          "odds": 1.37,
-          "avg_odds": 1.37,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "Borussia Dortmund": "1 (Hazai)",
         "Draw": "X (Döntetlen)",
-        "Werder Bremen": "2 (Vendég)",
-        "Borussia Dortmund": "1 (Hazai)"
+        "Werder Bremen": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -638,17 +638,17 @@
       "home_team": "Lens",
       "away_team": "Lyon",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 3.8,
-          "avg_odds": 3.8,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Lyon": {
           "bookmaker": "DraftKings",
           "odds": 2.65,
           "avg_odds": 2.65,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.8,
+          "avg_odds": 3.8,
           "edge": 1.0,
           "books_count": 1
         },
@@ -661,8 +661,8 @@
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "Lyon": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
         "Lens": "1 (Hazai)"
       },
       "value_bets": [],
@@ -851,10 +851,10 @@
       "home_team": "Málaga",
       "away_team": "Espanyol",
       "best_odds": {
-        "Draw": {
+        "Espanyol": {
           "bookmaker": "DraftKings",
-          "odds": 3.25,
-          "avg_odds": 3.25,
+          "odds": 2.75,
+          "avg_odds": 2.75,
           "edge": 1.0,
           "books_count": 1
         },
@@ -865,18 +865,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Espanyol": {
+        "Draw": {
           "bookmaker": "DraftKings",
-          "odds": 2.75,
-          "avg_odds": 2.75,
+          "odds": 3.25,
+          "avg_odds": 3.25,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
+        "Espanyol": "2 (Vendég)",
         "Málaga": "1 (Hazai)",
-        "Espanyol": "2 (Vendég)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1020,13 +1020,6 @@
       "home_team": "Charlton Athletic",
       "away_team": "Bristol City",
       "best_odds": {
-        "Charlton Athletic": {
-          "bookmaker": "DraftKings",
-          "odds": 3.15,
-          "avg_odds": 3.15,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Bristol City": {
           "bookmaker": "DraftKings",
           "odds": 2.3,
@@ -1040,12 +1033,19 @@
           "avg_odds": 3.3,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Charlton Athletic": {
+          "bookmaker": "DraftKings",
+          "odds": 3.15,
+          "avg_odds": 3.15,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Charlton Athletic": "1 (Hazai)",
         "Bristol City": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Charlton Athletic": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1071,25 +1071,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Norwich City": {
-          "bookmaker": "DraftKings",
-          "odds": 2.7,
-          "avg_odds": 2.7,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Draw": {
           "bookmaker": "DraftKings",
           "odds": 3.5,
           "avg_odds": 3.5,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Norwich City": {
+          "bookmaker": "DraftKings",
+          "odds": 2.7,
+          "avg_odds": 2.7,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "Swansea City": "1 (Hazai)",
-        "Norwich City": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Norwich City": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1108,6 +1108,13 @@
       "home_team": "West Bromwich Albion",
       "away_team": "Birmingham City",
       "best_odds": {
+        "Birmingham City": {
+          "bookmaker": "DraftKings",
+          "odds": 3.0,
+          "avg_odds": 3.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "West Bromwich Albion": {
           "bookmaker": "DraftKings",
           "odds": 2.3,
@@ -1121,19 +1128,12 @@
           "avg_odds": 3.45,
           "edge": 1.0,
           "books_count": 1
-        },
-        "Birmingham City": {
-          "bookmaker": "DraftKings",
-          "odds": 3.0,
-          "avg_odds": 3.0,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "Birmingham City": "2 (Vendég)",
         "West Bromwich Albion": "1 (Hazai)",
-        "Draw": "X (Döntetlen)",
-        "Birmingham City": "2 (Vendég)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1152,6 +1152,13 @@
       "home_team": "Arsenal",
       "away_team": "Leeds United",
       "best_odds": {
+        "Leeds United": {
+          "bookmaker": "DraftKings",
+          "odds": 7.5,
+          "avg_odds": 7.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "Arsenal": {
           "bookmaker": "DraftKings",
           "odds": 1.385,
@@ -1165,19 +1172,12 @@
           "avg_odds": 4.9,
           "edge": 1.0,
           "books_count": 1
-        },
-        "Leeds United": {
-          "bookmaker": "DraftKings",
-          "odds": 7.5,
-          "avg_odds": 7.5,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "Leeds United": "2 (Vendég)",
         "Arsenal": "1 (Hazai)",
-        "Draw": "X (Döntetlen)",
-        "Leeds United": "2 (Vendég)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1196,13 +1196,6 @@
       "home_team": "Rayo Vallecano",
       "away_team": "Athletic Club",
       "best_odds": {
-        "Rayo Vallecano": {
-          "bookmaker": "DraftKings",
-          "odds": 2.95,
-          "avg_odds": 2.95,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Athletic Club": {
           "bookmaker": "DraftKings",
           "odds": 2.35,
@@ -1216,12 +1209,19 @@
           "avg_odds": 3.45,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Rayo Vallecano": {
+          "bookmaker": "DraftKings",
+          "odds": 2.95,
+          "avg_odds": 2.95,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Rayo Vallecano": "1 (Hazai)",
         "Athletic Club": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Rayo Vallecano": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1240,6 +1240,13 @@
       "home_team": "Genoa",
       "away_team": "Fiorentina",
       "best_odds": {
+        "Genoa": {
+          "bookmaker": "DraftKings",
+          "odds": 3.05,
+          "avg_odds": 3.05,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "Fiorentina": {
           "bookmaker": "DraftKings",
           "odds": 2.2,
@@ -1253,19 +1260,12 @@
           "avg_odds": 3.2,
           "edge": 1.0,
           "books_count": 1
-        },
-        "Genoa": {
-          "bookmaker": "DraftKings",
-          "odds": 3.05,
-          "avg_odds": 3.05,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "Genoa": "1 (Hazai)",
         "Fiorentina": "2 (Vendég)",
-        "Draw": "X (Döntetlen)",
-        "Genoa": "1 (Hazai)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1416,13 +1416,6 @@
       "home_team": "SC Paderborn 07",
       "away_team": "VfB Stuttgart",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 4.3,
-          "avg_odds": 4.3,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "SC Paderborn 07": {
           "bookmaker": "DraftKings",
           "odds": 4.6,
@@ -1436,12 +1429,19 @@
           "avg_odds": 1.556,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.3,
+          "avg_odds": 4.3,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "SC Paderborn 07": "1 (Hazai)",
-        "VfB Stuttgart": "2 (Vendég)"
+        "VfB Stuttgart": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1478,13 +1478,6 @@
       "home_team": "Blackburn Rovers",
       "away_team": "Cardiff City",
       "best_odds": {
-        "Blackburn Rovers": {
-          "bookmaker": "DraftKings",
-          "odds": 2.7,
-          "avg_odds": 2.7,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Cardiff City": {
           "bookmaker": "DraftKings",
           "odds": 2.45,
@@ -1498,12 +1491,19 @@
           "avg_odds": 3.55,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Blackburn Rovers": {
+          "bookmaker": "DraftKings",
+          "odds": 2.7,
+          "avg_odds": 2.7,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Blackburn Rovers": "1 (Hazai)",
         "Cardiff City": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Blackburn Rovers": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1522,10 +1522,10 @@
       "home_team": "Bolton Wanderers",
       "away_team": "Stoke City",
       "best_odds": {
-        "Stoke City": {
+        "Draw": {
           "bookmaker": "DraftKings",
-          "odds": 2.55,
-          "avg_odds": 2.55,
+          "odds": 3.35,
+          "avg_odds": 3.35,
           "edge": 1.0,
           "books_count": 1
         },
@@ -1536,18 +1536,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Draw": {
+        "Stoke City": {
           "bookmaker": "DraftKings",
-          "odds": 3.35,
-          "avg_odds": 3.35,
+          "odds": 2.55,
+          "avg_odds": 2.55,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Stoke City": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
         "Bolton Wanderers": "1 (Hazai)",
-        "Draw": "X (Döntetlen)"
+        "Stoke City": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1610,10 +1610,10 @@
       "home_team": "Middlesbrough",
       "away_team": "Wolverhampton Wanderers",
       "best_odds": {
-        "Draw": {
+        "Middlesbrough": {
           "bookmaker": "DraftKings",
-          "odds": 3.65,
-          "avg_odds": 3.65,
+          "odds": 2.3,
+          "avg_odds": 2.3,
           "edge": 1.0,
           "books_count": 1
         },
@@ -1624,18 +1624,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Middlesbrough": {
+        "Draw": {
           "bookmaker": "DraftKings",
-          "odds": 2.3,
-          "avg_odds": 2.3,
+          "odds": 3.65,
+          "avg_odds": 3.65,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
+        "Middlesbrough": "1 (Hazai)",
         "Wolverhampton Wanderers": "2 (Vendég)",
-        "Middlesbrough": "1 (Hazai)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1654,17 +1654,17 @@
       "home_team": "Preston North End",
       "away_team": "Millwall",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 3.45,
-          "avg_odds": 3.45,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Millwall": {
           "bookmaker": "DraftKings",
           "odds": 2.45,
           "avg_odds": 2.45,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.45,
+          "avg_odds": 3.45,
           "edge": 1.0,
           "books_count": 1
         },
@@ -1677,8 +1677,8 @@
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "Millwall": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
         "Preston North End": "1 (Hazai)"
       },
       "value_bets": [],
@@ -1698,13 +1698,6 @@
       "home_team": "Sheffield United",
       "away_team": "Lincoln City",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 3.55,
-          "avg_odds": 3.55,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Lincoln City": {
           "bookmaker": "DraftKings",
           "odds": 3.55,
@@ -1718,12 +1711,19 @@
           "avg_odds": 2.05,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.55,
+          "avg_odds": 3.55,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "Lincoln City": "2 (Vendég)",
-        "Sheffield United": "1 (Hazai)"
+        "Sheffield United": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1742,10 +1742,10 @@
       "home_team": "Watford",
       "away_team": "Burnley",
       "best_odds": {
-        "Burnley": {
+        "Draw": {
           "bookmaker": "DraftKings",
-          "odds": 2.25,
-          "avg_odds": 2.25,
+          "odds": 3.6,
+          "avg_odds": 3.6,
           "edge": 1.0,
           "books_count": 1
         },
@@ -1756,18 +1756,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Draw": {
+        "Burnley": {
           "bookmaker": "DraftKings",
-          "odds": 3.6,
-          "avg_odds": 3.6,
+          "odds": 2.25,
+          "avg_odds": 2.25,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Burnley": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
         "Watford": "1 (Hazai)",
-        "Draw": "X (Döntetlen)"
+        "Burnley": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1786,17 +1786,17 @@
       "home_team": "Aston Villa",
       "away_team": "Brentford",
       "best_odds": {
-        "Brentford": {
-          "bookmaker": "DraftKings",
-          "odds": 2.55,
-          "avg_odds": 2.55,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Aston Villa": {
           "bookmaker": "DraftKings",
           "odds": 2.6,
           "avg_odds": 2.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Brentford": {
+          "bookmaker": "DraftKings",
+          "odds": 2.55,
+          "avg_odds": 2.55,
           "edge": 1.0,
           "books_count": 1
         },
@@ -1809,8 +1809,8 @@
         }
       },
       "labels": {
-        "Brentford": "2 (Vendég)",
         "Aston Villa": "1 (Hazai)",
+        "Brentford": "2 (Vendég)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -1830,6 +1830,13 @@
       "home_team": "Chelsea",
       "away_team": "AFC Bournemouth",
       "best_odds": {
+        "AFC Bournemouth": {
+          "bookmaker": "DraftKings",
+          "odds": 4.3,
+          "avg_odds": 4.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "Draw": {
           "bookmaker": "DraftKings",
           "odds": 4.1,
@@ -1843,19 +1850,12 @@
           "avg_odds": 1.714,
           "edge": 1.0,
           "books_count": 1
-        },
-        "AFC Bournemouth": {
-          "bookmaker": "DraftKings",
-          "odds": 4.3,
-          "avg_odds": 4.3,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "AFC Bournemouth": "2 (Vendég)",
         "Draw": "X (Döntetlen)",
-        "Chelsea": "1 (Hazai)",
-        "AFC Bournemouth": "2 (Vendég)"
+        "Chelsea": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1874,10 +1874,10 @@
       "home_team": "Ipswich Town",
       "away_team": "Fulham",
       "best_odds": {
-        "Ipswich Town": {
+        "Fulham": {
           "bookmaker": "DraftKings",
-          "odds": 2.65,
-          "avg_odds": 2.65,
+          "odds": 2.5,
+          "avg_odds": 2.5,
           "edge": 1.0,
           "books_count": 1
         },
@@ -1888,18 +1888,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Fulham": {
+        "Ipswich Town": {
           "bookmaker": "DraftKings",
-          "odds": 2.5,
-          "avg_odds": 2.5,
+          "odds": 2.65,
+          "avg_odds": 2.65,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Ipswich Town": "1 (Hazai)",
+        "Fulham": "2 (Vendég)",
         "Draw": "X (Döntetlen)",
-        "Fulham": "2 (Vendég)"
+        "Ipswich Town": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1918,6 +1918,13 @@
       "home_team": "Sunderland",
       "away_team": "Brighton & Hove Albion",
       "best_odds": {
+        "Sunderland": {
+          "bookmaker": "DraftKings",
+          "odds": 2.85,
+          "avg_odds": 2.85,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "Brighton & Hove Albion": {
           "bookmaker": "DraftKings",
           "odds": 2.35,
@@ -1931,19 +1938,12 @@
           "avg_odds": 3.5,
           "edge": 1.0,
           "books_count": 1
-        },
-        "Sunderland": {
-          "bookmaker": "DraftKings",
-          "odds": 2.85,
-          "avg_odds": 2.85,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "Sunderland": "1 (Hazai)",
         "Brighton & Hove Albion": "2 (Vendég)",
-        "Draw": "X (Döntetlen)",
-        "Sunderland": "1 (Hazai)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -1962,13 +1962,6 @@
       "home_team": "Alavés",
       "away_team": "Atlético Madrid",
       "best_odds": {
-        "Atlético Madrid": {
-          "bookmaker": "DraftKings",
-          "odds": 1.833,
-          "avg_odds": 1.833,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Alavés": {
           "bookmaker": "DraftKings",
           "odds": 4.1,
@@ -1982,12 +1975,19 @@
           "avg_odds": 3.75,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Atlético Madrid": {
+          "bookmaker": "DraftKings",
+          "odds": 1.833,
+          "avg_odds": 1.833,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Atlético Madrid": "2 (Vendég)",
         "Alavés": "1 (Hazai)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Atlético Madrid": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2006,13 +2006,6 @@
       "home_team": "Lille",
       "away_team": "Le Havre AC",
       "best_odds": {
-        "Lille": {
-          "bookmaker": "DraftKings",
-          "odds": 1.444,
-          "avg_odds": 1.444,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Le Havre AC": {
           "bookmaker": "DraftKings",
           "odds": 6.5,
@@ -2026,12 +2019,19 @@
           "avg_odds": 4.6,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Lille": {
+          "bookmaker": "DraftKings",
+          "odds": 1.444,
+          "avg_odds": 1.444,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Lille": "1 (Hazai)",
         "Le Havre AC": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Lille": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2050,17 +2050,17 @@
       "home_team": "Internazionale",
       "away_team": "Parma",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 8.0,
-          "avg_odds": 8.0,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Internazionale": {
           "bookmaker": "DraftKings",
           "odds": 1.125,
           "avg_odds": 1.125,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 8.0,
+          "avg_odds": 8.0,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2073,58 +2073,14 @@
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "Internazionale": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
         "Parma": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
       "kickoff_local": "2026-10-10 18:00",
       "kickoff_display": "2026-10-10 18:00 (szombat)",
-      "is_today": false,
-      "kick_date": "2026-10-10",
-      "xg_tip": null,
-      "on_slate": false
-    },
-    {
-      "id": "401878773",
-      "league": "eng.1",
-      "sport_title": "Premier League",
-      "commence_time": "2026-10-10T16:30Z",
-      "home_team": "Manchester United",
-      "away_team": "Tottenham Hotspur",
-      "best_odds": {
-        "Tottenham Hotspur": {
-          "bookmaker": "DraftKings",
-          "odds": 4.4,
-          "avg_odds": 4.4,
-          "edge": 1.0,
-          "books_count": 1
-        },
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 4.2,
-          "avg_odds": 4.2,
-          "edge": 1.0,
-          "books_count": 1
-        },
-        "Manchester United": {
-          "bookmaker": "DraftKings",
-          "odds": 1.69,
-          "avg_odds": 1.69,
-          "edge": 1.0,
-          "books_count": 1
-        }
-      },
-      "labels": {
-        "Tottenham Hotspur": "2 (Vendég)",
-        "Draw": "X (Döntetlen)",
-        "Manchester United": "1 (Hazai)"
-      },
-      "value_bets": [],
-      "bookmaker_count": 1,
-      "kickoff_local": "2026-10-10 18:30",
-      "kickoff_display": "2026-10-10 18:30 (szombat)",
       "is_today": false,
       "kick_date": "2026-10-10",
       "xg_tip": null,
@@ -2138,10 +2094,10 @@
       "home_team": "Barcelona",
       "away_team": "Getafe",
       "best_odds": {
-        "Draw": {
+        "Getafe": {
           "bookmaker": "DraftKings",
-          "odds": 15.0,
-          "avg_odds": 15.0,
+          "odds": 21.0,
+          "avg_odds": 21.0,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2152,18 +2108,62 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Getafe": {
+        "Draw": {
           "bookmaker": "DraftKings",
-          "odds": 21.0,
-          "avg_odds": 21.0,
+          "odds": 15.0,
+          "avg_odds": 15.0,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
+        "Getafe": "2 (Vendég)",
         "Barcelona": "1 (Hazai)",
-        "Getafe": "2 (Vendég)"
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1,
+      "kickoff_local": "2026-10-10 18:30",
+      "kickoff_display": "2026-10-10 18:30 (szombat)",
+      "is_today": false,
+      "kick_date": "2026-10-10",
+      "xg_tip": null,
+      "on_slate": false
+    },
+    {
+      "id": "401878773",
+      "league": "eng.1",
+      "sport_title": "Premier League",
+      "commence_time": "2026-10-10T16:30Z",
+      "home_team": "Manchester United",
+      "away_team": "Tottenham Hotspur",
+      "best_odds": {
+        "Manchester United": {
+          "bookmaker": "DraftKings",
+          "odds": 1.69,
+          "avg_odds": 1.69,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.2,
+          "avg_odds": 4.2,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Tottenham Hotspur": {
+          "bookmaker": "DraftKings",
+          "odds": 4.4,
+          "avg_odds": 4.4,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Manchester United": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Tottenham Hotspur": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2226,17 +2226,17 @@
       "home_team": "AS Monaco",
       "away_team": "Toulouse",
       "best_odds": {
-        "AS Monaco": {
-          "bookmaker": "DraftKings",
-          "odds": 1.588,
-          "avg_odds": 1.588,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Toulouse": {
           "bookmaker": "DraftKings",
           "odds": 5.0,
           "avg_odds": 5.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "AS Monaco": {
+          "bookmaker": "DraftKings",
+          "odds": 1.588,
+          "avg_odds": 1.588,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2249,8 +2249,8 @@
         }
       },
       "labels": {
-        "AS Monaco": "1 (Hazai)",
         "Toulouse": "2 (Vendég)",
+        "AS Monaco": "1 (Hazai)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -2270,10 +2270,10 @@
       "home_team": "Brest",
       "away_team": "Angers",
       "best_odds": {
-        "Draw": {
+        "Angers": {
           "bookmaker": "DraftKings",
-          "odds": 3.65,
-          "avg_odds": 3.65,
+          "odds": 3.55,
+          "avg_odds": 3.55,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2284,18 +2284,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Angers": {
+        "Draw": {
           "bookmaker": "DraftKings",
-          "odds": 3.55,
-          "avg_odds": 3.55,
+          "odds": 3.65,
+          "avg_odds": 3.65,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
+        "Angers": "2 (Vendég)",
         "Brest": "1 (Hazai)",
-        "Angers": "2 (Vendég)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2402,17 +2402,17 @@
       "home_team": "Napoli",
       "away_team": "Frosinone",
       "best_odds": {
-        "Frosinone": {
-          "bookmaker": "DraftKings",
-          "odds": 5.75,
-          "avg_odds": 5.75,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Napoli": {
           "bookmaker": "DraftKings",
           "odds": 1.426,
           "avg_odds": 1.426,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Frosinone": {
+          "bookmaker": "DraftKings",
+          "odds": 5.75,
+          "avg_odds": 5.75,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2425,8 +2425,8 @@
         }
       },
       "labels": {
-        "Frosinone": "2 (Vendég)",
         "Napoli": "1 (Hazai)",
+        "Frosinone": "2 (Vendég)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -2446,13 +2446,6 @@
       "home_team": "Real Madrid",
       "away_team": "Villarreal",
       "best_odds": {
-        "Real Madrid": {
-          "bookmaker": "DraftKings",
-          "odds": 1.345,
-          "avg_odds": 1.345,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Villarreal": {
           "bookmaker": "DraftKings",
           "odds": 7.0,
@@ -2466,12 +2459,19 @@
           "avg_odds": 5.75,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Real Madrid": {
+          "bookmaker": "DraftKings",
+          "odds": 1.345,
+          "avg_odds": 1.345,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Real Madrid": "1 (Hazai)",
         "Villarreal": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Real Madrid": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2497,25 +2497,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 3.75,
-          "avg_odds": 3.75,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Lens": {
           "bookmaker": "DraftKings",
           "odds": 2.5,
           "avg_odds": 2.5,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.75,
+          "avg_odds": 3.75,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "Sporting CP": "2 (Vendég)",
-        "Draw": "X (Döntetlen)",
-        "Lens": "1 (Hazai)"
+        "Lens": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2534,13 +2534,6 @@
       "home_team": "Sabah FK",
       "away_team": "Slavia Prague",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 3.7,
-          "avg_odds": 3.7,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Slavia Prague": {
           "bookmaker": "DraftKings",
           "odds": 2.0,
@@ -2554,12 +2547,19 @@
           "avg_odds": 3.5,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.7,
+          "avg_odds": 3.7,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "Slavia Prague": "2 (Vendég)",
-        "Sabah FK": "1 (Hazai)"
+        "Sabah FK": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2622,10 +2622,10 @@
       "home_team": "Atlético Madrid",
       "away_team": "Manchester United",
       "best_odds": {
-        "Atlético Madrid": {
+        "Manchester United": {
           "bookmaker": "DraftKings",
-          "odds": 2.2,
-          "avg_odds": 2.2,
+          "odds": 2.85,
+          "avg_odds": 2.85,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2636,18 +2636,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Manchester United": {
+        "Atlético Madrid": {
           "bookmaker": "DraftKings",
-          "odds": 2.85,
-          "avg_odds": 2.85,
+          "odds": 2.2,
+          "avg_odds": 2.2,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Atlético Madrid": "1 (Hazai)",
+        "Manchester United": "2 (Vendég)",
         "Draw": "X (Döntetlen)",
-        "Manchester United": "2 (Vendég)"
+        "Atlético Madrid": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2666,17 +2666,17 @@
       "home_team": "Galatasaray",
       "away_team": "Barcelona",
       "best_odds": {
-        "Barcelona": {
-          "bookmaker": "DraftKings",
-          "odds": 1.294,
-          "avg_odds": 1.294,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Galatasaray": {
           "bookmaker": "DraftKings",
           "odds": 7.0,
           "avg_odds": 7.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Barcelona": {
+          "bookmaker": "DraftKings",
+          "odds": 1.294,
+          "avg_odds": 1.294,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2689,8 +2689,8 @@
         }
       },
       "labels": {
-        "Barcelona": "2 (Vendég)",
         "Galatasaray": "1 (Hazai)",
+        "Barcelona": "2 (Vendég)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -2710,17 +2710,17 @@
       "home_team": "Internazionale",
       "away_team": "Club Brugge",
       "best_odds": {
-        "Internazionale": {
-          "bookmaker": "DraftKings",
-          "odds": 1.278,
-          "avg_odds": 1.278,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Club Brugge": {
           "bookmaker": "DraftKings",
           "odds": 9.0,
           "avg_odds": 9.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Internazionale": {
+          "bookmaker": "DraftKings",
+          "odds": 1.278,
+          "avg_odds": 1.278,
           "edge": 1.0,
           "books_count": 1
         },
@@ -2733,8 +2733,8 @@
         }
       },
       "labels": {
-        "Internazionale": "1 (Hazai)",
         "Club Brugge": "2 (Vendég)",
+        "Internazionale": "1 (Hazai)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -2761,25 +2761,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "RB Leipzig": {
-          "bookmaker": "DraftKings",
-          "odds": 2.0,
-          "avg_odds": 2.0,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Draw": {
           "bookmaker": "DraftKings",
           "odds": 4.0,
           "avg_odds": 4.0,
           "edge": 1.0,
           "books_count": 1
+        },
+        "RB Leipzig": {
+          "bookmaker": "DraftKings",
+          "odds": 2.0,
+          "avg_odds": 2.0,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "PSV Eindhoven": "2 (Vendég)",
-        "RB Leipzig": "1 (Hazai)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "RB Leipzig": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2805,25 +2805,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Viking FK": {
-          "bookmaker": "DraftKings",
-          "odds": 15.0,
-          "avg_odds": 15.0,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Draw": {
           "bookmaker": "DraftKings",
           "odds": 11.0,
           "avg_odds": 11.0,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Viking FK": {
+          "bookmaker": "DraftKings",
+          "odds": 15.0,
+          "avg_odds": 15.0,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "Bayern Munich": "2 (Vendég)",
-        "Viking FK": "1 (Hazai)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Viking FK": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2937,25 +2937,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 4.2,
-          "avg_odds": 4.2,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Lech Poznan": {
           "bookmaker": "DraftKings",
           "odds": 4.4,
           "avg_odds": 4.4,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.2,
+          "avg_odds": 4.2,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "Bayer Leverkusen": "2 (Vendég)",
-        "Draw": "X (Döntetlen)",
-        "Lech Poznan": "1 (Hazai)"
+        "Lech Poznan": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -2981,25 +2981,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 3.65,
-          "avg_odds": 3.65,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Lyon": {
           "bookmaker": "DraftKings",
           "odds": 2.15,
           "avg_odds": 2.15,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.65,
+          "avg_odds": 3.65,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "Crystal Palace": "2 (Vendég)",
-        "Draw": "X (Döntetlen)",
-        "Lyon": "1 (Hazai)"
+        "Lyon": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -3018,17 +3018,17 @@
       "home_team": "NK Celje",
       "away_team": "Omonia Nicosia",
       "best_odds": {
-        "Omonia Nicosia": {
-          "bookmaker": "DraftKings",
-          "odds": 2.85,
-          "avg_odds": 2.85,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "NK Celje": {
           "bookmaker": "DraftKings",
           "odds": 2.4,
           "avg_odds": 2.4,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Omonia Nicosia": {
+          "bookmaker": "DraftKings",
+          "odds": 2.85,
+          "avg_odds": 2.85,
           "edge": 1.0,
           "books_count": 1
         },
@@ -3041,8 +3041,8 @@
         }
       },
       "labels": {
-        "Omonia Nicosia": "2 (Vendég)",
         "NK Celje": "1 (Hazai)",
+        "Omonia Nicosia": "2 (Vendég)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -3062,6 +3062,13 @@
       "home_team": "RB Salzburg",
       "away_team": "AC Milan",
       "best_odds": {
+        "AC Milan": {
+          "bookmaker": "DraftKings",
+          "odds": 1.8,
+          "avg_odds": 1.8,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "RB Salzburg": {
           "bookmaker": "DraftKings",
           "odds": 3.85,
@@ -3075,19 +3082,12 @@
           "avg_odds": 3.9,
           "edge": 1.0,
           "books_count": 1
-        },
-        "AC Milan": {
-          "bookmaker": "DraftKings",
-          "odds": 1.8,
-          "avg_odds": 1.8,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "AC Milan": "2 (Vendég)",
         "RB Salzburg": "1 (Hazai)",
-        "Draw": "X (Döntetlen)",
-        "AC Milan": "2 (Vendég)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -3106,13 +3106,6 @@
       "home_team": "Sparta Prague",
       "away_team": "Lillestrom",
       "best_odds": {
-        "Sparta Prague": {
-          "bookmaker": "DraftKings",
-          "odds": 1.357,
-          "avg_odds": 1.357,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Lillestrom": {
           "bookmaker": "DraftKings",
           "odds": 7.5,
@@ -3126,12 +3119,19 @@
           "avg_odds": 5.0,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Sparta Prague": {
+          "bookmaker": "DraftKings",
+          "odds": 1.357,
+          "avg_odds": 1.357,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Sparta Prague": "1 (Hazai)",
         "Lillestrom": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Sparta Prague": "1 (Hazai)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -3157,25 +3157,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 4.7,
-          "avg_odds": 4.7,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Sunderland": {
           "bookmaker": "DraftKings",
           "odds": 1.444,
           "avg_odds": 1.444,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.7,
+          "avg_odds": 4.7,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "Torreense": "1 (Hazai)",
-        "Draw": "X (Döntetlen)",
-        "Sunderland": "2 (Vendég)"
+        "Sunderland": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -3194,17 +3194,17 @@
       "home_team": "Union St.-Gilloise",
       "away_team": "Real Sociedad",
       "best_odds": {
-        "Real Sociedad": {
-          "bookmaker": "DraftKings",
-          "odds": 2.9,
-          "avg_odds": 2.9,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Union St.-Gilloise": {
           "bookmaker": "DraftKings",
           "odds": 2.3,
           "avg_odds": 2.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Real Sociedad": {
+          "bookmaker": "DraftKings",
+          "odds": 2.9,
+          "avg_odds": 2.9,
           "edge": 1.0,
           "books_count": 1
         },
@@ -3217,8 +3217,8 @@
         }
       },
       "labels": {
-        "Real Sociedad": "2 (Vendég)",
         "Union St.-Gilloise": "1 (Hazai)",
+        "Real Sociedad": "2 (Vendég)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -3238,13 +3238,6 @@
       "home_team": "AFC Bournemouth",
       "away_team": "SK Sturm Graz",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 7.0,
-          "avg_odds": 7.0,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "AFC Bournemouth": {
           "bookmaker": "DraftKings",
           "odds": 1.19,
@@ -3258,12 +3251,19 @@
           "avg_odds": 12.0,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 7.0,
+          "avg_odds": 7.0,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "AFC Bournemouth": "1 (Hazai)",
-        "SK Sturm Graz": "2 (Vendég)"
+        "SK Sturm Graz": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -3282,17 +3282,17 @@
       "home_team": "Benfica",
       "away_team": "Celtic",
       "best_odds": {
-        "Celtic": {
-          "bookmaker": "DraftKings",
-          "odds": 9.5,
-          "avg_odds": 9.5,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Benfica": {
           "bookmaker": "DraftKings",
           "odds": 1.25,
           "avg_odds": 1.25,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Celtic": {
+          "bookmaker": "DraftKings",
+          "odds": 9.5,
+          "avg_odds": 9.5,
           "edge": 1.0,
           "books_count": 1
         },
@@ -3305,8 +3305,8 @@
         }
       },
       "labels": {
-        "Celtic": "2 (Vendég)",
         "Benfica": "1 (Hazai)",
+        "Celtic": "2 (Vendég)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -3333,25 +3333,25 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Juventus": {
-          "bookmaker": "DraftKings",
-          "odds": 2.05,
-          "avg_odds": 2.05,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Draw": {
           "bookmaker": "DraftKings",
           "odds": 3.4,
           "avg_odds": 3.4,
           "edge": 1.0,
           "books_count": 1
+        },
+        "Juventus": {
+          "bookmaker": "DraftKings",
+          "odds": 2.05,
+          "avg_odds": 2.05,
+          "edge": 1.0,
+          "books_count": 1
         }
       },
       "labels": {
         "Celta Vigo": "1 (Hazai)",
-        "Juventus": "2 (Vendég)",
-        "Draw": "X (Döntetlen)"
+        "Draw": "X (Döntetlen)",
+        "Juventus": "2 (Vendég)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -3458,17 +3458,17 @@
       "home_team": "Jagiellonia Bialystok",
       "away_team": "Ararat-Armenia",
       "best_odds": {
-        "Draw": {
-          "bookmaker": "DraftKings",
-          "odds": 4.7,
-          "avg_odds": 4.7,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Ararat-Armenia": {
           "bookmaker": "DraftKings",
           "odds": 7.0,
           "avg_odds": 7.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.7,
+          "avg_odds": 4.7,
           "edge": 1.0,
           "books_count": 1
         },
@@ -3481,8 +3481,8 @@
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
         "Ararat-Armenia": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
         "Jagiellonia Bialystok": "1 (Hazai)"
       },
       "value_bets": [],
@@ -3502,17 +3502,17 @@
       "home_team": "Marseille",
       "away_team": "Olympiacos",
       "best_odds": {
-        "Olympiacos": {
-          "bookmaker": "DraftKings",
-          "odds": 3.1,
-          "avg_odds": 3.1,
-          "edge": 1.0,
-          "books_count": 1
-        },
         "Marseille": {
           "bookmaker": "DraftKings",
           "odds": 2.15,
           "avg_odds": 2.15,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Olympiacos": {
+          "bookmaker": "DraftKings",
+          "odds": 3.1,
+          "avg_odds": 3.1,
           "edge": 1.0,
           "books_count": 1
         },
@@ -3525,8 +3525,8 @@
         }
       },
       "labels": {
-        "Olympiacos": "2 (Vendég)",
         "Marseille": "1 (Hazai)",
+        "Olympiacos": "2 (Vendég)",
         "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
@@ -3590,10 +3590,10 @@
       "home_team": "Stade Rennais",
       "away_team": "OFI Crete",
       "best_odds": {
-        "Draw": {
+        "Stade Rennais": {
           "bookmaker": "DraftKings",
-          "odds": 5.25,
-          "avg_odds": 5.25,
+          "odds": 1.333,
+          "avg_odds": 1.333,
           "edge": 1.0,
           "books_count": 1
         },
@@ -3604,18 +3604,18 @@
           "edge": 1.0,
           "books_count": 1
         },
-        "Stade Rennais": {
+        "Draw": {
           "bookmaker": "DraftKings",
-          "odds": 1.333,
-          "avg_odds": 1.333,
+          "odds": 5.25,
+          "avg_odds": 5.25,
           "edge": 1.0,
           "books_count": 1
         }
       },
       "labels": {
-        "Draw": "X (Döntetlen)",
+        "Stade Rennais": "1 (Hazai)",
         "OFI Crete": "2 (Vendég)",
-        "Stade Rennais": "1 (Hazai)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
@@ -3634,6 +3634,13 @@
       "home_team": "TSG Hoffenheim",
       "away_team": "Besiktas",
       "best_odds": {
+        "Besiktas": {
+          "bookmaker": "DraftKings",
+          "odds": 3.3,
+          "avg_odds": 3.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
         "TSG Hoffenheim": {
           "bookmaker": "DraftKings",
           "odds": 1.952,
@@ -3647,19 +3654,12 @@
           "avg_odds": 3.95,
           "edge": 1.0,
           "books_count": 1
-        },
-        "Besiktas": {
-          "bookmaker": "DraftKings",
-          "odds": 3.3,
-          "avg_odds": 3.3,
-          "edge": 1.0,
-          "books_count": 1
         }
       },
       "labels": {
+        "Besiktas": "2 (Vendég)",
         "TSG Hoffenheim": "1 (Hazai)",
-        "Draw": "X (Döntetlen)",
-        "Besiktas": "2 (Vendég)"
+        "Draw": "X (Döntetlen)"
       },
       "value_bets": [],
       "bookmaker_count": 1,
