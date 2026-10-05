@@ -1,6 +1,6 @@
 # Focifogadás – élő odds jelentés
 
-**Frissítve (UTC):** `2026-10-05T16:52:00.028864+00:00`  
+**Frissítve (UTC):** `2026-10-05T17:08:36.997233+00:00`  
 **Forrás:** `espn-public + understat-xg` (nyilvános net, API kulcs nélkül)  
 **Meccsek:** 65  
 **Odds-szal:** 64  
@@ -64,6 +64,16 @@ _Jelenleg nincs a küszöböt elérő value tipp (több fogadóiroda kell az ös
 | 2026-10-10 20:45 | Lorient – Paris FC | 3.00 | 3.25 | 2.30 | DraftKings |
 | 2026-10-10 20:45 | Paris Saint-Germain – Le Mans | 1.07 | 12.00 | 19.00 | DraftKings |
 
+### La Liga
+
+| Idő (BUÉK) | Meccs | 1 | X | 2 | Forrás |
+| --- | --- | ---: | ---: | ---: | --- |
+| 2026-10-09 21:00 | Málaga – Espanyol | 2.60 | 3.25 | 2.75 | DraftKings |
+| 2026-10-10 14:00 | Rayo Vallecano – Athletic Club | 2.95 | 3.45 | 2.35 | DraftKings |
+| 2026-10-10 16:15 | Alavés – Atlético Madrid | 4.10 | 3.75 | 1.83 | DraftKings |
+| 2026-10-10 18:30 | Barcelona – Getafe | 1.06 | 15.00 | 21.00 | DraftKings |
+| 2026-10-10 21:00 | Real Madrid – Villarreal | 1.34 | 5.75 | 7.00 | DraftKings |
+
 ### Championship
 
 | Idő (BUÉK) | Meccs | 1 | X | 2 | Forrás |
@@ -79,16 +89,6 @@ _Jelenleg nincs a küszöböt elérő value tipp (több fogadóiroda kell az ös
 | 2026-10-10 16:00 | Preston North End – Millwall | 2.75 | 3.45 | 2.45 | DraftKings |
 | 2026-10-10 16:00 | Sheffield United – Lincoln City | 2.05 | 3.55 | 3.55 | DraftKings |
 | 2026-10-10 16:00 | Watford – Burnley | 2.95 | 3.60 | 2.25 | DraftKings |
-
-### La Liga
-
-| Idő (BUÉK) | Meccs | 1 | X | 2 | Forrás |
-| --- | --- | ---: | ---: | ---: | --- |
-| 2026-10-09 21:00 | Málaga – Espanyol | 2.60 | 3.25 | 2.75 | DraftKings |
-| 2026-10-10 14:00 | Rayo Vallecano – Athletic Club | 2.95 | 3.45 | 2.35 | DraftKings |
-| 2026-10-10 16:15 | Alavés – Atlético Madrid | 4.10 | 3.75 | 1.83 | DraftKings |
-| 2026-10-10 18:30 | Barcelona – Getafe | 1.06 | 15.00 | 21.00 | DraftKings |
-| 2026-10-10 21:00 | Real Madrid – Villarreal | 1.34 | 5.75 | 7.00 | DraftKings |
 
 ### Premier League
 
