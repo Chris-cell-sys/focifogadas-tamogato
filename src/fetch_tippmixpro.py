@@ -165,42 +165,46 @@ def fetch_tippmixpro_events(timeout_ms: int = 60000) -> list[dict[str, Any]]:
             ),
             extra_http_headers={"Accept-Language": "hu-HU,hu;q=0.9,en;q=0.8"},
         )
-        page = context.new_page()
 
         for url in TIPPMIX_FOOTBALL_URLS:
+            page = context.new_page()
             try:
                 page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-            except Exception:
-                continue
-            for label in ("ÖSSZES ENGEDÉLYEZÉSE", "Elfogadom", "Accept"):
+                for label in ("ÖSSZES ENGEDÉLYEZÉSE", "Elfogadom", "Accept"):
+                    try:
+                        page.get_by_text(label, exact=False).first.click(timeout=1500)
+                        break
+                    except Exception:
+                        pass
                 try:
-                    page.get_by_text(label, exact=False).first.click(timeout=1500)
-                    break
+                    page.wait_for_selector("text=Hazai", timeout=12000)
                 except Exception:
-                    pass
-            try:
-                page.wait_for_selector("text=Hazai", timeout=15000)
-            except Exception:
-                # próbáljuk a Labdarúgás menüpontot
-                try:
-                    page.get_by_role("link", name="Labdarúgás").first.click(timeout=3000)
-                    page.wait_for_timeout(2500)
-                except Exception:
-                    pass
-            page.wait_for_timeout(2500)
-            for _ in range(6):
-                page.mouse.wheel(0, 3200)
+                    try:
+                        page.get_by_role("link", name="Labdarúgás").first.click(timeout=3000)
+                        page.wait_for_timeout(2000)
+                    except Exception:
+                        pass
+                page.wait_for_timeout(2000)
+                for _ in range(5):
+                    page.mouse.wheel(0, 3200)
+                    page.wait_for_timeout(400)
+                for _ in range(3):
+                    try:
+                        page.get_by_text("Lássam a többit", exact=False).first.click(timeout=700)
+                        page.wait_for_timeout(700)
+                    except Exception:
+                        break
                 page.wait_for_timeout(500)
-            # „Lássam a többit” gombok
-            for _ in range(4):
+                raw = page.evaluate(EXTRACT_JS) or []
+                collected.extend(raw)
+                print(f"  Tippmix oldal: {len(raw)} meccs ({url.split('/labdarugas/')[-1][:40]})")
+            except Exception as exc:
+                print(f"  Tippmix oldal hiba: {exc}")
+            finally:
                 try:
-                    page.get_by_text("Lássam a többit", exact=False).first.click(timeout=800)
-                    page.wait_for_timeout(800)
+                    page.close()
                 except Exception:
-                    break
-            raw = page.evaluate(EXTRACT_JS) or []
-            collected.extend(raw)
-            print(f"  Tippmix oldal: {len(raw)} meccs ({url.split('/labdarugas/')[-1][:40]})")
+                    pass
 
         browser.close()
 

@@ -38,13 +38,28 @@ def main() -> None:
 
     tippmix_events: list = []
     tippmix_index: dict = {}
+    # ha a scrape elhasal, tartsuk meg az előző Tippmix adatot
+    prev_path = DATA_DIR / "odds.json"
+    if prev_path.exists():
+        try:
+            prev = json.loads(prev_path.read_text(encoding="utf-8"))
+            tippmix_events = list(prev.get("tippmix_events") or [])
+            tippmix_index = index_tippmix_events(tippmix_events)
+        except Exception:
+            tippmix_events = []
+            tippmix_index = {}
+
     print("TippmixPro oddsok lekérése…")
     try:
-        tippmix_events = fetch_tippmixpro_events()
-        tippmix_index = index_tippmix_events(tippmix_events)
-        print(f"  TippmixPro: {len(tippmix_events)} meccs odds-szal")
+        fresh = fetch_tippmixpro_events()
+        if fresh:
+            tippmix_events = fresh
+            tippmix_index = index_tippmix_events(tippmix_events)
+            print(f"  TippmixPro: {len(tippmix_events)} meccs odds-szal")
+        else:
+            print(f"  TippmixPro üres válasz – előző adat: {len(tippmix_events)} meccs")
     except Exception as exc:
-        print(f"  TippmixPro hiba (folytatás nélküle): {exc}")
+        print(f"  TippmixPro hiba (előző adat: {len(tippmix_events)}): {exc}")
 
     league_keys = list(dict.fromkeys(m.get("league") for m in analyzed if m.get("league")))
     print("Csapat xG adatok (Understat)…")

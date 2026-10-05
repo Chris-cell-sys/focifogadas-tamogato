@@ -271,7 +271,7 @@
       const bankroll = getBankroll(data);
       const cur = data?.currency || "HUF";
       if (!tips || !tips.length) {
-        box.innerHTML = "<p class=\"hint\">Nincs value tipp a 1.8–2.1 odds sávban.</p>";
+        box.innerHTML = "<p class=\"hint\">Nincs value tipp a 1.8–2.1 odds sávban. A bankroll mezőből a stake akkor jelenik meg, ha van tipp.</p>";
         return;
       }
       box.innerHTML = tips.map((t, i) => {
