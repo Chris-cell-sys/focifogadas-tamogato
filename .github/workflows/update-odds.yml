@@ -31,9 +31,11 @@ jobs:
           cache: pip
 
       - name: Függőségek
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
 
-      - name: Oddsok frissítése (ESPN, API kulcs nélkül)
+      - name: Oddsok + TippmixPro tippek frissítése
         run: python main.py
 
       - name: Commit & push

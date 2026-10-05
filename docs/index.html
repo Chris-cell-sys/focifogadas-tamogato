@@ -134,19 +134,42 @@
     </section>
 
     <section>
+      <h2>TippmixPro – aktuális szorzók</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Kezdés</th>
+              <th>Meccs</th>
+              <th>1</th>
+              <th>X</th>
+              <th>2</th>
+              <th>O2.5</th>
+              <th>U2.5</th>
+              <th>BTTS I</th>
+              <th>BTTS N</th>
+            </tr>
+          </thead>
+          <tbody id="tmpRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
       <h2>Aktuális meccsek – mire fogadj</h2>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th>Idő</th>
+              <th>Kezdés</th>
               <th>Meccs</th>
               <th>Győztes</th>
               <th>BTTS</th>
               <th>Gólok 2.5</th>
               <th>Fő tipp</th>
               <th>Esély</th>
-              <th>Fair odds</th>
+              <th>TippmixPro</th>
+              <th>Fair</th>
             </tr>
           </thead>
           <tbody id="rows"></tbody>
@@ -164,12 +187,14 @@
     const JSON_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/odds.json`;
     const bust = () => `?t=${Date.now()}`;
 
-    function fmtTime(iso) {
+    function fmtTime(iso, display) {
+      if (display) return display;
       if (!iso) return "–";
       try {
         return new Date(iso).toLocaleString("hu-HU", {
           timeZone: "Europe/Budapest",
-          month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit"
+          year: "numeric", month: "2-digit", day: "2-digit",
+          hour: "2-digit", minute: "2-digit", weekday: "short"
         });
       } catch { return iso; }
     }
@@ -187,31 +212,53 @@
             · ${t.home_team} – ${t.away_team}
           </div>
           <div class="tip-meta">
-            ${t.market || ""} · Esély: <strong>${t.prob_pct}%</strong>
-            · Fair odds: ${t.fair_odds ?? "–"}
+            <strong>${fmtTime(t.commence_time, t.kickoff_display)}</strong>
+            · ${t.market || ""} · Esély: <strong>${t.prob_pct}%</strong>
+            · TippmixPro: <strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong>
+            · Fair: ${t.fair_odds ?? "–"}
             · Várható: ${t.expected_score || "–"}
-            · ${fmtTime(t.commence_time)}
           </div>
         </div>
       `).join("");
     }
 
-    function renderTable(tips) {
+    function renderTippmix(events) {
+      const body = document.getElementById("tmpRows");
+      if (!body) return;
+      if (!events || !events.length) {
+        body.innerHTML = "<tr><td colspan=\"9\">Nincs TippmixPro adat (vagy az oldal nem töltött).</td></tr>";
+        return;
+      }
+      body.innerHTML = events.slice(0, 30).map((e) => `
+        <tr>
+          <td>${fmtTime(e.commence_time, e.kickoff_local)}</td>
+          <td>${e.home_team} – ${e.away_team}</td>
+          <td>${e.odds_1 ?? "–"}</td>
+          <td>${e.odds_x ?? "–"}</td>
+          <td>${e.odds_2 ?? "–"}</td>
+          <td>${e.over_25 ?? "–"}</td>
+          <td>${e.under_25 ?? "–"}</td>
+          <td>${e.btts_yes ?? "–"}</td>
+          <td>${e.btts_no ?? "–"}</td>
+        </tr>
+      `).join("");
+    }
       const body = document.getElementById("rows");
       if (!tips || !tips.length) {
-        body.innerHTML = "<tr><td colspan=\"8\">Nincs aktuális tippelhető meccs.</td></tr>";
+        body.innerHTML = "<tr><td colspan=\"9\">Nincs aktuális tippelhető meccs.</td></tr>";
         return;
       }
       const sorted = [...tips].sort((a, b) => (a.commence_time || "").localeCompare(b.commence_time || ""));
       body.innerHTML = sorted.map((t) => `
         <tr class="${t.is_top ? "top" : ""}">
-          <td>${fmtTime(t.commence_time)}</td>
+          <td>${fmtTime(t.commence_time, t.kickoff_display)}</td>
           <td>${t.is_top ? "⭐ " : ""}${t.home_team} – ${t.away_team}</td>
           <td>${t.winner_pick || "–"} (${Math.round(t.winner_prob || 0)}%)</td>
           <td>${t.btts_pick || "–"} (${Math.round(t.btts_prob || 0)}%)</td>
           <td>${t.goals_pick || "–"} (${Math.round(t.goals_prob || 0)}%)</td>
           <td><strong>${t.short || t.pick || "–"}</strong></td>
           <td>${t.prob_pct != null ? t.prob_pct + "%" : "–"}</td>
+          <td><strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong></td>
           <td>${t.fair_odds ?? "–"}</td>
         </tr>
       `).join("");
@@ -231,8 +278,9 @@
           const data = await jsonRes.json();
           renderTop(data.top_tips || []);
           renderTable(data.xg_tips || []);
+          renderTippmix(data.tippmix_events || []);
           status.textContent =
-            `Bukméker: TippmixPro · Mentve: ${data.updated_at || "?"} · Mai/közeli tippek: ${data.xg_tips_count || 0}`;
+            `Bukméker: TippmixPro · Mentve: ${data.updated_at || "?"} · Tippek: ${data.xg_tips_count || 0} · Tippmix odds: ${data.tippmix_event_count || 0}`;
         } else {
           renderTop([]);
           renderTable([]);

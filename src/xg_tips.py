@@ -243,12 +243,16 @@ def attach_xg_tips(
     matches: list[dict[str, Any]],
     xg_by_league: dict[str, dict[str, dict[str, Any]]],
     config: dict,
+    tippmix_index: dict[str, dict[str, Any]] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
+    from src.fetch_tippmixpro import find_tippmix_event, format_kickoff_hu, odds_for_pick
+
     home_adv = float(config.get("xg_home_advantage", 1.08))
     min_games = int(config.get("xg_min_team_games", 4))
     min_prob = float(config.get("xg_min_prob_pct", 52.0))
     top_n = int(config.get("top_tips", 5))
     today_only = bool(config.get("today_only", True))
+    tippmix_index = tippmix_index or {}
 
     now = datetime.now(BUDAPEST)
     all_tips: list[dict[str, Any]] = []
@@ -257,6 +261,7 @@ def attach_xg_tips(
         league = m.get("league") or ""
         kick = parse_kickoff(m.get("commence_time"))
         m["kickoff_local"] = kick.strftime("%Y-%m-%d %H:%M") if kick else None
+        m["kickoff_display"] = format_kickoff_hu(m.get("commence_time"))
         m["is_today"] = is_today_match(m.get("commence_time"), now=now)
         m["kick_date"] = kick.date().isoformat() if kick else None
 
@@ -307,12 +312,34 @@ def attach_xg_tips(
 
         rec = tip.get("recommendation") or {}
         markets = tip.get("markets") or {}
+        tmp = find_tippmix_event(m.get("home_team") or "", m.get("away_team") or "", tippmix_index)
+        tippmix_odds = odds_for_pick(tmp, rec.get("short"))
+        tippmix_markets = None
+        if tmp:
+            tippmix_markets = {
+                "1": tmp.get("odds_1"),
+                "X": tmp.get("odds_x"),
+                "2": tmp.get("odds_2"),
+                "O2.5": tmp.get("over_25"),
+                "U2.5": tmp.get("under_25"),
+                "BTTS Igen": tmp.get("btts_yes"),
+                "BTTS Nem": tmp.get("btts_no"),
+            }
+            # ha TippmixPro ad pontosabb időt, tartsuk meg a megjelenítéshez
+            if tmp.get("kickoff_local"):
+                m["tippmix_kickoff_local"] = tmp["kickoff_local"]
+
+        tip["tippmix_odds"] = tippmix_odds
+        tip["tippmix_markets"] = tippmix_markets
+        tip["tippmix_matched"] = bool(tmp)
+
         row = {
             "match_id": m.get("id"),
             "league": league,
             "sport_title": m.get("sport_title"),
             "commence_time": m.get("commence_time"),
             "kickoff_local": m.get("kickoff_local"),
+            "kickoff_display": m.get("kickoff_display"),
             "is_today": m.get("is_today"),
             "home_team": m.get("home_team"),
             "away_team": m.get("away_team"),
@@ -322,6 +349,9 @@ def attach_xg_tips(
             "market": rec.get("market"),
             "prob_pct": rec.get("prob_pct"),
             "fair_odds": rec.get("fair_odds"),
+            "tippmix_odds": tippmix_odds,
+            "tippmix_markets": tippmix_markets,
+            "tippmix_matched": bool(tmp),
             "expected_score": f"{tip['expected_home_goals']:.2f} – {tip['expected_away_goals']:.2f}",
             "winner_pick": (markets.get("1X2") or {}).get("short"),
             "winner_prob": (markets.get("1X2") or {}).get("prob_pct"),
