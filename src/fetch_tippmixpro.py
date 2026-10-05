@@ -14,6 +14,13 @@ BUDAPEST = ZoneInfo("Europe/Budapest")
 TIPPMIX_HOME_URL = "https://sports2.tippmixpro.hu/hu"
 TIPPMIX_FOOTBALL_URLS = [
     "https://sports2.tippmixpro.hu/hu",
+    "https://sports2.tippmixpro.hu/hu/fogadas/labdarugas/1/osszes/0/helyszin",
+    "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/anglia/77/osszes/0",
+    "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/spanyolorszag/65/osszes/0",
+    "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/nemetorszag/54/osszes/0",
+    "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/olaszorszag/111/osszes/0",
+    "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/franciaorszag/73/osszes/0",
+    "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/europa/67/osszes/0",
 ]
 
 EXTRACT_JS = r"""
@@ -180,12 +187,20 @@ def fetch_tippmixpro_events(timeout_ms: int = 60000) -> list[dict[str, Any]]:
                     page.wait_for_timeout(2500)
                 except Exception:
                     pass
-            page.wait_for_timeout(3000)
-            for _ in range(8):
-                page.mouse.wheel(0, 2800)
-                page.wait_for_timeout(700)
+            page.wait_for_timeout(2500)
+            for _ in range(6):
+                page.mouse.wheel(0, 3200)
+                page.wait_for_timeout(500)
+            # „Lássam a többit” gombok
+            for _ in range(4):
+                try:
+                    page.get_by_text("Lássam a többit", exact=False).first.click(timeout=800)
+                    page.wait_for_timeout(800)
+                except Exception:
+                    break
             raw = page.evaluate(EXTRACT_JS) or []
             collected.extend(raw)
+            print(f"  Tippmix oldal: {len(raw)} meccs ({url.split('/labdarugas/')[-1][:40]})")
 
         browser.close()
 

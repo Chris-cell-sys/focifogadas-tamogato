@@ -1,4 +1,4 @@
-"""Markdown jelentés – TippmixPro tippek pontos idővel és oddsokkal."""
+"""Markdown jelentés – TippmixPro value tippek (1.8–2.1)."""
 
 from __future__ import annotations
 
@@ -34,13 +34,21 @@ def _tmp_odds(t: dict[str, Any]) -> str:
     return f"**{float(val):.2f}**"
 
 
+def _form(t: dict[str, Any]) -> str:
+    h = t.get("home_form") or "?"
+    a = t.get("away_form") or "?"
+    return f"{h} / {a}"
+
+
 def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
     matches = payload.get("matches") or []
     today_matches = [m for m in matches if m.get("is_today")]
     slate = [m for m in matches if m.get("on_slate")]
     top_tips = payload.get("top_tips") or []
     all_tips = payload.get("xg_tips") or []
-    min_prob = float(config.get("xg_min_prob_pct", 52.0))
+    min_prob = float(config.get("xg_min_prob_pct", 45.0))
+    odds_min = float(config.get("odds_min", 1.8))
+    odds_max = float(config.get("odds_max", 2.1))
 
     config_names = {}
     for league in config.get("leagues") or []:
@@ -55,72 +63,76 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
         slate_day = today_label
 
     lines: list[str] = [
-        "# TippmixPro tippek (xG)",
+        "# TippmixPro value tippek (forma + open-play xG)",
         "",
         f"**Ma (BUÉK):** `{today_label}`  ",
         f"**Mutatott nap:** `{slate_day}`  ",
         f"**Frissítve (UTC):** `{payload.get('updated_at')}`  ",
         f"**Bukméker:** TippmixPro  ",
+        f"**Odds sáv:** `{odds_min:.1f}` – `{odds_max:.1f}`  ",
         f"**TippmixPro meccsek:** {payload.get('tippmix_event_count', 0)}  ",
-        f"**TippmixPro egyezés:** {payload.get('tippmix_matched_tips', 0)}/{len(all_tips)}  ",
+        f"**Value tippek:** {len(all_tips)}  ",
         f"**Meccsek a listán:** {len(slate)}  ",
         f"**Top tippek:** {len(top_tips)}",
         "",
-        "> **Kezdés:** pontos dátum+óra (Budapest).  ",
-        "> **TippmixPro odds:** a fő tipphez tartozó aktuális szorzó a TippmixPro oldaláról.  ",
-        "> **Fair odds:** modell szerinti „igazságos” szorzó összehasonlításhoz.  ",
+        "> Modell: utolsó 5 meccs forma, hazai/vendég góltermelés, open-play xG/xGA (npxG), összes xG, támadási egyensúly.  ",
+        "> Csak akkor jelenik meg tipp, ha a TippmixPro szorzó **1.8–2.1** között van **és** value (jobb, mint a fair odds).  ",
         "> Nem pénzügyi tanács.",
         "",
-        "## Top 5 legesélyesebb tipp",
+        "## Top tippek (legnagyobb edge)",
         "",
     ]
 
     if not top_tips:
-        lines.append("_Nincs elég erős tipp a mai napra._")
+        lines.append("_Nincs value tipp a 1.8–2.1 sávban._")
         lines.append("")
     else:
         lines.extend(
             [
-                "| # | Kezdés (BUÉK) | Meccs | Mire fogadj | Esély | TippmixPro odds | Fair odds |",
-                "| -: | --- | --- | --- | ---: | ---: | ---: |",
+                "| # | Kezdés | Meccs | Forma (H/V) | Tipp | Esély | Tippmix | Fair | Edge |",
+                "| -: | --- | --- | --- | --- | ---: | ---: | ---: | ---: |",
             ]
         )
         for i, t in enumerate(top_tips, 1):
+            edge = t.get("edge_pct")
+            edge_s = f"**{edge:.1f}%**" if edge is not None else "–"
             lines.append(
                 f"| **{i}** | {_kick(t)} | "
                 f"**{t['home_team']} – {t['away_team']}** | "
+                f"`{_form(t)}` | "
                 f"**{t.get('short')}** ({t.get('market')}) | "
                 f"**{t.get('prob_pct', 0):.0f}%** | {_tmp_odds(t)} | "
-                f"{t.get('fair_odds') or '–'} |"
+                f"{t.get('fair_odds') or '–'} | {edge_s} |"
             )
         lines.append("")
 
     lines.extend(
         [
-            f"## {slate_label} – mire érdemes fogadni",
+            f"## {slate_label} – value tippek (odds {odds_min:.1f}–{odds_max:.1f})",
             "",
-            "| Kezdés (BUÉK) | Meccs | Győztes | BTTS | Gólok 2.5 | Fő tipp | Esély | TippmixPro | Fair |",
-            "| --- | --- | --- | --- | --- | --- | ---: | ---: | ---: |",
+            "| Kezdés | Meccs | Forma | OP xG H/V | Egyensúly | Tipp | Esély | Tippmix | Fair | Edge |",
+            "| --- | --- | --- | --- | --- | --- | ---: | ---: | ---: | ---: |",
         ]
     )
 
     if not all_tips:
-        lines.append("| – | _Nincs tippelhető meccs_ | – | – | – | – | – | – | – |")
+        lines.append("| – | _Nincs tipp a sávban_ | – | – | – | – | – | – | – | – |")
         lines.append("")
     else:
         for t in sorted(all_tips, key=lambda x: x.get("commence_time") or ""):
             star = "⭐ " if t.get("is_top") else ""
+            op = f"{t.get('home_op_xg', '–')} / {t.get('away_op_xg', '–')}"
+            bal = f"{t.get('home_attack_balance', '–')} / {t.get('away_attack_balance', '–')}"
+            edge = t.get("edge_pct")
+            edge_s = f"{edge:.1f}%" if edge is not None else "–"
             lines.append(
                 f"| {_kick(t)} | {star}{t['home_team']} – {t['away_team']} | "
-                f"{t.get('winner_pick')} ({t.get('winner_prob', 0):.0f}%) | "
-                f"{t.get('btts_pick')} ({t.get('btts_prob', 0):.0f}%) | "
-                f"{t.get('goals_pick')} ({t.get('goals_prob', 0):.0f}%) | "
+                f"`{_form(t)}` | {op} | {bal} | "
                 f"**{t.get('short')}** | {t.get('prob_pct', 0):.0f}% | "
-                f"{_tmp_odds(t)} | {t.get('fair_odds') or '–'} |"
+                f"{_tmp_odds(t)} | {t.get('fair_odds') or '–'} | {edge_s} |"
             )
         lines.append("")
 
-    # TippmixPro élő tábla (amit az oldal most mutat)
     tippmix_events = payload.get("tippmix_events") or []
     if tippmix_events:
         lines.extend(
@@ -154,7 +166,8 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
     lines.extend(
         [
             "---",
-            f"_Modell: Understat xG + Poisson · TippmixPro élő odds · min. esély: {min_prob}%_",
+            f"_Modell: utolsó 5 forma + open-play xG (npxG) + góltermelés + egyensúly · "
+            f"odds sáv {odds_min:.1f}–{odds_max:.1f} · value · min. esély {min_prob}%_",
             "",
         ]
     )

@@ -1,80 +1,75 @@
-# TippmixPro tippek (xG)
+# TippmixPro value tippek (forma + open-play xG)
 
 **Ma (BUÉK):** `2026-10-05`  
-**Mutatott nap:** `2026-10-09`  
-**Frissítve (UTC):** `2026-10-05T17:33:34.441955+00:00`  
+**Mutatott nap:** `2026-10-10`  
+**Frissítve (UTC):** `2026-10-05T18:02:23.811577+00:00`  
 **Bukméker:** TippmixPro  
-**TippmixPro meccsek:** 16  
-**TippmixPro egyezés:** 0/3  
-**Meccsek a listán:** 4  
-**Top tippek:** 3
+**Odds sáv:** `1.8` – `2.1`  
+**TippmixPro meccsek:** 363  
+**Value tippek:** 7  
+**Meccsek a listán:** 65  
+**Top tippek:** 5
 
-> **Kezdés:** pontos dátum+óra (Budapest).  
-> **TippmixPro odds:** a fő tipphez tartozó aktuális szorzó a TippmixPro oldaláról.  
-> **Fair odds:** modell szerinti „igazságos” szorzó összehasonlításhoz.  
+> Modell: utolsó 5 meccs forma, hazai/vendég góltermelés, open-play xG/xGA (npxG), összes xG, támadási egyensúly.  
+> Csak akkor jelenik meg tipp, ha a TippmixPro szorzó **1.8–2.1** között van **és** value (jobb, mint a fair odds).  
 > Nem pénzügyi tanács.
 
-## Top 5 legesélyesebb tipp
+## Top tippek (legnagyobb edge)
 
-| # | Kezdés (BUÉK) | Meccs | Mire fogadj | Esély | TippmixPro odds | Fair odds |
-| -: | --- | --- | --- | ---: | ---: | ---: |
-| **1** | 2026-10-09 20:45 (péntek) | **Lens – Lyon** | **O2.5** (Gólok) | **67%** | – | 1.5 |
-| **2** | 2026-10-09 20:30 (péntek) | **Borussia Dortmund – Werder Bremen** | **O2.5** (Gólok) | **60%** | – | 1.66 |
-| **3** | 2026-10-09 21:00 (péntek) | **Málaga – Espanyol** | **BTTS Igen** (BTTS) | **60%** | – | 1.67 |
+| # | Kezdés | Meccs | Forma (H/V) | Tipp | Esély | Tippmix | Fair | Edge |
+| -: | --- | --- | --- | --- | ---: | ---: | ---: | ---: |
+| **1** | 2026-10-10 16:00 (szombat) | **Ipswich Town – Fulham** | `WLLWL / LLLDD` | **U2.5** (Gólok) | **65%** | **2.05** | 1.53 | **16.5%** |
+| **2** | 2026-10-10 15:00 (szombat) | **Genoa – Fiorentina** | `LLLDL / LLLWD` | **O2.5** (Gólok) | **64%** | **1.99** | 1.55 | **14.2%** |
+| **3** | 2026-10-10 17:15 (szombat) | **Lille – Le Havre AC** | `WDWWL / LDLDL` | **BTTS Igen** (BTTS) | **62%** | **1.84** | 1.6 | **8.1%** |
+| **4** | 2026-10-10 20:45 (szombat) | **Lorient – Paris FC** | `DLWDL / DWWDW` | **O2.5** (Gólok) | **56%** | **1.92** | 1.8 | **3.5%** |
+| **5** | 2026-10-09 21:00 (péntek) | **Málaga – Espanyol** | `LDDLL / LDWLL` | **O2.5** (Gólok) | **52%** | **2.04** | 1.94 | **2.6%** |
 
-## Aktuális forduló (legközelebbi nap) – mire érdemes fogadni
+## Aktuális forduló (legközelebbi nap) – value tippek (odds 1.8–2.1)
 
-| Kezdés (BUÉK) | Meccs | Győztes | BTTS | Gólok 2.5 | Fő tipp | Esély | TippmixPro | Fair |
-| --- | --- | --- | --- | --- | --- | ---: | ---: | ---: |
-| 2026-10-09 20:30 (péntek) | ⭐ Borussia Dortmund – Werder Bremen | 1 (60%) | BTTS Igen (57%) | O2.5 (60%) | **O2.5** | 60% | – | 1.66 |
-| 2026-10-09 20:45 (péntek) | ⭐ Lens – Lyon | 1 (64%) | BTTS Igen (61%) | O2.5 (67%) | **O2.5** | 67% | – | 1.5 |
-| 2026-10-09 21:00 (péntek) | ⭐ Málaga – Espanyol | 2 (42%) | BTTS Igen (60%) | O2.5 (58%) | **BTTS Igen** | 60% | – | 1.67 |
+| Kezdés | Meccs | Forma | OP xG H/V | Egyensúly | Tipp | Esély | Tippmix | Fair | Edge |
+| --- | --- | --- | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 2026-10-09 20:30 (péntek) | Borussia Dortmund – Werder Bremen | `WWWW / LWDW` | 2.229 / 1.065 | 0.759 / 0.397 | **BTTS Nem** | 51% | **2.00** | 1.95 | 1.3% |
+| 2026-10-09 21:00 (péntek) | ⭐ Málaga – Espanyol | `LDDLL / LDWLL` | 0.672 / 1.166 | 0.223 / 0.374 | **O2.5** | 52% | **2.04** | 1.94 | 2.6% |
+| 2026-10-10 13:30 (szombat) | Arsenal – Leeds United | `WWWWL / WDDWD` | 2.33 / 1.35 | 0.825 / 0.484 | **BTTS Igen** | 51% | **2.02** | 1.97 | 1.3% |
+| 2026-10-10 15:00 (szombat) | ⭐ Genoa – Fiorentina | `LLLDL / LLLWD` | 0.834 / 1.709 | 0.338 / 0.416 | **O2.5** | 64% | **1.99** | 1.55 | 14.2% |
+| 2026-10-10 16:00 (szombat) | ⭐ Ipswich Town – Fulham | `WLLWL / LLLDD` | 1.091 / 0.973 | 0.532 / 0.367 | **U2.5** | 65% | **2.05** | 1.53 | 16.5% |
+| 2026-10-10 17:15 (szombat) | ⭐ Lille – Le Havre AC | `WDWWL / LDLDL` | 1.607 / 1.63 | 0.601 / 0.427 | **BTTS Igen** | 62% | **1.84** | 1.6 | 8.1% |
+| 2026-10-10 20:45 (szombat) | ⭐ Lorient – Paris FC | `DLWDL / DWWDW` | 0.855 / 2.082 | 0.431 / 0.669 | **O2.5** | 56% | **1.92** | 1.8 | 3.5% |
 
 ## TippmixPro – aktuális szorzók (élő oldal)
 
 | Kezdés (BUÉK) | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS Igen | BTTS Nem |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2026-10-05 20:45 (hétfő) | Ukrajna – Magyarország | 2.75 | 3.15 | 2.95 | 2.31 | 1.58 | 1.92 | 1.81 |
-| 2026-10-05 20:45 (hétfő) | Észak-Írország – Georgia | 2.48 | 3 | 3.5 | 2.75 | 1.42 | 2.21 | 1.61 |
-| 2026-10-05 20:45 (hétfő) | Franciaország – Belgium | 1.5 | 4.9 | 6.5 | 1.54 | 2.41 | 1.69 | 2.12 |
-| 2026-10-05 20:45 (hétfő) | Olaszország – Törökország | 1.41 | 5.25 | 8 | 1.54 | 2.41 | 1.8 | 1.97 |
-| 2026-10-05 20:45 (hétfő) | Románia – Svédország | 4.65 | 4.15 | 1.71 | 1.56 | 2.36 | 1.58 | 2.26 |
-| 2026-10-05 20:45 (hétfő) | Bosznia-Hercegovina – Lengyelország | 3.15 | 3.45 | 2.41 | 2.02 | 1.76 | 1.76 | 1.97 |
-| 2026-10-05 20:45 (hétfő) | Montenegró – Örményország | 1.43 | 4.9 | 7 | 1.61 | 2.26 | 1.83 | 1.94 |
-| 2026-10-05 20:45 (hétfő) | Liechtenstein – Gibraltár | 3.3 | 2.8 | 2.34 | 3.05 | 1.32 | 2.44 | 1.48 |
-| 2026-10-06 13:00 (kedd) | Dél-Korea – Üzbegisztán | 1.67 | 3.65 | 4.45 | 1.84 | 1.84 | 1.84 | 1.84 |
-| 2026-10-06 13:35 (kedd) | Kína – Tadzsikisztán | 1.61 | 3.65 | 4.95 | 1.96 | 1.73 | 1.97 | 1.72 |
-| 2026-10-05 20:30 (hétfő) | Cordoba – Tenerife | 1.92 | 3.55 | 3.8 | 1.78 | 1.95 | 1.69 | 2.07 |
-| 2026-10-05 21:45 (hétfő) | Dep. Riestra Central – Cordoba SDE | 1.81 | 2.95 | 4.5 | 2.61 | 1.37 | 2.28 | 1.49 |
-| 2026-10-06 00:00 (kedd) | Vélez Sarsfield – Atl. Platense | 1.82 | 2.95 | 4.4 | 2.57 | 1.38 | 2.27 | 1.49 |
-| 2026-10-06 02:15 (kedd) | Banfield Rosario – Central | 3.95 | 3.15 | 1.84 | 2.12 | 1.57 | 1.9 | 1.71 |
-| 2026-10-06 00:00 (kedd) | Estudiantes LP – Gimnasia Mendoza | 1.61 | 3.4 | 5 | 2.07 | 1.59 | 2 | 1.64 |
-| 2026-10-06 00:00 (kedd) | Martinique – Salvador | 2.37 | 3.15 | 2.67 | 1.75 | 1.86 | 1.61 | 2.05 |
-
-## Közelgő meccsek (nem a listán)
-
-| Kezdés (BUÉK) | Meccs | Liga |
-| --- | --- | --- |
-| 2026-10-10 13:30 (szombat) | Charlton Athletic – Bristol City | Championship |
-| 2026-10-10 13:30 (szombat) | Swansea City – Norwich City | Championship |
-| 2026-10-10 13:30 (szombat) | West Bromwich Albion – Birmingham City | Championship |
-| 2026-10-10 13:30 (szombat) | Arsenal – Leeds United | Premier League |
-| 2026-10-10 14:00 (szombat) | Rayo Vallecano – Athletic Club | La Liga |
-| 2026-10-10 15:00 (szombat) | Genoa – Fiorentina | Serie A |
-| 2026-10-10 15:30 (szombat) | 1. FC Union Berlin – SV Elversberg | Bundesliga |
-| 2026-10-10 15:30 (szombat) | FC Augsburg – Bayern Munich | Bundesliga |
-| 2026-10-10 15:30 (szombat) | Mainz – Bayer Leverkusen | Bundesliga |
-| 2026-10-10 15:30 (szombat) | SC Paderborn 07 – VfB Stuttgart | Bundesliga |
-| 2026-10-10 15:30 (szombat) | TSG Hoffenheim – Hamburg SV | Bundesliga |
-| 2026-10-10 16:00 (szombat) | Blackburn Rovers – Cardiff City | Championship |
-| 2026-10-10 16:00 (szombat) | Bolton Wanderers – Stoke City | Championship |
-| 2026-10-10 16:00 (szombat) | Derby County – Wrexham | Championship |
-| 2026-10-10 16:00 (szombat) | Middlesbrough – Wolverhampton Wanderers | Championship |
-| 2026-10-10 16:00 (szombat) | Preston North End – Millwall | Championship |
-| 2026-10-10 16:00 (szombat) | Sheffield United – Lincoln City | Championship |
-| 2026-10-10 16:00 (szombat) | Watford – Burnley | Championship |
-| 2026-10-10 16:00 (szombat) | Aston Villa – Brentford | Premier League |
-| 2026-10-10 16:00 (szombat) | Chelsea – AFC Bournemouth | Premier League |
+| 2026-10-05 20:45 (hétfő) | Franciaország – Belgium | 1.53 | 4.9 | 6 | 1.54 | 2.41 | 1.68 | 2.13 |
+| 2026-10-05 20:45 (hétfő) | Olaszország – Törökország | 1.48 | 4.85 | 7 | 1.56 | 2.36 | 1.75 | 2.04 |
+| 2026-10-06 20:45 (kedd) | Horvátország – Spanyolország | 10.5 | 6.5 | 1.28 | 1.43 | 2.7 | 1.83 | 1.89 |
+| 2026-10-06 20:45 (kedd) | Anglia – Csehország | 1.12 | 9 | 19 | 1.36 | 3.05 | 2.24 | 1.59 |
+| 2026-10-06 20:45 (kedd) | Svájc – Észak-Macedónia | 1.1 | 9.5 | 26 | 1.41 | 2.8 | 2.7 | 1.41 |
+| 2026-10-06 20:45 (kedd) | Skócia – Szlovénia | 1.82 | 3.75 | 4.9 | 2.23 | 1.63 | 2.1 | 1.67 |
+| 2026-10-05 20:45 (hétfő) | Észak-Írország – Georgia | 2.4 | 3 | 3.7 | 2.75 | 1.43 | 2.21 | 1.61 |
+| 2026-10-05 20:45 (hétfő) | Ukrajna – Magyarország | 2.9 | 3.15 | 2.75 | 2.29 | 1.6 | 1.91 | 1.81 |
+| 2026-10-05 20:45 (hétfő) | Bosznia-Hercegovina – Lengyelország | 3.15 | 3.5 | 2.4 | 1.97 | 1.8 | 1.74 | 2 |
+| 2026-10-05 20:45 (hétfő) | Románia – Svédország | 3.9 | 3.9 | 1.89 | 1.61 | 2.26 | 1.56 | 2.29 |
+| 2026-10-06 20:45 (kedd) | Albánia San – Marino | 1.04 | 15 | 40 | 1.18 | 4.6 | 3.1 | 1.33 |
+| 2026-10-06 20:45 (kedd) | Fehéroroszország – Finnország | 3.8 | 3.35 | 2.02 | 2.3 | 1.59 | 2.02 | 1.72 |
+| 2026-10-05 20:45 (hétfő) | Montenegró – Örményország | 1.48 | 4.6 | 6.5 | 1.7 | 2.1 | 1.89 | 1.87 |
+| 2026-10-06 16:00 (kedd) | Kazahsztán – Feröer-szigetek | 2.39 | 3.05 | 3.25 | 2.45 | 1.53 | 2.03 | 1.72 |
+| 2026-10-06 20:45 (kedd) | Moldova – Szlovákia | 7 | 4.65 | 1.43 | 1.77 | 2.01 | 1.98 | 1.75 |
+| 2026-10-06 20:45 (kedd) | Észtország – Izland | 5.5 | 3.8 | 1.62 | 1.87 | 1.89 | 1.9 | 1.82 |
+| 2026-10-06 20:45 (kedd) | Luxemburg – Bulgária | 2.15 | 3.25 | 3.55 | 2.41 | 1.54 | 2.09 | 1.68 |
+| 2026-10-10 13:30 (szombat) | Arsenal – Leeds | 1.37 | 4.85 | 7.5 | 1.7 | 2.1 | 2.02 | 1.76 |
+| 2026-10-10 16:00 (szombat) | Ipswich – Fulham | 2.7 | 3.45 | 2.46 | 1.74 | 2.05 | 1.61 | 2.26 |
+| 2026-10-10 16:00 (szombat) | Sunderland – Brighton | 2.85 | 3.5 | 2.33 | 1.77 | 2 | 1.63 | 2.22 |
+| 2026-10-10 16:00 (szombat) | Chelsea – Bournemouth | 1.7 | 4.1 | 4.25 | 1.47 | 2.61 | 1.48 | 2.56 |
+| 2026-10-10 16:00 (szombat) | Aston Villa – Brentford | 2.62 | 3.5 | 2.53 | 1.66 | 2.16 | 1.55 | 2.4 |
+| 2026-10-10 18:30 (szombat) | Manchester Utd. – Tottenham | 1.69 | 4.1 | 4.35 | 1.5 | 2.53 | 1.52 | 2.48 |
+| 2026-10-11 15:00 (vasárnap) | Hull City – Everton | 3.6 | 3.25 | 2.08 | 2.05 | 1.74 | 1.84 | 1.92 |
+| 2026-10-11 15:00 (vasárnap) | Crystal Palace – Nottingham | 2.61 | 3.3 | 2.66 | 1.98 | 1.79 | 1.76 | 2.02 |
+| 2026-10-12 21:00 (hétfő) | Coventry – Newcastle | 3.25 | 3.5 | 2.12 | 1.64 | 2.2 | 1.56 | 2.38 |
+| 2026-10-17 13:30 (szombat) | Everton – Chelsea | 2.8 | 3.6 | 2.32 | 1.62 | 2.25 | 1.53 | 2.45 |
+| 2026-10-17 16:00 (szombat) | Fulham Hull – City | 1.69 | 3.85 | 4.7 | 1.7 | 2.11 | 1.72 | 2.07 |
+| 2026-10-17 16:00 (szombat) | Manchester City – Ipswich | 1.24 | 6 | 10 | 1.36 | 3.05 | 1.78 | 2 |
+| 2026-10-17 18:30 (szombat) | Newcastle Aston – Villa | 2.11 | 3.65 | 3.15 | 1.59 | 2.3 | 1.52 | 2.48 |
 
 ---
-_Modell: Understat xG + Poisson · TippmixPro élő odds · min. esély: 52.0%_
+_Modell: utolsó 5 forma + open-play xG (npxG) + góltermelés + egyensúly · odds sáv 1.8–2.1 · value · min. esély 45.0%_

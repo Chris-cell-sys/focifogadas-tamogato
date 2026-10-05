@@ -116,8 +116,8 @@
 </head>
 <body>
   <header>
-    <h1>TippmixPro tippek – xG modell</h1>
-    <p>Mai / közeli meccsek · 1X2 · BTTS · Over/Under 2.5 · Top 5 kiemelve</p>
+    <h1>TippmixPro tippek – forma + xG</h1>
+    <p>Utolsó 5 forma · open-play xG · value tippek · odds 1.8–2.1</p>
     <div class="toolbar">
       <button type="button" id="refreshBtn">Frissítés</button>
       <a class="btn-link" href="https://www.tippmixpro.hu/hu/fogadas" target="_blank" rel="noopener">TippmixPro megnyitása</a>
@@ -129,7 +129,7 @@
     <p id="status">Betöltés…</p>
 
     <section>
-      <h2>Top 5 legesélyesebb</h2>
+      <h2>Top tippek (legnagyobb edge)</h2>
       <div id="top"></div>
     </section>
 
@@ -156,20 +156,19 @@
     </section>
 
     <section>
-      <h2>Aktuális meccsek – mire fogadj</h2>
+      <h2>Value tippek (odds 1.8–2.1)</h2>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
               <th>Kezdés</th>
               <th>Meccs</th>
-              <th>Győztes</th>
-              <th>BTTS</th>
-              <th>Gólok 2.5</th>
-              <th>Fő tipp</th>
+              <th>Forma H/V</th>
+              <th>Tipp</th>
               <th>Esély</th>
               <th>TippmixPro</th>
               <th>Fair</th>
+              <th>Edge</th>
             </tr>
           </thead>
           <tbody id="rows"></tbody>
@@ -202,7 +201,7 @@
     function renderTop(tips) {
       const box = document.getElementById("top");
       if (!tips || !tips.length) {
-        box.innerHTML = "<p class=\"hint\">Nincs top tipp ehhez a naphoz.</p>";
+        box.innerHTML = "<p class=\"hint\">Nincs value tipp a 1.8–2.1 odds sávban.</p>";
         return;
       }
       box.innerHTML = tips.map((t, i) => `
@@ -213,9 +212,12 @@
           </div>
           <div class="tip-meta">
             <strong>${fmtTime(t.commence_time, t.kickoff_display)}</strong>
+            · Forma: <code>${t.home_form || "?"} / ${t.away_form || "?"}</code>
             · ${t.market || ""} · Esély: <strong>${t.prob_pct}%</strong>
             · TippmixPro: <strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong>
             · Fair: ${t.fair_odds ?? "–"}
+            · Edge: <strong>${t.edge_pct != null ? t.edge_pct + "%" : "–"}</strong>
+            · Forrás: ${t.odds_source || t.bookmaker || "–"}
             · Várható: ${t.expected_score || "–"}
           </div>
         </div>
@@ -247,7 +249,7 @@
     function renderTable(tips) {
       const body = document.getElementById("rows");
       if (!tips || !tips.length) {
-        body.innerHTML = "<tr><td colspan=\"9\">Nincs aktuális tippelhető meccs.</td></tr>";
+        body.innerHTML = "<tr><td colspan=\"8\">Nincs value tipp a 1.8–2.1 sávban.</td></tr>";
         return;
       }
       const sorted = [...tips].sort((a, b) => (a.commence_time || "").localeCompare(b.commence_time || ""));
@@ -255,13 +257,12 @@
         <tr class="${t.is_top ? "top" : ""}">
           <td>${fmtTime(t.commence_time, t.kickoff_display)}</td>
           <td>${t.is_top ? "⭐ " : ""}${t.home_team} – ${t.away_team}</td>
-          <td>${t.winner_pick || "–"} (${Math.round(t.winner_prob || 0)}%)</td>
-          <td>${t.btts_pick || "–"} (${Math.round(t.btts_prob || 0)}%)</td>
-          <td>${t.goals_pick || "–"} (${Math.round(t.goals_prob || 0)}%)</td>
-          <td><strong>${t.short || t.pick || "–"}</strong></td>
+          <td><code>${t.home_form || "?"} / ${t.away_form || "?"}</code></td>
+          <td><strong>${t.short || t.pick || "–"}</strong> (${t.market || ""})</td>
           <td>${t.prob_pct != null ? t.prob_pct + "%" : "–"}</td>
           <td><strong>${t.tippmix_odds != null ? Number(t.tippmix_odds).toFixed(2) : "–"}</strong></td>
           <td>${t.fair_odds ?? "–"}</td>
+          <td><strong>${t.edge_pct != null ? t.edge_pct + "%" : "–"}</strong></td>
         </tr>
       `).join("");
     }
@@ -282,7 +283,7 @@
           renderTable(data.xg_tips || []);
           renderTippmix(data.tippmix_events || []);
           status.textContent =
-            `Bukméker: TippmixPro · Mentve: ${data.updated_at || "?"} · Tippek: ${data.xg_tips_count || 0} · Tippmix odds: ${data.tippmix_event_count || 0}`;
+            `Bukméker: TippmixPro · Odds 1.8–2.1 + value · Mentve: ${data.updated_at || "?"} · Tippek: ${data.xg_tips_count || 0} · Tippmix: ${data.tippmix_event_count || 0}`;
         } else {
           renderTop([]);
           renderTable([]);
