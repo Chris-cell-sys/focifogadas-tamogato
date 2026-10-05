@@ -1,4 +1,4 @@
-"""Focifogadás támogató – meccsek és oddsok frissítése (API kulcs nélkül)."""
+"""Focifogadás támogató – meccsek, oddsok, xG tippek (API kulcs nélkül)."""
 
 from __future__ import annotations
 
@@ -10,7 +10,9 @@ import yaml
 
 from src.analyze import analyze_events
 from src.fetch_odds import fetch_all_leagues
+from src.fetch_xg import fetch_xg_for_leagues
 from src.report import write_report
+from src.xg_tips import attach_xg_tips
 
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
@@ -33,18 +35,26 @@ def main() -> None:
 
     analyzed = analyze_events(events, value_threshold=float(config.get("value_threshold", 1.05)))
 
+    league_keys = [m.get("league") for m in analyzed if m.get("league")]
+    league_keys = list(dict.fromkeys(league_keys))
+    print("Csapat xG adatok (Understat)…")
+    xg_by_league = fetch_xg_for_leagues(league_keys)
+    analyzed, xg_tips = attach_xg_tips(analyzed, xg_by_league, config)
+
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "espn-public",
+        "source": "espn-public + understat-xg",
         "match_count": len(analyzed),
         "with_odds": sum(1 for e in analyzed if e.get("best_odds")),
         "value_bets": sum(1 for e in analyzed if e.get("value_bets")),
+        "xg_tips_count": len(xg_tips),
+        "xg_tips": xg_tips,
         "matches": analyzed,
     }
 
     odds_path = DATA_DIR / "odds.json"
     odds_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Mentve: {odds_path}")
+    print(f"Mentve: {odds_path} ({len(xg_tips)} xG tipp)")
 
     report_path = REPORTS_DIR / "latest.md"
     write_report(payload, report_path, config)

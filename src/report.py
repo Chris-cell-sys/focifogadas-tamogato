@@ -51,13 +51,36 @@ def write_report(payload: dict[str, Any], path: Path, config: dict) -> None:
         f"**Forrás:** `{payload.get('source')}` (nyilvános net, API kulcs nélkül)  ",
         f"**Meccsek:** {payload.get('match_count', 0)}  ",
         f"**Odds-szal:** {payload.get('with_odds', 0)}  ",
-        f"**Value tippek (>={edge_pct}% edge):** {payload.get('value_bets', 0)}",
+        f"**Value tippek (>={edge_pct}% edge):** {payload.get('value_bets', 0)}  ",
+        f"**xG tippek (>= {float(config.get('xg_min_edge_pct', 3))}% EV):** {payload.get('xg_tips_count', 0)}",
         "",
         "> Ez egy döntéstámogató eszköz, nem pénzügyi tanács. Fogadj felelősen.",
         "",
-        "## Value tippek",
+        "## xG alapú fogadási tippek",
         "",
     ]
+
+    xg_tips = payload.get("xg_tips") or []
+    if not xg_tips:
+        lines.append("_Nincs a küszöböt elérő xG tipp (vagy nincs xG adat a ligához)._")
+        lines.append("")
+    else:
+        lines.extend(
+            [
+                "| Meccs | Tipp | Odds | EV | Modell % | Várható gólok | O2.5 % |",
+                "| --- | --- | ---: | ---: | ---: | --- | ---: |",
+            ]
+        )
+        for t in xg_tips:
+            odds_txt = f"**{t['odds']:.2f}**" if t.get("odds") else "–"
+            lines.append(
+                f"| {t['home_team']} – {t['away_team']} | **{t['pick']}** | "
+                f"{odds_txt} | +{t['ev_pct']:.1f}% | {t['prob_pct']:.1f}% | "
+                f"{t.get('expected_score', '–')} | {t.get('over25_prob_pct', 0):.0f}% |"
+            )
+        lines.append("")
+
+    lines.extend(["## Value tippek (odds összehasonlítás)", ""])
 
     value_rows = []
     for m in matches:

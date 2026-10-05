@@ -23,3 +23,7 @@ lookahead_days: 7
 # Value tipp: ha a legjobb odds ennyivel jobb az átlagnál (pl. 1.05 = 5%)
 # ESPN gyakran 1 irodát ad → value tipp csak több iroda esetén jelenik meg
 value_threshold: 1.05
+
+# xG tippek (Understat, nyilvános)
+xg_min_edge_pct: 3.0
+xg_home_advantage: 1.08

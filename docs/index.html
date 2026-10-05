@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Focifogadás – élő odds</title>
+  <title>Focifogadás – xG tippek</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -13,6 +13,7 @@
       --muted: #9aa7b8;
       --accent: #3dd68c;
       --border: #2a3544;
+      --warn: #fbbf24;
     }
     @media (prefers-color-scheme: light) {
       :root {
@@ -39,12 +40,52 @@
     }
     header h1 { margin: 0; font-size: 1.35rem; }
     header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.9rem; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.85rem;
+      align-items: center;
+    }
+    button, .btn-link {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--accent);
+      color: #052e16;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: 0.45rem 1rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    button:disabled { opacity: 0.6; cursor: wait; }
+    .btn-link {
+      background: transparent;
+      color: var(--text);
+    }
     main {
       max-width: 960px;
       margin: 0 auto;
       padding: 1.5rem;
     }
-    #status { color: var(--muted); margin-bottom: 1rem; }
+    #status { color: var(--muted); margin-bottom: 1rem; min-height: 1.25rem; }
+    #tips {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .tip-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+    }
+    .tip-card strong { color: var(--accent); }
+    .tip-meta { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; }
     #content {
       background: var(--card);
       border: 1px solid var(--border);
@@ -74,44 +115,90 @@
       background: rgba(61, 214, 140, 0.08);
       color: var(--muted);
     }
-    #content code { font-size: 0.85em; }
     .err { color: #f87171; }
+    .hint { color: var(--muted); font-size: 0.82rem; }
     a { color: var(--accent); }
   </style>
 </head>
 <body>
   <header>
-    <h1>Focifogadás – élő odds</h1>
-    <p>Friss adat az internetről · API kulcs nélkül · automatikus frissítés</p>
+    <h1>Focifogadás – xG tippek</h1>
+    <p>Meccsek + odds (ESPN) · csapat xG (Understat) · API kulcs nélkül</p>
+    <div class="toolbar">
+      <button type="button" id="refreshBtn" title="Legfrissebb mentett jelentés betöltése">Frissítés</button>
+      <a class="btn-link" id="fetchBtn" href="https://github.com/Chris-cell-sys/focifogadas-tamogato/actions/workflows/update-odds.yml" target="_blank" rel="noopener">Új adat letöltése (GitHub Actions)</a>
+    </div>
+    <p class="hint">A zöld gomb azonnal újratölti az oldalt. Az „Új adat letöltése” az internetről frissít (Run workflow → ~1 perc → Frissítés).</p>
   </header>
   <main>
     <p id="status">Jelentés betöltése…</p>
+    <section id="tips" aria-label="xG tippek"></section>
     <article id="content"></article>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    const REPORT_URL =
-      "https://raw.githubusercontent.com/Chris-cell-sys/focifogadas-tamogato/main/reports/latest.md";
+    const REPO = "Chris-cell-sys/focifogadas-tamogato";
+    const BRANCH = "main";
+    const REPORT_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/reports/latest.md`;
+    const JSON_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/odds.json`;
+    const cacheBust = () => `?t=${Date.now()}`;
 
-    async function load() {
+    function renderTips(tips) {
+      const box = document.getElementById("tips");
+      if (!tips || !tips.length) {
+        box.innerHTML = "<p class=\"hint\">Jelenleg nincs kiemelt xG tipp a küszöb felett.</p>";
+        return;
+      }
+      box.innerHTML = tips.slice(0, 8).map((t) => `
+        <div class="tip-card">
+          <div><strong>${t.pick}</strong> · ${t.home_team} – ${t.away_team}</div>
+          <div class="tip-meta">
+            Odds: ${t.odds ? t.odds.toFixed(2) : "–"} · EV: +${t.ev_pct}% · Modell: ${t.prob_pct}% · Várható: ${t.expected_score} · O2.5: ${t.over25_prob_pct}%
+          </div>
+        </div>
+      `).join("");
+    }
+
+    async function load({ manual = false } = {}) {
       const status = document.getElementById("status");
       const content = document.getElementById("content");
+      const btn = document.getElementById("refreshBtn");
+      btn.disabled = true;
+      if (manual) status.textContent = "Frissítés…";
+
       try {
-        const res = await fetch(REPORT_URL, { cache: "no-store" });
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        const md = await res.text();
+        const [mdRes, jsonRes] = await Promise.all([
+          fetch(REPORT_URL + cacheBust(), { cache: "no-store" }),
+          fetch(JSON_URL + cacheBust(), { cache: "no-store" }),
+        ]);
+        if (!mdRes.ok) throw new Error("Markdown HTTP " + mdRes.status);
+        const md = await mdRes.text();
         content.innerHTML = marked.parse(md);
-        status.textContent = "Utolsó betöltés: " + new Date().toLocaleString("hu-HU");
+
+        if (jsonRes.ok) {
+          const data = await jsonRes.json();
+          renderTips(data.xg_tips || []);
+          status.textContent =
+            "Utolsó mentett adat: " +
+            (data.updated_at || "?") +
+            " · xG tippek: " +
+            (data.xg_tips_count || 0);
+        } else {
+          renderTips([]);
+          status.textContent = "Jelentés betöltve · JSON nem elérhető (" + jsonRes.status + ")";
+        }
       } catch (e) {
-        status.innerHTML = '<span class="err">Nem sikerült betölteni a jelentést.</span>';
+        status.innerHTML = '<span class="err">Nem sikerült betölteni.</span>';
         content.innerHTML =
-          "<p>Próbáld újra pár perc múlva, vagy nézd meg a " +
-          '<a href="https://github.com/Chris-cell-sys/focifogadas-tamogato/blob/main/reports/latest.md">GitHub jelentést</a>.</p>';
+          "<p>Próbáld a <strong>Frissítés</strong> gombot, vagy futtasd a GitHub Actions workflow-ot.</p>";
         console.error(e);
+      } finally {
+        btn.disabled = false;
       }
     }
+
+    document.getElementById("refreshBtn").addEventListener("click", () => load({ manual: true }));
     load();
-    setInterval(load, 5 * 60 * 1000);
   </script>
 </body>
 </html>
