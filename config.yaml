@@ -1,0 +1,25 @@
+# Ligák – ESPN nyilvános scoreboard (API kulcs NEM kell)
+leagues:
+  - key: eng.1
+    name: Premier League
+  - key: esp.1
+    name: La Liga
+  - key: ger.1
+    name: Bundesliga
+  - key: ita.1
+    name: Serie A
+  - key: fra.1
+    name: Ligue 1
+  - key: uefa.champions
+    name: Bajnokok Ligája
+  - key: uefa.europa
+    name: Európa Liga
+  - key: eng.2
+    name: Championship
+
+# Hány napra előre kérje a meccseket
+lookahead_days: 7
+
+# Value tipp: ha a legjobb odds ennyivel jobb az átlagnál (pl. 1.05 = 5%)
+# ESPN gyakran 1 irodát ad → value tipp csak több iroda esetén jelenik meg
+value_threshold: 1.05

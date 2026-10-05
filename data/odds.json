@@ -1,0 +1,2453 @@
+{
+  "updated_at": "2026-10-05T16:34:06.546337+00:00",
+  "source": "espn-public",
+  "match_count": 65,
+  "with_odds": 64,
+  "value_bets": 0,
+  "matches": [
+    {
+      "id": "401884781",
+      "league": "ger.1",
+      "sport_title": "Bundesliga",
+      "commence_time": "2026-10-09T18:30Z",
+      "home_team": "Borussia Dortmund",
+      "away_team": "Werder Bremen",
+      "best_odds": {
+        "Borussia Dortmund": {
+          "bookmaker": "DraftKings",
+          "odds": 1.37,
+          "avg_odds": 1.37,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 5.0,
+          "avg_odds": 5.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Werder Bremen": {
+          "bookmaker": "DraftKings",
+          "odds": 6.0,
+          "avg_odds": 6.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Borussia Dortmund": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Werder Bremen": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401876447",
+      "league": "fra.1",
+      "sport_title": "Ligue 1",
+      "commence_time": "2026-10-09T18:45Z",
+      "home_team": "Lens",
+      "away_team": "Lyon",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.8,
+          "avg_odds": 3.8,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Lyon": {
+          "bookmaker": "DraftKings",
+          "odds": 2.65,
+          "avg_odds": 2.65,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Lens": {
+          "bookmaker": "DraftKings",
+          "odds": 2.4,
+          "avg_odds": 2.4,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Lyon": "2 (Vendég)",
+        "Lens": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401882851",
+      "league": "esp.1",
+      "sport_title": "La Liga",
+      "commence_time": "2026-10-09T19:00Z",
+      "home_team": "Málaga",
+      "away_team": "Espanyol",
+      "best_odds": {
+        "Espanyol": {
+          "bookmaker": "DraftKings",
+          "odds": 2.75,
+          "avg_odds": 2.75,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Málaga": {
+          "bookmaker": "DraftKings",
+          "odds": 2.6,
+          "avg_odds": 2.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.25,
+          "avg_odds": 3.25,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Espanyol": "2 (Vendég)",
+        "Málaga": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880233",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-09T19:00Z",
+      "home_team": "West Ham United",
+      "away_team": "Queens Park Rangers",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.5,
+          "avg_odds": 4.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "West Ham United": {
+          "bookmaker": "DraftKings",
+          "odds": 1.556,
+          "avg_odds": 1.556,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Queens Park Rangers": {
+          "bookmaker": "DraftKings",
+          "odds": 5.25,
+          "avg_odds": 5.25,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "West Ham United": "1 (Hazai)",
+        "Queens Park Rangers": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401879268",
+      "league": "eng.1",
+      "sport_title": "Premier League",
+      "commence_time": "2026-10-10T11:30Z",
+      "home_team": "Arsenal",
+      "away_team": "Leeds United",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.9,
+          "avg_odds": 4.9,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Leeds United": {
+          "bookmaker": "DraftKings",
+          "odds": 7.5,
+          "avg_odds": 7.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Arsenal": {
+          "bookmaker": "DraftKings",
+          "odds": 1.385,
+          "avg_odds": 1.385,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Leeds United": "2 (Vendég)",
+        "Arsenal": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880242",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T11:30Z",
+      "home_team": "Charlton Athletic",
+      "away_team": "Bristol City",
+      "best_odds": {
+        "Charlton Athletic": {
+          "bookmaker": "DraftKings",
+          "odds": 3.15,
+          "avg_odds": 3.15,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.3,
+          "avg_odds": 3.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Bristol City": {
+          "bookmaker": "DraftKings",
+          "odds": 2.3,
+          "avg_odds": 2.3,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Charlton Athletic": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Bristol City": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880236",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T11:30Z",
+      "home_team": "Swansea City",
+      "away_team": "Norwich City",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.5,
+          "avg_odds": 3.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Swansea City": {
+          "bookmaker": "DraftKings",
+          "odds": 2.5,
+          "avg_odds": 2.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Norwich City": {
+          "bookmaker": "DraftKings",
+          "odds": 2.7,
+          "avg_odds": 2.7,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Swansea City": "1 (Hazai)",
+        "Norwich City": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880234",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T11:30Z",
+      "home_team": "West Bromwich Albion",
+      "away_team": "Birmingham City",
+      "best_odds": {
+        "Birmingham City": {
+          "bookmaker": "DraftKings",
+          "odds": 3.0,
+          "avg_odds": 3.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "West Bromwich Albion": {
+          "bookmaker": "DraftKings",
+          "odds": 2.3,
+          "avg_odds": 2.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.45,
+          "avg_odds": 3.45,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Birmingham City": "2 (Vendég)",
+        "West Bromwich Albion": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401882849",
+      "league": "esp.1",
+      "sport_title": "La Liga",
+      "commence_time": "2026-10-10T12:00Z",
+      "home_team": "Rayo Vallecano",
+      "away_team": "Athletic Club",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.45,
+          "avg_odds": 3.45,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Rayo Vallecano": {
+          "bookmaker": "DraftKings",
+          "odds": 2.95,
+          "avg_odds": 2.95,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Athletic Club": {
+          "bookmaker": "DraftKings",
+          "odds": 2.35,
+          "avg_odds": 2.35,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Rayo Vallecano": "1 (Hazai)",
+        "Athletic Club": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401874947",
+      "league": "ita.1",
+      "sport_title": "Serie A",
+      "commence_time": "2026-10-10T13:00Z",
+      "home_team": "Genoa",
+      "away_team": "Fiorentina",
+      "best_odds": {
+        "Genoa": {
+          "bookmaker": "DraftKings",
+          "odds": 3.05,
+          "avg_odds": 3.05,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.2,
+          "avg_odds": 3.2,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Fiorentina": {
+          "bookmaker": "DraftKings",
+          "odds": 2.2,
+          "avg_odds": 2.2,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Genoa": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Fiorentina": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401884775",
+      "league": "ger.1",
+      "sport_title": "Bundesliga",
+      "commence_time": "2026-10-10T13:30Z",
+      "home_team": "1. FC Union Berlin",
+      "away_team": "SV Elversberg",
+      "best_odds": {
+        "SV Elversberg": {
+          "bookmaker": "DraftKings",
+          "odds": 2.75,
+          "avg_odds": 2.75,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.7,
+          "avg_odds": 3.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "1. FC Union Berlin": {
+          "bookmaker": "DraftKings",
+          "odds": 2.2,
+          "avg_odds": 2.2,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "SV Elversberg": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "1. FC Union Berlin": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401884777",
+      "league": "ger.1",
+      "sport_title": "Bundesliga",
+      "commence_time": "2026-10-10T13:30Z",
+      "home_team": "FC Augsburg",
+      "away_team": "Bayern Munich",
+      "best_odds": {
+        "FC Augsburg": {
+          "bookmaker": "DraftKings",
+          "odds": 8.5,
+          "avg_odds": 8.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Bayern Munich": {
+          "bookmaker": "DraftKings",
+          "odds": 1.19,
+          "avg_odds": 1.19,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 7.5,
+          "avg_odds": 7.5,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "FC Augsburg": "1 (Hazai)",
+        "Bayern Munich": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401884776",
+      "league": "ger.1",
+      "sport_title": "Bundesliga",
+      "commence_time": "2026-10-10T13:30Z",
+      "home_team": "Mainz",
+      "away_team": "Bayer Leverkusen",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.7,
+          "avg_odds": 3.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Mainz": {
+          "bookmaker": "DraftKings",
+          "odds": 2.8,
+          "avg_odds": 2.8,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Bayer Leverkusen": {
+          "bookmaker": "DraftKings",
+          "odds": 2.15,
+          "avg_odds": 2.15,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Mainz": "1 (Hazai)",
+        "Bayer Leverkusen": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401884773",
+      "league": "ger.1",
+      "sport_title": "Bundesliga",
+      "commence_time": "2026-10-10T13:30Z",
+      "home_team": "SC Paderborn 07",
+      "away_team": "VfB Stuttgart",
+      "best_odds": {
+        "SC Paderborn 07": {
+          "bookmaker": "DraftKings",
+          "odds": 4.6,
+          "avg_odds": 4.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.3,
+          "avg_odds": 4.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "VfB Stuttgart": {
+          "bookmaker": "DraftKings",
+          "odds": 1.556,
+          "avg_odds": 1.556,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "SC Paderborn 07": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "VfB Stuttgart": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401884779",
+      "league": "ger.1",
+      "sport_title": "Bundesliga",
+      "commence_time": "2026-10-10T13:30Z",
+      "home_team": "TSG Hoffenheim",
+      "away_team": "Hamburg SV",
+      "best_odds": {},
+      "labels": {},
+      "value_bets": [],
+      "bookmaker_count": 0
+    },
+    {
+      "id": "401878776",
+      "league": "eng.1",
+      "sport_title": "Premier League",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Aston Villa",
+      "away_team": "Brentford",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.55,
+          "avg_odds": 3.55,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Brentford": {
+          "bookmaker": "DraftKings",
+          "odds": 2.55,
+          "avg_odds": 2.55,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Aston Villa": {
+          "bookmaker": "DraftKings",
+          "odds": 2.6,
+          "avg_odds": 2.6,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Brentford": "2 (Vendég)",
+        "Aston Villa": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401878775",
+      "league": "eng.1",
+      "sport_title": "Premier League",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Chelsea",
+      "away_team": "AFC Bournemouth",
+      "best_odds": {
+        "Chelsea": {
+          "bookmaker": "DraftKings",
+          "odds": 1.714,
+          "avg_odds": 1.714,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.1,
+          "avg_odds": 4.1,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "AFC Bournemouth": {
+          "bookmaker": "DraftKings",
+          "odds": 4.3,
+          "avg_odds": 4.3,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Chelsea": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "AFC Bournemouth": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401879265",
+      "league": "eng.1",
+      "sport_title": "Premier League",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Ipswich Town",
+      "away_team": "Fulham",
+      "best_odds": {
+        "Ipswich Town": {
+          "bookmaker": "DraftKings",
+          "odds": 2.65,
+          "avg_odds": 2.65,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Fulham": {
+          "bookmaker": "DraftKings",
+          "odds": 2.5,
+          "avg_odds": 2.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.55,
+          "avg_odds": 3.55,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Ipswich Town": "1 (Hazai)",
+        "Fulham": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401878772",
+      "league": "eng.1",
+      "sport_title": "Premier League",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Sunderland",
+      "away_team": "Brighton & Hove Albion",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.5,
+          "avg_odds": 3.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Sunderland": {
+          "bookmaker": "DraftKings",
+          "odds": 2.85,
+          "avg_odds": 2.85,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Brighton & Hove Albion": {
+          "bookmaker": "DraftKings",
+          "odds": 2.35,
+          "avg_odds": 2.35,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Sunderland": "1 (Hazai)",
+        "Brighton & Hove Albion": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880244",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Blackburn Rovers",
+      "away_team": "Cardiff City",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.55,
+          "avg_odds": 3.55,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Blackburn Rovers": {
+          "bookmaker": "DraftKings",
+          "odds": 2.7,
+          "avg_odds": 2.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Cardiff City": {
+          "bookmaker": "DraftKings",
+          "odds": 2.45,
+          "avg_odds": 2.45,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Blackburn Rovers": "1 (Hazai)",
+        "Cardiff City": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880243",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Bolton Wanderers",
+      "away_team": "Stoke City",
+      "best_odds": {
+        "Bolton Wanderers": {
+          "bookmaker": "DraftKings",
+          "odds": 2.7,
+          "avg_odds": 2.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.35,
+          "avg_odds": 3.35,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Stoke City": {
+          "bookmaker": "DraftKings",
+          "odds": 2.55,
+          "avg_odds": 2.55,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Bolton Wanderers": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Stoke City": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880241",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Derby County",
+      "away_team": "Wrexham",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.35,
+          "avg_odds": 3.35,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Derby County": {
+          "bookmaker": "DraftKings",
+          "odds": 2.65,
+          "avg_odds": 2.65,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Wrexham": {
+          "bookmaker": "DraftKings",
+          "odds": 2.6,
+          "avg_odds": 2.6,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Derby County": "1 (Hazai)",
+        "Wrexham": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880240",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Middlesbrough",
+      "away_team": "Wolverhampton Wanderers",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.65,
+          "avg_odds": 3.65,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Middlesbrough": {
+          "bookmaker": "DraftKings",
+          "odds": 2.3,
+          "avg_odds": 2.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Wolverhampton Wanderers": {
+          "bookmaker": "DraftKings",
+          "odds": 2.9,
+          "avg_odds": 2.9,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Middlesbrough": "1 (Hazai)",
+        "Wolverhampton Wanderers": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880239",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Preston North End",
+      "away_team": "Millwall",
+      "best_odds": {
+        "Millwall": {
+          "bookmaker": "DraftKings",
+          "odds": 2.45,
+          "avg_odds": 2.45,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.45,
+          "avg_odds": 3.45,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Preston North End": {
+          "bookmaker": "DraftKings",
+          "odds": 2.75,
+          "avg_odds": 2.75,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Millwall": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Preston North End": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880238",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Sheffield United",
+      "away_team": "Lincoln City",
+      "best_odds": {
+        "Lincoln City": {
+          "bookmaker": "DraftKings",
+          "odds": 3.55,
+          "avg_odds": 3.55,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.55,
+          "avg_odds": 3.55,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Sheffield United": {
+          "bookmaker": "DraftKings",
+          "odds": 2.05,
+          "avg_odds": 2.05,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Lincoln City": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Sheffield United": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401880235",
+      "league": "eng.2",
+      "sport_title": "Championship",
+      "commence_time": "2026-10-10T14:00Z",
+      "home_team": "Watford",
+      "away_team": "Burnley",
+      "best_odds": {
+        "Burnley": {
+          "bookmaker": "DraftKings",
+          "odds": 2.25,
+          "avg_odds": 2.25,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Watford": {
+          "bookmaker": "DraftKings",
+          "odds": 2.95,
+          "avg_odds": 2.95,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.6,
+          "avg_odds": 3.6,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Burnley": "2 (Vendég)",
+        "Watford": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401882856",
+      "league": "esp.1",
+      "sport_title": "La Liga",
+      "commence_time": "2026-10-10T14:15Z",
+      "home_team": "Alavés",
+      "away_team": "Atlético Madrid",
+      "best_odds": {
+        "Atlético Madrid": {
+          "bookmaker": "DraftKings",
+          "odds": 1.833,
+          "avg_odds": 1.833,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.75,
+          "avg_odds": 3.75,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Alavés": {
+          "bookmaker": "DraftKings",
+          "odds": 4.1,
+          "avg_odds": 4.1,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Atlético Madrid": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Alavés": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401876446",
+      "league": "fra.1",
+      "sport_title": "Ligue 1",
+      "commence_time": "2026-10-10T15:15Z",
+      "home_team": "Lille",
+      "away_team": "Le Havre AC",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.6,
+          "avg_odds": 4.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Lille": {
+          "bookmaker": "DraftKings",
+          "odds": 1.444,
+          "avg_odds": 1.444,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Le Havre AC": {
+          "bookmaker": "DraftKings",
+          "odds": 6.5,
+          "avg_odds": 6.5,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Lille": "1 (Hazai)",
+        "Le Havre AC": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401875021",
+      "league": "ita.1",
+      "sport_title": "Serie A",
+      "commence_time": "2026-10-10T16:00Z",
+      "home_team": "Internazionale",
+      "away_team": "Parma",
+      "best_odds": {
+        "Internazionale": {
+          "bookmaker": "DraftKings",
+          "odds": 1.125,
+          "avg_odds": 1.125,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Parma": {
+          "bookmaker": "DraftKings",
+          "odds": 13.0,
+          "avg_odds": 13.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 8.0,
+          "avg_odds": 8.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Internazionale": "1 (Hazai)",
+        "Parma": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401882853",
+      "league": "esp.1",
+      "sport_title": "La Liga",
+      "commence_time": "2026-10-10T16:30Z",
+      "home_team": "Barcelona",
+      "away_team": "Getafe",
+      "best_odds": {
+        "Barcelona": {
+          "bookmaker": "DraftKings",
+          "odds": 1.062,
+          "avg_odds": 1.062,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 15.0,
+          "avg_odds": 15.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Getafe": {
+          "bookmaker": "DraftKings",
+          "odds": 21.0,
+          "avg_odds": 21.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Barcelona": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Getafe": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401878773",
+      "league": "eng.1",
+      "sport_title": "Premier League",
+      "commence_time": "2026-10-10T16:30Z",
+      "home_team": "Manchester United",
+      "away_team": "Tottenham Hotspur",
+      "best_odds": {
+        "Tottenham Hotspur": {
+          "bookmaker": "DraftKings",
+          "odds": 4.4,
+          "avg_odds": 4.4,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Manchester United": {
+          "bookmaker": "DraftKings",
+          "odds": 1.69,
+          "avg_odds": 1.69,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.2,
+          "avg_odds": 4.2,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Tottenham Hotspur": "2 (Vendég)",
+        "Manchester United": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401884780",
+      "league": "ger.1",
+      "sport_title": "Bundesliga",
+      "commence_time": "2026-10-10T16:30Z",
+      "home_team": "RB Leipzig",
+      "away_team": "Eintracht Frankfurt",
+      "best_odds": {
+        "RB Leipzig": {
+          "bookmaker": "DraftKings",
+          "odds": 1.5,
+          "avg_odds": 1.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.6,
+          "avg_odds": 4.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Eintracht Frankfurt": {
+          "bookmaker": "DraftKings",
+          "odds": 4.8,
+          "avg_odds": 4.8,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "RB Leipzig": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Eintracht Frankfurt": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401876444",
+      "league": "fra.1",
+      "sport_title": "Ligue 1",
+      "commence_time": "2026-10-10T18:45Z",
+      "home_team": "AS Monaco",
+      "away_team": "Toulouse",
+      "best_odds": {
+        "AS Monaco": {
+          "bookmaker": "DraftKings",
+          "odds": 1.588,
+          "avg_odds": 1.588,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Toulouse": {
+          "bookmaker": "DraftKings",
+          "odds": 5.0,
+          "avg_odds": 5.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.2,
+          "avg_odds": 4.2,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "AS Monaco": "1 (Hazai)",
+        "Toulouse": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401876448",
+      "league": "fra.1",
+      "sport_title": "Ligue 1",
+      "commence_time": "2026-10-10T18:45Z",
+      "home_team": "Brest",
+      "away_team": "Angers",
+      "best_odds": {
+        "Angers": {
+          "bookmaker": "DraftKings",
+          "odds": 3.55,
+          "avg_odds": 3.55,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Brest": {
+          "bookmaker": "DraftKings",
+          "odds": 1.952,
+          "avg_odds": 1.952,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.65,
+          "avg_odds": 3.65,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Angers": "2 (Vendég)",
+        "Brest": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401876445",
+      "league": "fra.1",
+      "sport_title": "Ligue 1",
+      "commence_time": "2026-10-10T18:45Z",
+      "home_team": "Lorient",
+      "away_team": "Paris FC",
+      "best_odds": {
+        "Lorient": {
+          "bookmaker": "DraftKings",
+          "odds": 3.0,
+          "avg_odds": 3.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Paris FC": {
+          "bookmaker": "DraftKings",
+          "odds": 2.3,
+          "avg_odds": 2.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.25,
+          "avg_odds": 3.25,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Lorient": "1 (Hazai)",
+        "Paris FC": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401876442",
+      "league": "fra.1",
+      "sport_title": "Ligue 1",
+      "commence_time": "2026-10-10T18:45Z",
+      "home_team": "Paris Saint-Germain",
+      "away_team": "Le Mans",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 12.0,
+          "avg_odds": 12.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Paris Saint-Germain": {
+          "bookmaker": "DraftKings",
+          "odds": 1.071,
+          "avg_odds": 1.071,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Le Mans": {
+          "bookmaker": "DraftKings",
+          "odds": 19.0,
+          "avg_odds": 19.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Paris Saint-Germain": "1 (Hazai)",
+        "Le Mans": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401874754",
+      "league": "ita.1",
+      "sport_title": "Serie A",
+      "commence_time": "2026-10-10T18:45Z",
+      "home_team": "Napoli",
+      "away_team": "Frosinone",
+      "best_odds": {
+        "Napoli": {
+          "bookmaker": "DraftKings",
+          "odds": 1.426,
+          "avg_odds": 1.426,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.6,
+          "avg_odds": 4.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Frosinone": {
+          "bookmaker": "DraftKings",
+          "odds": 5.75,
+          "avg_odds": 5.75,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Napoli": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Frosinone": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401882848",
+      "league": "esp.1",
+      "sport_title": "La Liga",
+      "commence_time": "2026-10-10T19:00Z",
+      "home_team": "Real Madrid",
+      "away_team": "Villarreal",
+      "best_odds": {
+        "Villarreal": {
+          "bookmaker": "DraftKings",
+          "odds": 7.0,
+          "avg_odds": 7.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Real Madrid": {
+          "bookmaker": "DraftKings",
+          "odds": 1.345,
+          "avg_odds": 1.345,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 5.75,
+          "avg_odds": 5.75,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Villarreal": "2 (Vendég)",
+        "Real Madrid": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915418",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T16:45Z",
+      "home_team": "Lens",
+      "away_team": "Sporting CP",
+      "best_odds": {
+        "Sporting CP": {
+          "bookmaker": "DraftKings",
+          "odds": 2.55,
+          "avg_odds": 2.55,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.7,
+          "avg_odds": 3.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Lens": {
+          "bookmaker": "DraftKings",
+          "odds": 2.45,
+          "avg_odds": 2.45,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Sporting CP": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Lens": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915436",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T16:45Z",
+      "home_team": "Sabah FK",
+      "away_team": "Slavia Prague",
+      "best_odds": {
+        "Slavia Prague": {
+          "bookmaker": "DraftKings",
+          "odds": 1.952,
+          "avg_odds": 1.952,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.65,
+          "avg_odds": 3.65,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Sabah FK": {
+          "bookmaker": "DraftKings",
+          "odds": 3.45,
+          "avg_odds": 3.45,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Slavia Prague": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Sabah FK": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915417",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T19:00Z",
+      "home_team": "Arsenal",
+      "away_team": "Lille",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 6.0,
+          "avg_odds": 6.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Lille": {
+          "bookmaker": "DraftKings",
+          "odds": 10.0,
+          "avg_odds": 10.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Arsenal": {
+          "bookmaker": "DraftKings",
+          "odds": 1.25,
+          "avg_odds": 1.25,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Lille": "2 (Vendég)",
+        "Arsenal": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915412",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T19:00Z",
+      "home_team": "Atlético Madrid",
+      "away_team": "Manchester United",
+      "best_odds": {
+        "Atlético Madrid": {
+          "bookmaker": "DraftKings",
+          "odds": 2.2,
+          "avg_odds": 2.2,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Manchester United": {
+          "bookmaker": "DraftKings",
+          "odds": 2.85,
+          "avg_odds": 2.85,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.75,
+          "avg_odds": 3.75,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Atlético Madrid": "1 (Hazai)",
+        "Manchester United": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915435",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T19:00Z",
+      "home_team": "Galatasaray",
+      "away_team": "Barcelona",
+      "best_odds": {
+        "Galatasaray": {
+          "bookmaker": "DraftKings",
+          "odds": 7.0,
+          "avg_odds": 7.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Barcelona": {
+          "bookmaker": "DraftKings",
+          "odds": 1.294,
+          "avg_odds": 1.294,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 6.0,
+          "avg_odds": 6.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Galatasaray": "1 (Hazai)",
+        "Barcelona": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915413",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T19:00Z",
+      "home_team": "Internazionale",
+      "away_team": "Club Brugge",
+      "best_odds": {
+        "Club Brugge": {
+          "bookmaker": "DraftKings",
+          "odds": 9.0,
+          "avg_odds": 9.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Internazionale": {
+          "bookmaker": "DraftKings",
+          "odds": 1.278,
+          "avg_odds": 1.278,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 5.75,
+          "avg_odds": 5.75,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Club Brugge": "2 (Vendég)",
+        "Internazionale": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915434",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T19:00Z",
+      "home_team": "RB Leipzig",
+      "away_team": "PSV Eindhoven",
+      "best_odds": {
+        "RB Leipzig": {
+          "bookmaker": "DraftKings",
+          "odds": 2.0,
+          "avg_odds": 2.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.0,
+          "avg_odds": 4.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "PSV Eindhoven": {
+          "bookmaker": "DraftKings",
+          "odds": 3.1,
+          "avg_odds": 3.1,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "RB Leipzig": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "PSV Eindhoven": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915411",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T19:00Z",
+      "home_team": "Viking FK",
+      "away_team": "Bayern Munich",
+      "best_odds": {
+        "Viking FK": {
+          "bookmaker": "DraftKings",
+          "odds": 15.0,
+          "avg_odds": 15.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Bayern Munich": {
+          "bookmaker": "DraftKings",
+          "odds": 1.1,
+          "avg_odds": 1.1,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 11.0,
+          "avg_odds": 11.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Viking FK": "1 (Hazai)",
+        "Bayern Munich": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915410",
+      "league": "uefa.champions",
+      "sport_title": "Bajnokok Ligája",
+      "commence_time": "2026-10-13T19:00Z",
+      "home_team": "Villarreal",
+      "away_team": "Napoli",
+      "best_odds": {
+        "Napoli": {
+          "bookmaker": "DraftKings",
+          "odds": 3.0,
+          "avg_odds": 3.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Villarreal": {
+          "bookmaker": "DraftKings",
+          "odds": 2.2,
+          "avg_odds": 2.2,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.5,
+          "avg_odds": 3.5,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Napoli": "2 (Vendég)",
+        "Villarreal": "1 (Hazai)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915573",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "AZ Alkmaar",
+      "away_team": "Hapoel Be'er",
+      "best_odds": {
+        "AZ Alkmaar": {
+          "bookmaker": "DraftKings",
+          "odds": 1.312,
+          "avg_odds": 1.312,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Hapoel Be'er": {
+          "bookmaker": "DraftKings",
+          "odds": 8.0,
+          "avg_odds": 8.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 5.5,
+          "avg_odds": 5.5,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "AZ Alkmaar": "1 (Hazai)",
+        "Hapoel Be'er": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915576",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "Lech Poznan",
+      "away_team": "Bayer Leverkusen",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.2,
+          "avg_odds": 4.2,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Lech Poznan": {
+          "bookmaker": "DraftKings",
+          "odds": 4.4,
+          "avg_odds": 4.4,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Bayer Leverkusen": {
+          "bookmaker": "DraftKings",
+          "odds": 1.645,
+          "avg_odds": 1.645,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Lech Poznan": "1 (Hazai)",
+        "Bayer Leverkusen": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915566",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "Lyon",
+      "away_team": "Crystal Palace",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.65,
+          "avg_odds": 3.65,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Lyon": {
+          "bookmaker": "DraftKings",
+          "odds": 2.15,
+          "avg_odds": 2.15,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Crystal Palace": {
+          "bookmaker": "DraftKings",
+          "odds": 3.05,
+          "avg_odds": 3.05,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Lyon": "1 (Hazai)",
+        "Crystal Palace": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915577",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "NK Celje",
+      "away_team": "Omonia Nicosia",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.3,
+          "avg_odds": 3.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "NK Celje": {
+          "bookmaker": "DraftKings",
+          "odds": 2.4,
+          "avg_odds": 2.4,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Omonia Nicosia": {
+          "bookmaker": "DraftKings",
+          "odds": 2.85,
+          "avg_odds": 2.85,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "NK Celje": "1 (Hazai)",
+        "Omonia Nicosia": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915568",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "RB Salzburg",
+      "away_team": "AC Milan",
+      "best_odds": {
+        "RB Salzburg": {
+          "bookmaker": "DraftKings",
+          "odds": 3.85,
+          "avg_odds": 3.85,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "AC Milan": {
+          "bookmaker": "DraftKings",
+          "odds": 1.8,
+          "avg_odds": 1.8,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.9,
+          "avg_odds": 3.9,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "RB Salzburg": "1 (Hazai)",
+        "AC Milan": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915567",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "Sparta Prague",
+      "away_team": "Lillestrom",
+      "best_odds": {
+        "Lillestrom": {
+          "bookmaker": "DraftKings",
+          "odds": 7.5,
+          "avg_odds": 7.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 5.0,
+          "avg_odds": 5.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Sparta Prague": {
+          "bookmaker": "DraftKings",
+          "odds": 1.357,
+          "avg_odds": 1.357,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Lillestrom": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Sparta Prague": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915575",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "Torreense",
+      "away_team": "Sunderland",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.7,
+          "avg_odds": 4.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Sunderland": {
+          "bookmaker": "DraftKings",
+          "odds": 1.444,
+          "avg_odds": 1.444,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Torreense": {
+          "bookmaker": "DraftKings",
+          "odds": 6.0,
+          "avg_odds": 6.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Sunderland": "2 (Vendég)",
+        "Torreense": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915574",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T16:45Z",
+      "home_team": "Union St.-Gilloise",
+      "away_team": "Real Sociedad",
+      "best_odds": {
+        "Real Sociedad": {
+          "bookmaker": "DraftKings",
+          "odds": 2.9,
+          "avg_odds": 2.9,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.5,
+          "avg_odds": 3.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Union St.-Gilloise": {
+          "bookmaker": "DraftKings",
+          "odds": 2.3,
+          "avg_odds": 2.3,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Real Sociedad": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Union St.-Gilloise": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915571",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "AFC Bournemouth",
+      "away_team": "SK Sturm Graz",
+      "best_odds": {
+        "SK Sturm Graz": {
+          "bookmaker": "DraftKings",
+          "odds": 12.0,
+          "avg_odds": 12.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 7.0,
+          "avg_odds": 7.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "AFC Bournemouth": {
+          "bookmaker": "DraftKings",
+          "odds": 1.19,
+          "avg_odds": 1.19,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "SK Sturm Graz": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "AFC Bournemouth": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915562",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "Benfica",
+      "away_team": "Celtic",
+      "best_odds": {
+        "Celtic": {
+          "bookmaker": "DraftKings",
+          "odds": 9.5,
+          "avg_odds": 9.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 6.0,
+          "avg_odds": 6.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Benfica": {
+          "bookmaker": "DraftKings",
+          "odds": 1.25,
+          "avg_odds": 1.25,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Celtic": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Benfica": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915560",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "Celta Vigo",
+      "away_team": "Juventus",
+      "best_odds": {
+        "Celta Vigo": {
+          "bookmaker": "DraftKings",
+          "odds": 3.5,
+          "avg_odds": 3.5,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.4,
+          "avg_odds": 3.4,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Juventus": {
+          "bookmaker": "DraftKings",
+          "odds": 2.05,
+          "avg_odds": 2.05,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Celta Vigo": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "Juventus": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915549",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "Dinamo Zagreb",
+      "away_team": "Anderlecht",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.6,
+          "avg_odds": 3.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Anderlecht": {
+          "bookmaker": "DraftKings",
+          "odds": 3.85,
+          "avg_odds": 3.85,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Dinamo Zagreb": {
+          "bookmaker": "DraftKings",
+          "odds": 1.909,
+          "avg_odds": 1.909,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Anderlecht": "2 (Vendég)",
+        "Dinamo Zagreb": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915564",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "Ferencvaros",
+      "away_team": "Viktoria Plzen",
+      "best_odds": {
+        "Ferencvaros": {
+          "bookmaker": "DraftKings",
+          "odds": 1.952,
+          "avg_odds": 1.952,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Viktoria Plzen": {
+          "bookmaker": "DraftKings",
+          "odds": 3.45,
+          "avg_odds": 3.45,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.85,
+          "avg_odds": 3.85,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Ferencvaros": "1 (Hazai)",
+        "Viktoria Plzen": "2 (Vendég)",
+        "Draw": "X (Döntetlen)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915561",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "Jagiellonia Bialystok",
+      "away_team": "Ararat-Armenia",
+      "best_odds": {
+        "Ararat-Armenia": {
+          "bookmaker": "DraftKings",
+          "odds": 7.0,
+          "avg_odds": 7.0,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 4.7,
+          "avg_odds": 4.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Jagiellonia Bialystok": {
+          "bookmaker": "DraftKings",
+          "odds": 1.408,
+          "avg_odds": 1.408,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Ararat-Armenia": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Jagiellonia Bialystok": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915550",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "Marseille",
+      "away_team": "Olympiacos",
+      "best_odds": {
+        "Olympiacos": {
+          "bookmaker": "DraftKings",
+          "odds": 3.1,
+          "avg_odds": 3.1,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.6,
+          "avg_odds": 3.6,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Marseille": {
+          "bookmaker": "DraftKings",
+          "odds": 2.15,
+          "avg_odds": 2.15,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Olympiacos": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "Marseille": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915565",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "NEC Nijmegen",
+      "away_team": "Levski Sofia",
+      "best_odds": {
+        "Levski Sofia": {
+          "bookmaker": "DraftKings",
+          "odds": 3.85,
+          "avg_odds": 3.85,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.7,
+          "avg_odds": 3.7,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "NEC Nijmegen": {
+          "bookmaker": "DraftKings",
+          "odds": 1.87,
+          "avg_odds": 1.87,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Levski Sofia": "2 (Vendég)",
+        "Draw": "X (Döntetlen)",
+        "NEC Nijmegen": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915572",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "Stade Rennais",
+      "away_team": "OFI Crete",
+      "best_odds": {
+        "Stade Rennais": {
+          "bookmaker": "DraftKings",
+          "odds": 1.333,
+          "avg_odds": 1.333,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 5.25,
+          "avg_odds": 5.25,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "OFI Crete": {
+          "bookmaker": "DraftKings",
+          "odds": 8.0,
+          "avg_odds": 8.0,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Stade Rennais": "1 (Hazai)",
+        "Draw": "X (Döntetlen)",
+        "OFI Crete": "2 (Vendég)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    },
+    {
+      "id": "401915563",
+      "league": "uefa.europa",
+      "sport_title": "Európa Liga",
+      "commence_time": "2026-10-15T19:00Z",
+      "home_team": "TSG Hoffenheim",
+      "away_team": "Besiktas",
+      "best_odds": {
+        "Draw": {
+          "bookmaker": "DraftKings",
+          "odds": 3.95,
+          "avg_odds": 3.95,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "Besiktas": {
+          "bookmaker": "DraftKings",
+          "odds": 3.3,
+          "avg_odds": 3.3,
+          "edge": 1.0,
+          "books_count": 1
+        },
+        "TSG Hoffenheim": {
+          "bookmaker": "DraftKings",
+          "odds": 1.952,
+          "avg_odds": 1.952,
+          "edge": 1.0,
+          "books_count": 1
+        }
+      },
+      "labels": {
+        "Draw": "X (Döntetlen)",
+        "Besiktas": "2 (Vendég)",
+        "TSG Hoffenheim": "1 (Hazai)"
+      },
+      "value_bets": [],
+      "bookmaker_count": 1
+    }
+  ]
+}

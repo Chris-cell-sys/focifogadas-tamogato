@@ -1,0 +1,49 @@
+name: Frissítsd a focioddsokat
+
+on:
+  schedule:
+    # UTC – kb. naponta 3×
+    - cron: "0 7,13,19 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - "main.py"
+      - "src/**"
+      - "config.yaml"
+      - ".github/workflows/update-odds.yml"
+      - "requirements.txt"
+
+permissions:
+  contents: write
+
+jobs:
+  update-odds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Függőségek
+        run: pip install -r requirements.txt
+
+      - name: Oddsok frissítése (ESPN, API kulcs nélkül)
+        run: python main.py
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/odds.json reports/latest.md
+          if git diff --staged --quiet; then
+            echo "Nincs változás a commitoláshoz."
+          else
+            git commit -m "chore: frissített focioddsok $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
