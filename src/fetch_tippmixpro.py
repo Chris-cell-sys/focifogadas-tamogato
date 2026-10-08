@@ -195,8 +195,8 @@ def fetch_tippmixpro_events(timeout_ms: int = 15000) -> list[dict[str, Any]]:
         import playwright  # noqa: F401
     except ImportError as exc:
         raise RuntimeError("playwright nincs telepítve") from exc
-    return asyncio.run(_fetch_async(timeout_ms))
 
+    collected = asyncio.run(_fetch_async(timeout_ms))
     now = datetime.now(BUDAPEST)
     events: list[dict[str, Any]] = []
     seen: set[str] = set()

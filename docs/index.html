@@ -275,13 +275,26 @@
       }
     }
 
+    function eventStamp(e) {
+      return e?.kickoff_local || (e?.date && e?.time ? `${e.date} ${e.time}` : e?.date || "");
+    }
+
     function isTodayEvent(e, todayIso) {
       const commence = e?.commence_time || "";
       if (commence.startsWith(todayIso)) return true;
-      const local = e?.kickoff_local || "";
-      // Tippmix: MM.DD
       const mmdd = todayIso.slice(5, 7) + "." + todayIso.slice(8, 10);
+      const local = eventStamp(e);
       return local.startsWith(mmdd);
+    }
+
+    function nextSlateLabel(events, todayIso) {
+      const mmdd = todayIso.slice(5, 7) + "." + todayIso.slice(8, 10);
+      const dates = [...new Set((events || []).map((e) => (eventStamp(e).split(" ")[0] || "")).filter(Boolean))]
+        .filter((d) => d > mmdd)
+        .sort();
+      if (!dates.length) return "";
+      const n = (events || []).filter((e) => eventStamp(e).startsWith(dates[0])).length;
+      return ` Következő nap a Tippmixen: ${dates[0]} (${n} meccs).`;
     }
 
     function renderTop(tips, data) {
@@ -292,7 +305,8 @@
       const heading = document.getElementById("topHeading");
       if (heading) heading.textContent = `Mai top tippek (${day})`;
       if (!tips || !tips.length) {
-        box.innerHTML = `<p class="hint">Ma (${day}) nincs value tipp a 1.8–2.1 odds sávban. A bankroll mezőből a stake akkor jelenik meg, ha van tipp.</p>`;
+        const next = nextSlateLabel(data?.tippmix_events || [], day);
+        box.innerHTML = `<p class="hint">Ma (${day}) nincs value tipp. A zöld Frissítés a mentett fájlt tölti; ha az új letöltés után ma nincs meccs, a lista üres marad.${next}</p>`;
         return;
       }
       box.innerHTML = tips.map((t, i) => {
@@ -329,12 +343,13 @@
         ? data.tippmix_today
         : (events || []).filter((e) => isTodayEvent(e, day));
       if (!todayEvents.length) {
-        body.innerHTML = `<tr><td colspan="9">Ma (${day}) nincs TippmixPro meccs.</td></tr>`;
+        const next = nextSlateLabel(data?.tippmix_events || events || [], day);
+        body.innerHTML = `<tr><td colspan="9">Ma (${day}) nincs meccs ezekben a ligákban.${next}</td></tr>`;
         return;
       }
       body.innerHTML = todayEvents.slice(0, 40).map((e) => `
         <tr>
-          <td>${fmtTime(e.commence_time, e.kickoff_local)}</td>
+          <td>${fmtTime(e.commence_time, eventStamp(e))}</td>
           <td>${e.home_team} – ${e.away_team}</td>
           <td>${e.odds_1 ?? "–"}</td>
           <td>${e.odds_x ?? "–"}</td>
@@ -381,7 +396,7 @@
       if (!lastData) return;
       renderTop(lastData.top_tips || [], lastData);
       renderTable(lastData.xg_tips || [], lastData);
-      renderTippmix(lastData.tippmix_today || lastData.tippmix_events || [], lastData);
+      renderTippmix(lastData.tippmix_events || [], lastData);
     }
 
     async function load({ manual = false } = {}) {
@@ -402,15 +417,16 @@
           }
           renderTop(data.top_tips || [], data);
           renderTable(data.xg_tips || [], data);
-          renderTippmix(data.tippmix_today || data.tippmix_events || [], data);
+          renderTippmix(data.tippmix_events || [], data);
           const br = getBankroll(data);
           const kf = Math.round(((data.staking || {}).kelly_fraction || 0.25) * 100);
           const maxP = Math.round(((data.staking || {}).max_stake_pct || 0.03) * 100);
           const meta = document.getElementById("bankrollMeta");
           const day = todayParts(data);
           if (meta) meta.textContent = `${day} · ${kf}% Kelly · max ${maxP}% / tipp · tippek: ${data.xg_tips_count || 0}`;
+          const next = (data.xg_tips_count || 0) === 0 ? nextSlateLabel(data.tippmix_events || [], day) : "";
           status.textContent =
-            `Ma: ${day} · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Mai tippek: ${data.xg_tips_count || 0} · Mai Tippmix: ${data.tippmix_today_count ?? "?"} · Mentve: ${data.updated_at || "?"}`;
+            `Ma: ${day} · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Mai tippek: ${data.xg_tips_count || 0} · Mentve: ${data.updated_at || "?"}${next}`;
         } else {
           renderTop([]);
           renderTable([]);
