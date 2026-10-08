@@ -2,7 +2,7 @@
 
 **Ma (BUÉK):** `2026-10-08` · **csak mai meccsek**  
 **Mai meccsek a listán:** 0  
-**Frissítve (UTC):** `2026-10-07T23:28:08.046130+00:00`  
+**Frissítve (UTC):** `2026-10-08T14:32:49.595236+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
 **Mai value tippek:** 0  
@@ -26,8 +26,9 @@ _Ma (2026-10-08) nincs value tipp a 1.8–2.1 sávban._
 
 | Kezdés | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS I | BTTS N |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2026-10-08 01:30 (csütörtök) | Botafogo RJ Vasco da – Gama RJ | 2.95 | 3.6 | 2.29 | 1.6 | 2.23 | 1.5 | 2.45 |
-| 2026-10-08 02:30 (csütörtök) | Cruzeiro MG Sao – Paulo SP | 1.74 | 3.75 | 4.9 | 1.9 | 1.83 | 1.86 | 1.86 |
+| 2026-10-08 19:45 (csütörtök) | Beti Kozkor – Beti Onak | 2.03 | 3.35 | 3.1 | 1.72 | 1.89 | 1.63 | 2.01 |
+| 2026-10-08 20:00 (csütörtök) | UDC Txantrea – CD Cortes | 2.51 | 3.2 | 2.51 | 1.74 | 1.87 | 1.59 | 2.07 |
+| 2026-10-08 20:30 (csütörtök) | CD Onda – Silla CF | 2 | 3.3 | 3.2 | None | None | None | None |
 
 ## Közelgő (nem a listán)
 
