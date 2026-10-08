@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import re
 import unicodedata
 from datetime import datetime
@@ -12,9 +13,8 @@ from zoneinfo import ZoneInfo
 BUDAPEST = ZoneInfo("Europe/Budapest")
 
 TIPPMIX_HOME_URL = "https://sports2.tippmixpro.hu/hu"
+# A főoldal 0 meccset adott és csak lassított. A top ligák + Európa elég a mai naphoz.
 TIPPMIX_FOOTBALL_URLS = [
-    "https://sports2.tippmixpro.hu/hu",
-    "https://sports2.tippmixpro.hu/hu/fogadas/labdarugas/1/osszes/0/helyszin",
     "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/anglia/77/osszes/0",
     "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/spanyolorszag/65/osszes/0",
     "https://sports2.tippmixpro.hu/hu/bajnoksag-lokacio/labdarugas/1/nemetorszag/54/osszes/0",
@@ -146,17 +146,33 @@ def _parse_tippmix_kickoff(date_mmdd: str, time_hhmm: str, now: datetime | None 
         return None
 
 
-def fetch_tippmixpro_events(timeout_ms: int = 60000) -> list[dict[str, Any]]:
-    """Böngészővel lekéri a TippmixPro labdarúgás oddsokat."""
+async def _scrape_one(context, url: str, timeout_ms: int) -> list[dict[str, Any]]:
+    page = await context.new_page()
     try:
-        from playwright.sync_api import sync_playwright
-    except ImportError as exc:
-        raise RuntimeError("playwright nincs telepítve") from exc
+        await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+        try:
+            await page.wait_for_selector("text=Hazai", timeout=8000)
+        except Exception:
+            print(f"  Tippmix: nincs odds ({url.split('/')[-3][:24]})")
+            return []
+        await page.mouse.wheel(0, 2800)
+        await page.wait_for_timeout(200)
+        raw = await page.evaluate(EXTRACT_JS) or []
+        print(f"  Tippmix oldal: {len(raw)} meccs ({url.split('/labdarugas/')[-1][:40]})")
+        return raw
+    except Exception as exc:
+        print(f"  Tippmix oldal hiba: {exc}")
+        return []
+    finally:
+        await page.close()
 
-    collected: list[dict[str, Any]] = []
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
+
+async def _fetch_async(timeout_ms: int) -> list[dict[str, Any]]:
+    from playwright.async_api import async_playwright
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(
             locale="hu-HU",
             timezone_id="Europe/Budapest",
             user_agent=(
@@ -165,48 +181,21 @@ def fetch_tippmixpro_events(timeout_ms: int = 60000) -> list[dict[str, Any]]:
             ),
             extra_http_headers={"Accept-Language": "hu-HU,hu;q=0.9,en;q=0.8"},
         )
+        batches = await asyncio.gather(*[_scrape_one(context, url, timeout_ms) for url in TIPPMIX_FOOTBALL_URLS])
+        await browser.close()
+    collected: list[dict[str, Any]] = []
+    for batch in batches:
+        collected.extend(batch)
+    return collected
 
-        for url in TIPPMIX_FOOTBALL_URLS:
-            page = context.new_page()
-            try:
-                page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-                for label in ("ÖSSZES ENGEDÉLYEZÉSE", "Elfogadom", "Accept"):
-                    try:
-                        page.get_by_text(label, exact=False).first.click(timeout=1500)
-                        break
-                    except Exception:
-                        pass
-                try:
-                    page.wait_for_selector("text=Hazai", timeout=12000)
-                except Exception:
-                    try:
-                        page.get_by_role("link", name="Labdarúgás").first.click(timeout=3000)
-                        page.wait_for_timeout(2000)
-                    except Exception:
-                        pass
-                page.wait_for_timeout(2000)
-                for _ in range(5):
-                    page.mouse.wheel(0, 3200)
-                    page.wait_for_timeout(400)
-                for _ in range(3):
-                    try:
-                        page.get_by_text("Lássam a többit", exact=False).first.click(timeout=700)
-                        page.wait_for_timeout(700)
-                    except Exception:
-                        break
-                page.wait_for_timeout(500)
-                raw = page.evaluate(EXTRACT_JS) or []
-                collected.extend(raw)
-                print(f"  Tippmix oldal: {len(raw)} meccs ({url.split('/labdarugas/')[-1][:40]})")
-            except Exception as exc:
-                print(f"  Tippmix oldal hiba: {exc}")
-            finally:
-                try:
-                    page.close()
-                except Exception:
-                    pass
 
-        browser.close()
+def fetch_tippmixpro_events(timeout_ms: int = 15000) -> list[dict[str, Any]]:
+    """A ligák egyszerre töltődnek, nem egymás után."""
+    try:
+        import playwright  # noqa: F401
+    except ImportError as exc:
+        raise RuntimeError("playwright nincs telepítve") from exc
+    return asyncio.run(_fetch_async(timeout_ms))
 
     now = datetime.now(BUDAPEST)
     events: list[dict[str, Any]] = []

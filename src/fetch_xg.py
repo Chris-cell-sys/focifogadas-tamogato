@@ -198,14 +198,14 @@ def _aggregate_team(history: list[dict[str, Any]], last_n: int = 5) -> dict[str,
     }
 
 
-def fetch_league_xg(understat_league: str, season: str | None = None, retries: int = 3) -> dict[str, dict[str, Any]]:
+def fetch_league_xg(understat_league: str, season: str | None = None, retries: int = 2) -> dict[str, dict[str, Any]]:
     season = season or current_season_start_year()
     url = f"https://understat.com/getLeagueData/{understat_league}/{season}"
     last_exc: Exception | None = None
     payload = None
     for attempt in range(retries):
         try:
-            response = requests.get(url, headers=HEADERS, timeout=45)
+            response = requests.get(url, headers=HEADERS, timeout=15)
             response.raise_for_status()
             payload = response.json()
             break
@@ -229,17 +229,24 @@ def fetch_league_xg(understat_league: str, season: str | None = None, retries: i
 
 def fetch_xg_for_leagues(league_keys: list[str], season: str | None = None) -> dict[str, dict[str, dict[str, Any]]]:
     """Vissza: espn_league_key -> normalized_team_name -> stats."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    jobs = [(key, UNDERSTAT_LEAGUES[key]) for key in league_keys if key in UNDERSTAT_LEAGUES]
     out: dict[str, dict[str, dict[str, Any]]] = {}
-    for key in league_keys:
-        u_league = UNDERSTAT_LEAGUES.get(key)
-        if not u_league:
-            continue
-        try:
-            out[key] = fetch_league_xg(u_league, season=season)
-            print(f"  xG: {key} ({u_league}) – {len(out[key])} csapat")
-        except requests.RequestException as exc:
-            print(f"  xG hiba ({key}): {exc}")
-            out[key] = {}
+
+    def _one(item: tuple[str, str]) -> tuple[str, str, dict[str, dict[str, Any]]]:
+        key, u_league = item
+        return key, u_league, fetch_league_xg(u_league, season=season)
+
+    with ThreadPoolExecutor(max_workers=min(5, max(1, len(jobs)))) as pool:
+        futures = [pool.submit(_one, item) for item in jobs]
+        for fut in as_completed(futures):
+            try:
+                key, u_league, teams = fut.result()
+                out[key] = teams
+                print(f"  xG: {key} ({u_league}) – {len(teams)} csapat")
+            except requests.RequestException as exc:
+                print(f"  xG hiba: {exc}")
     return out
 
 

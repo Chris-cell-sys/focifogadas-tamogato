@@ -79,17 +79,19 @@ def _parse_odds_entry(entry: dict[str, Any] | None, home: str, away: str) -> dic
     }
 
 
-def _scoreboard_queries(lookahead_days: int) -> list[dict[str, str | int]]:
-    """Először az alap közelgő lista, aztán a következő napok külön."""
-    # Az ESPN alap scoreboard általában a következő fordulót adja.
-    queries: list[dict[str, str | int]] = [{"limit": 100}]
-    # Extra napok csak ha kell (GitHub Actionsban is tartható legyen)
-    days = min(max(1, lookahead_days), 5)
+def _scoreboard_queries(lookahead_days: int, *, today_only: bool = False) -> list[dict[str, str | int]]:
+    """Ma: csak a budapesti nap. Különben a következő néhány nap."""
+    from zoneinfo import ZoneInfo
+
+    if today_only:
+        day = datetime.now(ZoneInfo("Europe/Budapest")).strftime("%Y%m%d")
+        return [{"dates": day, "limit": 80}]
+    days = min(max(1, lookahead_days), 3)
     start = datetime.now(timezone.utc).date()
-    for offset in range(0, days + 1):
-        day = start + timedelta(days=offset)
-        queries.append({"dates": day.strftime("%Y%m%d"), "limit": 100})
-    return queries
+    return [
+        {"dates": (start + timedelta(days=offset)).strftime("%Y%m%d"), "limit": 80}
+        for offset in range(0, days + 1)
+    ]
 
 
 def _ingest_payload(
@@ -158,12 +160,13 @@ def fetch_league(
     league_name: str,
     *,
     lookahead_days: int = 7,
+    today_only: bool = False,
 ) -> list[dict[str, Any]]:
     events_out: list[dict[str, Any]] = []
     seen: set[str] = set()
     url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league_key}/scoreboard"
 
-    for params in _scoreboard_queries(lookahead_days):
+    for params in _scoreboard_queries(lookahead_days, today_only=today_only):
         try:
             response = requests.get(url, params=params, headers=HEADERS, timeout=30)
             response.raise_for_status()
@@ -215,6 +218,7 @@ def fetch_all_leagues(config: dict) -> list[dict[str, Any]]:
 
     leagues = config.get("leagues") or []
     lookahead = int(config.get("lookahead_days", 3))
+    today_only = bool(config.get("today_only", False))
     all_events: list[dict[str, Any]] = []
 
     normalized: list[tuple[str, str]] = []
@@ -226,7 +230,7 @@ def fetch_all_leagues(config: dict) -> list[dict[str, Any]]:
 
     def _one(item: tuple[str, str]) -> tuple[str, str, list[dict[str, Any]]]:
         key, name = item
-        return key, name, fetch_league(key, name, lookahead_days=lookahead)
+        return key, name, fetch_league(key, name, lookahead_days=lookahead, today_only=today_only)
 
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(normalized)))) as pool:
         futures = [pool.submit(_one, item) for item in normalized]
