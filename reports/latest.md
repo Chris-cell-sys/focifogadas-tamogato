@@ -2,7 +2,7 @@
 
 **Ma (BUÉK):** `2026-10-08` · **csak mai meccsek**  
 **Mai meccsek a listán:** 0  
-**Frissítve (UTC):** `2026-10-08T14:40:10.887873+00:00`  
+**Frissítve (UTC):** `2026-10-08T14:41:39.128958+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
 **Mai value tippek:** 0  
