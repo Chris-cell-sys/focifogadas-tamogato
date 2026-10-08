@@ -41,9 +41,13 @@ def _moneyline_side(moneyline: dict | None, side: str) -> float | None:
     return american_to_decimal(close if close is not None else open_)
 
 
-def _parse_odds_entry(entry: dict[str, Any], home: str, away: str) -> dict[str, Any] | None:
+def _parse_odds_entry(entry: dict[str, Any] | None, home: str, away: str) -> dict[str, Any] | None:
+    if not isinstance(entry, dict):
+        return None
     provider = ((entry.get("provider") or {}).get("name")) or "ESPN"
     moneyline = entry.get("moneyline") or {}
+    if not isinstance(moneyline, dict):
+        moneyline = {}
 
     home_odds = _moneyline_side(moneyline, "home")
     away_odds = _moneyline_side(moneyline, "away")
@@ -51,7 +55,9 @@ def _parse_odds_entry(entry: dict[str, Any], home: str, away: str) -> dict[str, 
 
     # fallback: drawOdds.moneyLine (American)
     if draw_odds is None:
-        draw_odds = american_to_decimal((entry.get("drawOdds") or {}).get("moneyLine"))
+        draw_block = entry.get("drawOdds")
+        if isinstance(draw_block, dict):
+            draw_odds = american_to_decimal(draw_block.get("moneyLine"))
 
     if home_odds is None and away_odds is None and draw_odds is None:
         return None
@@ -119,7 +125,12 @@ def _ingest_payload(
 
         bookmakers = []
         for odds_entry in comp.get("odds") or []:
-            parsed = _parse_odds_entry(odds_entry, home, away)
+            if not odds_entry:
+                continue
+            try:
+                parsed = _parse_odds_entry(odds_entry, home, away)
+            except Exception:
+                continue
             if parsed:
                 bookmakers.append(parsed)
 
@@ -220,7 +231,11 @@ def fetch_all_leagues(config: dict) -> list[dict[str, Any]]:
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(normalized)))) as pool:
         futures = [pool.submit(_one, item) for item in normalized]
         for fut in as_completed(futures):
-            key, name, events = fut.result()
+            try:
+                key, name, events = fut.result()
+            except Exception as exc:
+                print(f"  Liga hiba (kihagyva): {exc}")
+                continue
             with_odds = sum(1 for e in events if e.get("bookmakers"))
             print(f"  {name} ({key}): {len(events)} meccs, {with_odds} odds-szal")
             all_events.extend(events)
