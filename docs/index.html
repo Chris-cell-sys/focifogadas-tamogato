@@ -266,8 +266,7 @@
       } catch { return iso; }
     }
 
-    function todayParts(data) {
-      if (data?.today_date) return data.today_date;
+    function todayParts() {
       try {
         return new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Budapest" });
       } catch {
@@ -301,7 +300,7 @@
       const box = document.getElementById("top");
       const bankroll = getBankroll(data);
       const cur = data?.currency || "HUF";
-      const day = todayParts(data);
+      const day = todayParts();
       const heading = document.getElementById("topHeading");
       if (heading) heading.textContent = `Mai top tippek (${day})`;
       if (!tips || !tips.length) {
@@ -336,7 +335,7 @@
     function renderTippmix(events, data) {
       const body = document.getElementById("tmpRows");
       if (!body) return;
-      const day = todayParts(data);
+      const day = todayParts();
       const heading = document.getElementById("tmpHeading");
       if (heading) heading.textContent = `TippmixPro – mai szorzók (${day})`;
       const todayEvents = (data?.tippmix_today && data.tippmix_today.length)
@@ -366,7 +365,7 @@
       const body = document.getElementById("rows");
       const bankroll = getBankroll(data);
       const cur = data?.currency || "HUF";
-      const day = todayParts(data);
+      const day = todayParts();
       const heading = document.getElementById("tipsHeading");
       if (heading) heading.textContent = `Mai value tippek (${day}, odds 1.8–2.1)`;
       if (!tips || !tips.length) {
@@ -422,7 +421,7 @@
           const kf = Math.round(((data.staking || {}).kelly_fraction || 0.25) * 100);
           const maxP = Math.round(((data.staking || {}).max_stake_pct || 0.03) * 100);
           const meta = document.getElementById("bankrollMeta");
-          const day = todayParts(data);
+          const day = todayParts();
           if (meta) meta.textContent = `${day} · ${kf}% Kelly · max ${maxP}% / tipp · tippek: ${data.xg_tips_count || 0}`;
           const next = (data.xg_tips_count || 0) === 0 ? nextSlateLabel(data.tippmix_events || [], day) : "";
           status.textContent =

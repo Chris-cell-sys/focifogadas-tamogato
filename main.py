@@ -71,11 +71,10 @@ def main() -> None:
     today_count = sum(1 for m in analyzed if m.get("is_today"))
     matched = sum(1 for t in xg_tips if t.get("tippmix_matched"))
     from zoneinfo import ZoneInfo
-    from datetime import timedelta as _td
 
     budapest = ZoneInfo("Europe/Budapest")
     now_bp = datetime.now(budapest)
-    today_date = (now_bp.date() if now_bp.hour >= 3 else (now_bp - _td(days=1)).date()).isoformat()
+    today_date = now_bp.date().isoformat()
     today_mmdd = now_bp.strftime("%m.%d")
     tippmix_today = [
         e

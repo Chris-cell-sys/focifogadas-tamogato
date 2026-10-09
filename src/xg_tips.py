@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -31,8 +31,7 @@ def is_today_match(iso: str | None, *, now: datetime | None = None) -> bool:
     if not kick:
         return False
     now = now or datetime.now(BUDAPEST)
-    day = now.date() if now.hour >= 3 else (now - timedelta(days=1)).date()
-    return kick.date() == day
+    return kick.date() == now.date()
 
 
 def espn_odds_as_tippmix(match: dict[str, Any]) -> dict[str, Any] | None:
@@ -126,7 +125,7 @@ def attach_xg_tips(
         m["is_today"] = is_today_match(m.get("commence_time"), now=now)
         m["kick_date"] = kick.date().isoformat() if kick else None
 
-    today_label = (now.date() if now.hour >= 3 else (now - timedelta(days=1)).date()).isoformat()
+    today_label = now.date().isoformat()
 
     for m in matches:
         league = m.get("league") or ""
