@@ -1,12 +1,12 @@
 # TippmixPro – ensemble tippek + stake
 
 **Ma (BUÉK):** `2026-10-09` · **csak mai meccsek**  
-**Mai meccsek a listán:** 0  
-**Frissítve (UTC):** `2026-10-08T23:37:47.121385+00:00`  
+**Mai meccsek a listán:** 4  
+**Frissítve (UTC):** `2026-10-09T05:19:49.480951+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
-**Mai value tippek:** 0  
-**Top tippek:** 0
+**Mai value tippek:** 1  
+**Top tippek:** 1
 
 > **Stat** – szezon teljesítmény · **xG** – open-play xG/xGA · **Form** – utolsó 5 meccs  
 > **Market** – bookmaker implicit esély · **Value** – ensemble vs piac · **Elite** – egyetértés + edge  
@@ -14,13 +14,15 @@
 
 ## Mai top tippek (2026-10-09)
 
-_Ma (2026-10-09) nincs value tipp a 1.8–2.1 sávban._
+| # | Kezdés | Meccs | Modell (S/X/F) | Tipp | Esély | Odds | Edge | Elite | Stake |
+| -: | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| **1** | 2026-10-09 21:00 (péntek) | **Málaga – Espanyol** | `S:50.6% · X:59.5% · F:41.9%` | **O2.5** | 52% | **2.07** | 3.3% | **44.5** | **1 580 HUF** |
 
 ## Mai value tippek (2026-10-09, odds 1.8–2.1)
 
 | Kezdés | Meccs | Forma | Tipp | Ensemble | Implied | Edge | Elite | Stake |
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| – | _Ma nincs tipp_ | – | – | – | – | – | – | – |
+| 2026-10-09 21:00 (péntek) | ⭐ Málaga – Espanyol | `LDDLL / LDWLL` | **O2.5** | 52% | 48.3% | 3.3% | 44.5 | **1 580 HUF** |
 
 ## TippmixPro – mai szorzók (2026-10-09)
 
@@ -46,13 +48,6 @@ _Ma (2026-10-09) nincs value tipp a 1.8–2.1 sávban._
 | 2026-10-09 20:00 (péntek) | Pau – Laval | 2.1 | 3.4 | 3.4 | 1.9 | 1.83 | 1.73 | 2.01 |
 | 2026-10-09 20:00 (péntek) | Sochaux Boulogne – sur Mer | 2.32 | 3.15 | 3.15 | 2.28 | 1.57 | 1.97 | 1.76 |
 | 2026-10-09 20:00 (péntek) | Montpellier – Grenoble | 1.63 | 3.85 | 5 | 1.98 | 1.75 | 1.98 | 1.75 |
-
-## Közelgő (nem a listán)
-
-- 2026-10-09 20:30 (péntek) · Borussia Dortmund – Werder Bremen (Bundesliga)
-- 2026-10-09 20:45 (péntek) · Lens – Lyon (Ligue 1)
-- 2026-10-09 21:00 (péntek) · Málaga – Espanyol (La Liga)
-- 2026-10-09 21:00 (péntek) · West Ham United – Queens Park Rangers (Championship)
 
 ---
 _Ensemble: stat + xG + form · odds 1.8–2.1 · min. esély 45.0% · bankroll 100000 HUF_
