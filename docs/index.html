@@ -296,11 +296,16 @@
       return ` Következő nap a Tippmixen: ${dates[0]} (${n} meccs).`;
     }
 
+    function tipsForToday(tips, day) {
+      return (tips || []).filter((t) => isTodayEvent(t, day));
+    }
+
     function renderTop(tips, data) {
       const box = document.getElementById("top");
       const bankroll = getBankroll(data);
       const cur = data?.currency || "HUF";
       const day = todayParts();
+      tips = tipsForToday(tips, day);
       const heading = document.getElementById("topHeading");
       if (heading) heading.textContent = `Mai top tippek (${day})`;
       if (!tips || !tips.length) {
@@ -338,9 +343,7 @@
       const day = todayParts();
       const heading = document.getElementById("tmpHeading");
       if (heading) heading.textContent = `TippmixPro – mai szorzók (${day})`;
-      const todayEvents = (data?.tippmix_today && data.tippmix_today.length)
-        ? data.tippmix_today
-        : (events || []).filter((e) => isTodayEvent(e, day));
+      const todayEvents = (events || []).filter((e) => isTodayEvent(e, day));
       if (!todayEvents.length) {
         const next = nextSlateLabel(data?.tippmix_events || events || [], day);
         body.innerHTML = `<tr><td colspan="9">Ma (${day}) nincs meccs ezekben a ligákban.${next}</td></tr>`;
@@ -366,6 +369,7 @@
       const bankroll = getBankroll(data);
       const cur = data?.currency || "HUF";
       const day = todayParts();
+      tips = tipsForToday(tips, day);
       const heading = document.getElementById("tipsHeading");
       if (heading) heading.textContent = `Mai value tippek (${day}, odds 1.8–2.1)`;
       if (!tips || !tips.length) {
@@ -422,10 +426,11 @@
           const maxP = Math.round(((data.staking || {}).max_stake_pct || 0.03) * 100);
           const meta = document.getElementById("bankrollMeta");
           const day = todayParts();
-          if (meta) meta.textContent = `${day} · ${kf}% Kelly · max ${maxP}% / tipp · tippek: ${data.xg_tips_count || 0}`;
-          const next = (data.xg_tips_count || 0) === 0 ? nextSlateLabel(data.tippmix_events || [], day) : "";
+          const todayTips = tipsForToday(data.xg_tips || [], day);
+          if (meta) meta.textContent = `${day} · ${kf}% Kelly · max ${maxP}% / tipp · tippek: ${todayTips.length}`;
+          const next = todayTips.length === 0 ? nextSlateLabel(data.tippmix_events || [], day) : "";
           status.textContent =
-            `Ma: ${day} · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Mai tippek: ${data.xg_tips_count || 0} · Mentve: ${data.updated_at || "?"}${next}`;
+            `Ma: ${day} · Bankroll: ${br.toLocaleString("hu-HU")} ${data.currency || "HUF"} · Mai tippek: ${todayTips.length} · Mentve: ${data.updated_at || "?"}${next}`;
         } else {
           renderTop([]);
           renderTable([]);

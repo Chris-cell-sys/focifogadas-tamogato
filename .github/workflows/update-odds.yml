@@ -2,8 +2,8 @@ name: Frissítsd a focioddsokat
 
 on:
   schedule:
-    # UTC – kb. naponta 3×
-    - cron: "0 7,13,19 * * *"
+    # UTC. 04:00 = 06:00 Budapest, így reggel már az új nap van a fájlban.
+    - cron: "0 4,7,13,19 * * *"
   workflow_dispatch:
   push:
     branches: [main, master]
