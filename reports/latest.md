@@ -1,8 +1,8 @@
 # TippmixPro – ensemble tippek + stake
 
-**Ma (BUÉK):** `2026-10-20` · **csak mai meccsek**  
+**Ma (BUÉK):** `2026-10-21` · **csak mai meccsek**  
 **Mai meccsek a listán:** 10  
-**Frissítve (UTC):** `2026-10-20T17:47:43.205137+00:00`  
+**Frissítve (UTC):** `2026-10-20T22:08:20.750899+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
 **Mai value tippek:** 0  
@@ -12,50 +12,50 @@
 > **Market** – bookmaker implicit esély · **Value** – ensemble vs piac · **Elite** – egyetértés + edge  
 > Mindig az **aktuális nap** (Budapest) tippjei. Nem pénzügyi tanács.
 
-## Mai top tippek (2026-10-20)
+## Mai top tippek (2026-10-21)
 
-_Ma (2026-10-20) nincs value tipp a 1.8–2.1 sávban._
+_Ma (2026-10-21) nincs value tipp a 1.8–2.1 sávban._
 
-## Mai value tippek (2026-10-20, odds 1.8–2.1)
+## Mai value tippek (2026-10-21, odds 1.8–2.1)
 
 | Kezdés | Meccs | Forma | Tipp | Ensemble | Implied | Edge | Elite | Stake |
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | – | _Ma nincs tipp_ | – | – | – | – | – | – | – |
 
-## TippmixPro – mai szorzók (2026-10-20)
+## TippmixPro – mai szorzók (2026-10-21)
 
 | Kezdés | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS I | BTTS N |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2026-10-20 20:45 (kedd) | Wolverhampton – Portsmouth | 1.56 | 4.15 | 5.5 | 1.74 | 2 | 1.83 | 1.89 |
-| 2026-10-20 20:45 (kedd) | Burton – Bradford | 4.6 | 3.55 | 1.77 | 1.84 | 1.88 | 1.77 | 1.96 |
-| 2026-10-20 20:45 (kedd) | Huddersfield – Peterborough | 1.5 | 4.9 | 5 | 1.36 | 2.95 | 1.49 | 2.47 |
-| 2026-10-20 20:45 (kedd) | Notts County – Sheffield Wed. | 3.55 | 3.55 | 1.98 | 1.84 | 1.88 | 1.71 | 2.05 |
-| 2026-10-20 20:45 (kedd) | Stevenage – Plymouth | 2.7 | 3.35 | 2.5 | 1.87 | 1.85 | 1.66 | 2.11 |
-| 2026-10-20 20:45 (kedd) | Doncaster – Stockport | 4.35 | 3.8 | 1.75 | 1.6 | 2.22 | 1.61 | 2.21 |
-| 2026-10-20 20:45 (kedd) | Luton – Barnsley | 1.44 | 5 | 5.5 | 1.32 | 3.15 | 1.46 | 2.55 |
-| 2026-10-20 20:45 (kedd) | Oxford Utd. – Wigan | 1.98 | 3.55 | 3.55 | 1.84 | 1.88 | 1.69 | 2.07 |
-| 2026-10-20 20:45 (kedd) | Bromley – Leicester | 4.55 | 4.2 | 1.65 | 1.52 | 2.41 | 1.56 | 2.31 |
-| 2026-10-20 20:45 (kedd) | Blackpool Milton – Keynes Dons | 2.19 | 3.55 | 3.05 | 1.61 | 2.21 | 1.51 | 2.42 |
-| 2026-10-20 20:45 (kedd) | Cambridge Utd. – Wycombe | 2.54 | 3.2 | 2.8 | 2.1 | 1.67 | 1.81 | 1.92 |
-| 2026-10-20 20:45 (kedd) | Wimbledon – Mansfield | 3.3 | 3.45 | 2.12 | 1.79 | 1.93 | 1.63 | 2.16 |
-| 2026-10-20 20:45 (kedd) | Cheltenham – Fleetwood | 3.1 | 3.3 | 2.15 | 1.8 | 1.88 | 1.62 | 2.13 |
-| 2026-10-20 20:45 (kedd) | Exeter – Crewe | 2.44 | 3.1 | 2.8 | 2.09 | 1.64 | 1.79 | 1.9 |
-| 2026-10-20 20:45 (kedd) | Walsall – Oldham | 2.34 | 3.4 | 2.7 | 1.73 | 1.97 | 1.59 | 2.19 |
-| 2026-10-20 20:45 (kedd) | Northampton – Tranmere | 2.25 | 3.2 | 3 | 2.07 | 1.66 | 1.82 | 1.86 |
-| 2026-10-20 20:45 (kedd) | York – Accrington | 1.37 | 4.85 | 6.5 | 1.52 | 2.33 | 1.78 | 1.9 |
-| 2026-10-20 20:45 (kedd) | Chesterfield – Colchester | 1.54 | 4.15 | 5 | 1.59 | 2.18 | 1.68 | 2.04 |
-| 2026-10-20 20:45 (kedd) | Bristol Rovers – Salford City | 2.7 | 3.25 | 2.44 | 1.75 | 1.94 | 1.57 | 2.23 |
-| 2026-10-20 20:45 (kedd) | Rochdale – Grimsby | 3.15 | 3.5 | 2.05 | 1.63 | 2.12 | 1.54 | 2.29 |
-| 2026-10-20 20:45 (kedd) | Rotherham – Newport | 2.22 | 3.25 | 3.05 | 1.91 | 1.78 | 1.69 | 2.01 |
-| 2026-10-20 20:45 (kedd) | Barnet – Swindon | 1.46 | 4.5 | 5.5 | 1.47 | 2.45 | 1.59 | 2.18 |
-| 2026-10-20 20:45 (kedd) | Crawley – Shrewsbury | 2.75 | 3.2 | 2.4 | 1.82 | 1.86 | 1.62 | 2.12 |
-| 2026-10-20 21:00 (kedd) | Gillingham Port – Vale | 3.2 | 3.15 | 2.17 | 2.1 | 1.64 | 1.84 | 1.84 |
-| 2026-10-20 20:45 (kedd) | Ebbsfleet Utd. – Horsham | 1.43 | 4.25 | 5.5 | 1.57 | 2.11 | 1.72 | 1.89 |
-| 2026-10-20 20:45 (kedd) | Brentwood Town – Dartford | 2.39 | 3.5 | 2.46 | 1.54 | 2.17 | 1.46 | 2.34 |
-| 2026-10-20 20:45 (kedd) | Ramsgate Stanway – Rovers | 1.24 | 5 | 9 | 1.4 | 2.53 | 1.75 | 1.85 |
-| 2026-10-20 20:45 (kedd) | Wingate & Finchley – Carshalton Athletic | 2.42 | 3.5 | 2.42 | 1.5 | 2.25 | 1.42 | 2.45 |
-| 2026-10-20 20:45 (kedd) | St. Albans City – Enfield Town | 2.29 | 3.55 | 2.55 | 1.55 | 2.15 | 1.48 | 2.29 |
-| 2026-10-20 20:45 (kedd) | Three Bridges – Eastbourne Borogh | 3.75 | 4.2 | 1.65 | 1.28 | 3 | 1.34 | 2.75 |
+| 2026-10-21 21:00 (szerda) | Reading – Leyton | 1.56 | 4.3 | 5 | 1.58 | 2.27 | 1.69 | 2.07 |
+| 2026-10-21 20:45 (szerda) | AFC Whyteleafe Burgess – Hill Town | 2.54 | 3.55 | 2.3 | 1.47 | 2.32 | 1.42 | 2.44 |
+| 2026-10-21 20:30 (szerda) | Sevenoaks Town AFC – Croydon Athletic | 2.49 | 3.55 | 2.34 | 1.51 | 2.23 | 1.46 | 2.34 |
+| 2026-10-21 20:45 (szerda) | Grays Athletic – Walthamstow | 2.7 | 3.5 | 2.18 | 1.53 | 2.14 | 1.48 | 2.29 |
+| 2026-10-21 20:00 (szerda) | U21Norwich U21Bristol – City | 1.75 | 3.8 | 3.6 | 1.41 | 2.5 | 1.43 | 2.43 |
+| 2026-10-21 20:45 (szerda) | Coventry Utd. – Basford Utd. | 2.36 | 3.35 | 2.57 | 1.66 | 1.97 | 1.56 | 2.12 |
+| 2026-10-21 14:00 (szerda) | U21Peterborough U21Sheffield – Wed. | 1.85 | 4.1 | 3.05 | 1.22 | 3.4 | 1.26 | 3.15 |
+| 2026-10-21 20:00 (szerda) | West Ham London – City Lionesses | 4.05 | 3.55 | 1.71 | 1.67 | 1.95 | 1.66 | 1.97 |
+| 2026-10-21 20:00 (szerda) | Everton – Newcastle | 1.71 | 3.55 | 4.05 | 1.58 | 2.09 | 1.57 | 2.11 |
+| 2026-10-21 20:00 (szerda) | Southampton Crystal – Palace | 3.45 | 3.35 | 1.91 | 1.8 | 1.8 | 1.66 | 1.96 |
+| 2026-10-21 20:00 (szerda) | Durham – Birmingham | 7 | 5 | 1.29 | 1.37 | 2.61 | 1.62 | 2.02 |
+| 2026-10-21 20:00 (szerda) | Burnley Aston – Villa | 9 | 5 | 1.24 | 1.44 | 2.4 | 1.83 | 1.77 |
+| 2026-10-21 20:30 (szerda) | Charlton – Bristol | 2.47 | 3.4 | 2.41 | 1.62 | 2.03 | 1.52 | 2.21 |
+| 2026-10-21 20:00 (szerda) | Levante Ath. – Bilbao | 3.5 | 3.25 | 2.16 | 1.97 | 1.8 | 1.71 | 2.05 |
+| 2026-10-21 15:00 (szerda) | Solbiatese Calcio 1911 – Tropical Coriano | 2.17 | 3 | 3.15 | 2.31 | 1.47 | 1.95 | 1.67 |
+| 2026-10-21 18:00 (szerda) | Ternana – Recanatese | 1.73 | 3.5 | 4 | 1.76 | 1.84 | 1.72 | 1.89 |
+| 2026-10-21 18:45 (szerda) | Como Manchester – Utd. | 2.21 | 3.7 | 3 | 1.56 | 2.38 | 1.48 | 2.51 |
+| 2026-10-21 18:45 (szerda) | Lille – Galatasaray | 2.19 | 3.7 | 3.05 | 1.57 | 2.34 | 1.48 | 2.49 |
+| 2026-10-21 21:00 (szerda) | Aston Villa – Viking Stavanger | 1.22 | 7 | 11 | 1.28 | 3.55 | 1.62 | 2.19 |
+| 2026-10-21 21:00 (szerda) | Betis – Feyenoord | 1.56 | 4.75 | 5 | 1.35 | 3.05 | 1.44 | 2.63 |
+| 2026-10-21 21:00 (szerda) | FC Bruges – Lens | 2.03 | 4 | 3.2 | 1.41 | 2.8 | 1.38 | 2.8 |
+| 2026-10-21 21:00 (szerda) | Real Madrid – RB Leipzig | 1.26 | 7.5 | 10 | 1.2 | 4.25 | 1.48 | 2.5 |
+| 2026-10-21 21:00 (szerda) | Sporting CP – LASK | 1.2 | 7.5 | 12 | 1.28 | 3.55 | 1.71 | 2.03 |
+| 2026-10-21 21:00 (szerda) | Bayern München – Arsenal | 2.11 | 3.95 | 3.4 | 1.58 | 2.31 | 1.5 | 2.44 |
+| 2026-10-21 21:00 (szerda) | Internazionale Sahtar – Doneck | 1.2 | 7.5 | 12 | 1.28 | 3.55 | 1.67 | 2.1 |
+| 2026-10-21 13:00 (szerda) | U19Como U19Manchester – Utd. | 2.7 | 3.55 | 2.22 | 1.41 | 2.65 | 1.37 | 2.75 |
+| 2026-10-21 14:00 (szerda) | U19Lille – U19Galatasaray | 1.64 | 4.05 | 4.05 | 1.37 | 2.8 | 1.42 | 2.61 |
+| 2026-10-21 15:00 (szerda) | U19FC Bruges – U19Lens | 1.69 | 3.9 | 3.95 | 1.41 | 2.66 | 1.43 | 2.58 |
+| 2026-10-21 15:00 (szerda) | U19Sporting CP – U19LASK | 1.23 | 6 | 8 | 1.17 | 4.25 | 1.42 | 2.61 |
+| 2026-10-21 15:00 (szerda) | U19Aston Villa – U19Viking Stavanger | 1.17 | 7 | 10 | 1.14 | 4.8 | 1.45 | 2.52 |
 
 ---
 _Ensemble: stat + xG + form · odds 1.8–2.1 · min. esély 45.0% · bankroll 100000 HUF_
