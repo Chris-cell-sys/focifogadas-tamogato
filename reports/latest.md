@@ -1,8 +1,8 @@
 # TippmixPro – ensemble tippek + stake
 
 **Ma (BUÉK):** `2026-10-30` · **csak mai meccsek**  
-**Mai meccsek a listán:** 6  
-**Frissítve (UTC):** `2026-10-30T18:26:10.416523+00:00`  
+**Mai meccsek a listán:** 1  
+**Frissítve (UTC):** `2026-10-30T22:48:50.008693+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
 **Mai value tippek:** 0  
@@ -22,11 +22,7 @@ _Ma (2026-10-30) nincs value tipp a 1.8–2.1 sávban._
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | – | _Ma nincs tipp_ | – | – | – | – | – | – | – |
 
-## TippmixPro – mai szorzók (2026-10-30)
-
-| Kezdés | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS I | BTTS N |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2026-10-30 20:30 (péntek) | Elversberg – Mainz | 3.45 | 3.75 | 2.06 | 1.57 | 2.34 | 1.5 | 2.51 |
+_Ma (2026-10-30) nincs TippmixPro meccs a scrapelt listán._
 
 ---
 _Ensemble: stat + xG + form · odds 1.8–2.1 · min. esély 45.0% · bankroll 100000 HUF_
