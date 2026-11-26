@@ -2,7 +2,7 @@
 
 **Ma (BUÉK):** `2026-11-26` · **csak mai meccsek**  
 **Mai meccsek a listán:** 18  
-**Frissítve (UTC):** `2026-11-26T02:02:43.530239+00:00`  
+**Frissítve (UTC):** `2026-11-26T13:34:00.659801+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
 **Mai value tippek:** 0  
@@ -26,36 +26,36 @@ _Ma (2026-11-26) nincs value tipp a 1.8–2.1 sávban._
 
 | Kezdés | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS I | BTTS N |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2026-11-26 21:00 (csütörtök) | Doncaster – Huddersfield | 4.35 | 3.85 | 1.73 | 1.56 | 2.29 | 1.57 | 2.26 |
-| 2026-11-26 20:00 (csütörtök) | U21Burnley – U21Wolverhampton | 2.64 | 3.7 | 2.15 | 1.34 | 2.7 | 1.31 | 2.85 |
-| 2026-11-26 20:30 (csütörtök) | Espanyol 2 – CE Europa | 1.92 | 3.25 | 3.45 | 1.91 | 1.7 | 1.74 | 1.85 |
-| 2026-11-26 18:45 (csütörtök) | Besiktas Hapoel – Beer Sheva | 1.25 | 6.25 | 9.5 | 1.37 | 2.95 | 1.74 | 1.99 |
-| 2026-11-26 18:45 (csütörtök) | RU Saint-Gilloise – Lech Poznan | 1.36 | 5.25 | 7.25 | 1.42 | 2.7 | 1.67 | 2.08 |
-| 2026-11-26 18:45 (csütörtök) | Dinamo Zágráb – Leverkusen | 4.4 | 4.25 | 1.67 | 1.46 | 2.61 | 1.49 | 2.44 |
-| 2026-11-26 18:45 (csütörtök) | Olympiakosz – Milan | 2.7 | 3.45 | 2.47 | 1.83 | 1.92 | 1.63 | 2.14 |
-| 2026-11-26 18:45 (csütörtök) | Celta Vigo – Bournemouth | 3.5 | 3.5 | 2.14 | 1.88 | 1.88 | 1.7 | 2.05 |
-| 2026-11-26 18:45 (csütörtök) | Marseille Levszki – Szófia | 1.32 | 5.25 | 8.5 | 1.57 | 2.32 | 1.87 | 1.84 |
-| 2026-11-26 18:45 (csütörtök) | Plzen – Benfica | 5.5 | 4.8 | 1.47 | 1.41 | 2.8 | 1.55 | 2.31 |
-| 2026-11-26 18:45 (csütörtök) | Salzburg – Ararat-Armenia | 1.15 | 8.25 | 14.5 | 1.3 | 3.35 | 1.88 | 1.83 |
-| 2026-11-26 21:00 (csütörtök) | Lyon – Lilleström | 1.2 | 7 | 11 | 1.37 | 2.95 | 1.85 | 1.86 |
-| 2026-11-26 21:00 (csütörtök) | Hoffenheim Sturm – Graz | 1.33 | 5.25 | 7.75 | 1.38 | 2.9 | 1.62 | 2.18 |
-| 2026-11-26 21:00 (csütörtök) | Sparta Praha – AZ Alkmaar | 2.9 | 3.6 | 2.26 | 1.66 | 2.16 | 1.53 | 2.34 |
-| 2026-11-26 21:00 (csütörtök) | Crystal Palace – Real Sociedad | 2.04 | 3.95 | 3.15 | 1.52 | 2.44 | 1.49 | 2.47 |
-| 2026-11-26 21:00 (csütörtök) | Juventus Omonia – Nicosia | 1.16 | 7.5 | 14 | 1.38 | 2.9 | 1.99 | 1.74 |
-| 2026-11-26 21:00 (csütörtök) | Nijmegen – Rennes | 3.1 | 3.65 | 2.13 | 1.5 | 2.51 | 1.44 | 2.62 |
-| 2026-11-26 21:00 (csütörtök) | Sunderland Jagiellonia – Bialystok | 1.24 | 5.75 | 11.5 | 1.55 | 2.36 | 2.05 | 1.69 |
-| 2026-11-26 21:00 (csütörtök) | OFI – Anderlecht | 4.3 | 3.65 | 1.79 | 1.7 | 2.1 | 1.62 | 2.17 |
-| 2026-11-26 21:00 (csütörtök) | Torreense – Celtic | 4.7 | 4.2 | 1.64 | 1.55 | 2.38 | 1.57 | 2.26 |
-| 2026-11-26 21:00 (csütörtök) | FTC – Celje | 1.39 | 5.25 | 7.75 | 1.52 | 2.45 | 1.77 | 1.94 |
-| 2026-11-26 16:30 (csütörtök) | Kajrat Almati – Mjällby | 2.13 | 3.4 | 3.3 | 1.9 | 1.85 | 1.7 | 2.05 |
-| 2026-11-26 18:45 (csütörtök) | Jablonec – Lugano | 3.25 | 3.45 | 2.13 | 1.75 | 2.02 | 1.6 | 2.21 |
-| 2026-11-26 18:45 (csütörtök) | Brann Bergen – Aarhus GF | 2.12 | 3.85 | 2.95 | 1.49 | 2.53 | 1.44 | 2.62 |
-| 2026-11-26 18:45 (csütörtök) | Brighton CS – Univ. Craiova | 1.11 | 8.75 | 18.5 | 1.38 | 2.9 | 2.3 | 1.55 |
-| 2026-11-26 18:45 (csütörtök) | Egnatia Rrogozhine Lincoln – Red Imps | 1.57 | 4.25 | 5 | 1.59 | 2.28 | 1.65 | 2.12 |
-| 2026-11-26 18:45 (csütörtök) | Iberia 1999 – Getafe | 7.5 | 4.3 | 1.43 | 1.99 | 1.77 | 2.24 | 1.59 |
-| 2026-11-26 18:45 (csütörtök) | Ajax – Thun | 1.16 | 8 | 12 | 1.23 | 3.85 | 1.67 | 2.09 |
-| 2026-11-26 18:45 (csütörtök) | Pafosz – Midtjylland | 2.95 | 3.45 | 2.26 | 1.61 | 2.24 | 1.48 | 2.5 |
-| 2026-11-26 18:45 (csütörtök) | Hearts – Monaco | 5.25 | 4.35 | 1.54 | 1.52 | 2.44 | 1.6 | 2.21 |
+| 2026-11-26 21:00 (csütörtök) | Doncaster – Huddersfield | 4.65 | 3.9 | 1.67 | 1.63 | 2.15 | 1.67 | 2.09 |
+| 2026-11-26 20:00 (csütörtök) | U21Burnley – U21Wolverhampton | 2.63 | 3.75 | 2.14 | 1.33 | 2.75 | 1.31 | 2.85 |
+| 2026-11-26 18:45 (csütörtök) | Besiktas Hapoel – Beer Sheva | 1.24 | 6.75 | 9.5 | 1.36 | 3 | 1.74 | 1.98 |
+| 2026-11-26 18:45 (csütörtök) | RU Saint-Gilloise – Lech Poznan | 1.35 | 5.25 | 7.5 | 1.46 | 2.6 | 1.72 | 2.01 |
+| 2026-11-26 18:45 (csütörtök) | Dinamo Zágráb – Leverkusen | 4.65 | 4.25 | 1.63 | 1.46 | 2.6 | 1.5 | 2.42 |
+| 2026-11-26 18:45 (csütörtök) | Olympiakosz – Milan | 2.75 | 3.35 | 2.49 | 1.88 | 1.88 | 1.65 | 2.11 |
+| 2026-11-26 18:45 (csütörtök) | Celta Vigo – Bournemouth | 4.05 | 3.6 | 1.96 | 1.91 | 1.84 | 1.74 | 1.99 |
+| 2026-11-26 18:45 (csütörtök) | Marseille Levszki – Szófia | 1.37 | 4.85 | 7.75 | 1.61 | 2.24 | 1.88 | 1.83 |
+| 2026-11-26 18:45 (csütörtök) | Plzen – Benfica | 5.75 | 4.95 | 1.45 | 1.41 | 2.8 | 1.56 | 2.3 |
+| 2026-11-26 18:45 (csütörtök) | Salzburg – Ararat-Armenia | 1.13 | 8.5 | 16 | 1.28 | 3.45 | 1.9 | 1.82 |
+| 2026-11-26 21:00 (csütörtök) | Lyon – Lilleström | 1.19 | 7.25 | 11.5 | 1.42 | 2.75 | 2.02 | 1.71 |
+| 2026-11-26 21:00 (csütörtök) | Hoffenheim Sturm – Graz | 1.32 | 5.75 | 7.5 | 1.33 | 3.15 | 1.59 | 2.23 |
+| 2026-11-26 21:00 (csütörtök) | Sparta Praha – AZ Alkmaar | 2.85 | 3.45 | 2.37 | 1.72 | 2.06 | 1.56 | 2.29 |
+| 2026-11-26 21:00 (csütörtök) | Crystal Palace – Real Sociedad | 2.02 | 3.9 | 3.2 | 1.51 | 2.48 | 1.45 | 2.56 |
+| 2026-11-26 21:00 (csütörtök) | Juventus Omonia – Nicosia | 1.19 | 6.75 | 12.5 | 1.39 | 2.85 | 1.93 | 1.78 |
+| 2026-11-26 21:00 (csütörtök) | Nijmegen – Rennes | 3 | 3.9 | 2.11 | 1.44 | 2.67 | 1.41 | 2.7 |
+| 2026-11-26 21:00 (csütörtök) | Sunderland Jagiellonia – Bialystok | 1.23 | 6 | 11 | 1.55 | 2.38 | 2.07 | 1.68 |
+| 2026-11-26 21:00 (csütörtök) | OFI – Anderlecht | 4.45 | 3.65 | 1.77 | 1.72 | 2.06 | 1.64 | 2.14 |
+| 2026-11-26 21:00 (csütörtök) | Torreense – Celtic | 4.6 | 4.35 | 1.63 | 1.42 | 2.75 | 1.47 | 2.52 |
+| 2026-11-26 21:00 (csütörtök) | FTC – Celje | 1.4 | 5.5 | 7.5 | 1.51 | 2.48 | 1.76 | 1.96 |
+| 2026-11-26 16:30 (csütörtök) | Kajrat Almati – Mjällby | 2.18 | 3.3 | 3.3 | 1.98 | 1.78 | 1.73 | 2 |
+| 2026-11-26 18:45 (csütörtök) | Jablonec – Lugano | 2.95 | 3.45 | 2.26 | 1.7 | 2.09 | 1.54 | 2.33 |
+| 2026-11-26 18:45 (csütörtök) | Brann Bergen – Aarhus GF | 2.08 | 3.65 | 3.15 | 1.52 | 2.44 | 1.44 | 2.6 |
+| 2026-11-26 18:45 (csütörtök) | Brighton CS – Univ. Craiova | 1.11 | 8.75 | 18.5 | 1.42 | 2.75 | 2.38 | 1.52 |
+| 2026-11-26 18:45 (csütörtök) | Egnatia Rrogozhine Lincoln – Red Imps | 1.58 | 4.35 | 4.85 | 1.59 | 2.28 | 1.67 | 2.09 |
+| 2026-11-26 18:45 (csütörtök) | Iberia 1999 – Getafe | 7 | 4.1 | 1.47 | 2.07 | 1.71 | 2.26 | 1.57 |
+| 2026-11-26 18:45 (csütörtök) | Ajax – Thun | 1.16 | 8 | 12 | 1.23 | 3.85 | 1.69 | 2.05 |
+| 2026-11-26 18:45 (csütörtök) | Pafosz – Midtjylland | 2.8 | 3.6 | 2.29 | 1.58 | 2.31 | 1.46 | 2.53 |
+| 2026-11-26 18:45 (csütörtök) | Hearts – Monaco | 5.75 | 4.6 | 1.48 | 1.52 | 2.44 | 1.63 | 2.15 |
+| 2026-11-26 18:45 (csütörtök) | Zalgiris Kaunas – Riga FC | 3.55 | 3.4 | 2.03 | 1.92 | 1.84 | 1.7 | 2.04 |
 
 ---
 _Ensemble: stat + xG + form · odds 1.8–2.1 · min. esély 45.0% · bankroll 100000 HUF_
