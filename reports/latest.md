@@ -2,7 +2,7 @@
 
 **Ma (BUÉK):** `2026-11-28` · **csak mai meccsek**  
 **Mai meccsek a listán:** 30  
-**Frissítve (UTC):** `2026-11-28T01:47:37.043784+00:00`  
+**Frissítve (UTC):** `2026-11-28T12:43:58.812633+00:00`  
 **Bankroll:** `100,000 HUF` · stake: **25% Kelly** (max 3%/tipp)  
 **Odds sáv:** `1.8` – `2.1`  
 **Mai value tippek:** 0  
@@ -26,36 +26,36 @@ _Ma (2026-11-28) nincs value tipp a 1.8–2.1 sávban._
 
 | Kezdés | Meccs | 1 | X | 2 | O2.5 | U2.5 | BTTS I | BTTS N |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2026-11-28 16:00 (szombat) | Manchester Utd. – Brentford | 2.24 | 3.8 | 3.1 | 1.55 | 2.36 | 1.49 | 2.52 |
-| 2026-11-28 16:00 (szombat) | Leeds – Coventry | 1.49 | 4.65 | 5.75 | 1.63 | 2.2 | 1.8 | 1.95 |
-| 2026-11-28 18:30 (szombat) | Ipswich Aston – Villa | 3.5 | 3.7 | 2 | 1.56 | 2.34 | 1.5 | 2.49 |
-| 2026-11-28 13:30 (szombat) | Preston – Norwich | 4.25 | 3.75 | 1.76 | 1.58 | 2.24 | 1.56 | 2.29 |
-| 2026-11-28 13:30 (szombat) | Lincoln City – Wolverhampton | 5.5 | 4.05 | 1.56 | 1.82 | 1.9 | 1.9 | 1.81 |
-| 2026-11-28 13:30 (szombat) | Blackburn – Charlton | 2 | 3.45 | 3.55 | 1.92 | 1.79 | 1.77 | 1.95 |
-| 2026-11-28 16:00 (szombat) | Millwall – Burnley | 2.11 | 3.5 | 3.2 | 1.67 | 2.09 | 1.56 | 2.29 |
-| 2026-11-28 16:00 (szombat) | QPR Sheffield – Utd. | 1.99 | 3.55 | 3.55 | 1.79 | 1.92 | 1.66 | 2.09 |
-| 2026-11-28 16:00 (szombat) | Derby County – Watford | 2.25 | 3.2 | 3.15 | 1.97 | 1.75 | 1.73 | 2 |
-| 2026-11-28 16:00 (szombat) | Birmingham – Bolton | 1.47 | 4.65 | 5.75 | 1.53 | 2.37 | 1.66 | 2.09 |
-| 2026-11-28 16:00 (szombat) | West Ham – Stoke | 1.64 | 4.1 | 4.65 | 1.67 | 2.08 | 1.73 | 2 |
-| 2026-11-28 16:00 (szombat) | Wrexham – Portsmouth | 2.19 | 3.2 | 3.35 | 2.25 | 1.58 | 1.96 | 1.76 |
-| 2026-11-28 16:00 (szombat) | West Bromwich – Bristol City | 1.69 | 3.7 | 4.8 | 1.84 | 1.87 | 1.8 | 1.92 |
-| 2026-11-28 13:30 (szombat) | Peterborough Cambridge – Utd. | 2.29 | 3.6 | 2.8 | 1.6 | 2.21 | 1.5 | 2.42 |
-| 2026-11-28 13:30 (szombat) | Milton Keynes Dons – Notts County | 1.88 | 3.65 | 3.85 | 1.71 | 2.02 | 1.65 | 2.11 |
-| 2026-11-28 16:00 (szombat) | Bromley – Burton | 2.29 | 3.55 | 2.85 | 1.77 | 1.95 | 1.62 | 2.16 |
-| 2026-11-28 16:00 (szombat) | Sheffield Wed. – Reading | 2.27 | 3.65 | 2.85 | 1.63 | 2.16 | 1.55 | 2.31 |
-| 2026-11-28 16:00 (szombat) | Stockport – Leyton | 1.41 | 5 | 6.25 | 1.47 | 2.51 | 1.67 | 2.09 |
-| 2026-11-28 16:00 (szombat) | Luton Oxford – Utd. | 1.75 | 3.85 | 4.2 | 1.58 | 2.25 | 1.57 | 2.26 |
-| 2026-11-28 16:00 (szombat) | Wimbledon – Barnsley | 2.67 | 3.6 | 2.4 | 1.55 | 2.31 | 1.46 | 2.53 |
-| 2026-11-28 16:00 (szombat) | Wycombe – Bradford | 2.29 | 3.4 | 2.95 | 1.87 | 1.84 | 1.67 | 2.08 |
-| 2026-11-28 16:00 (szombat) | Wigan – Plymouth | 2.54 | 3.4 | 2.63 | 1.69 | 2.05 | 1.54 | 2.33 |
-| 2026-11-28 16:00 (szombat) | Leicester – Mansfield | 1.52 | 4.5 | 5.25 | 1.45 | 2.56 | 1.57 | 2.26 |
-| 2026-11-28 16:00 (szombat) | Stevenage – Blackpool | 1.85 | 3.65 | 3.9 | 1.77 | 1.95 | 1.69 | 2.06 |
-| 2026-11-28 13:30 (szombat) | Exeter – Crawley | 1.84 | 3.5 | 3.8 | 1.86 | 1.81 | 1.74 | 1.94 |
-| 2026-11-28 13:30 (szombat) | Bristol Rovers – Tranmere | 1.86 | 3.5 | 3.7 | 1.8 | 1.87 | 1.7 | 1.99 |
-| 2026-11-28 16:00 (szombat) | Swindon – Chesterfield | 3.75 | 3.75 | 1.75 | 1.55 | 2.25 | 1.54 | 2.28 |
-| 2026-11-28 16:00 (szombat) | Salford City – Gillingham | 1.44 | 4.15 | 5.75 | 1.61 | 2.13 | 1.76 | 1.92 |
-| 2026-11-28 16:00 (szombat) | Walsall – Northampton | 2.32 | 3.2 | 2.75 | 1.81 | 1.86 | 1.61 | 2.13 |
-| 2026-11-28 16:00 (szombat) | Colchester – York | 2.75 | 3.4 | 2.23 | 1.62 | 2.12 | 1.5 | 2.35 |
+| 2026-11-28 15:00 (szombat) | Frosinone – Parma | 1.45 | 4.95 | 6.25 | 1.37 | 2.95 | 1.52 | 2.45 |
+| 2026-11-28 18:00 (szombat) | Torino – Lazio | 3.5 | 3.5 | 2.11 | 1.89 | 1.86 | 1.71 | 2.08 |
+| 2026-11-28 20:45 (szombat) | Internazionale – Genoa | 1.29 | 6 | 9.5 | 1.46 | 2.6 | 1.84 | 1.92 |
+| 2026-11-28 15:00 (szombat) | Carrarese Juve – Stabia | 2.02 | 3.2 | 3.8 | 1.96 | 1.76 | 1.71 | 2.03 |
+| 2026-11-28 15:00 (szombat) | Ascoli Virtus – Entella | 1.77 | 3.5 | 4.65 | 1.97 | 1.75 | 1.83 | 1.88 |
+| 2026-11-28 15:00 (szombat) | Empoli Hellas – Verona | 4.1 | 3.6 | 1.83 | 1.78 | 1.94 | 1.67 | 2.08 |
+| 2026-11-28 17:15 (szombat) | Vicenza – Cesena | 2.7 | 3.1 | 2.65 | 2 | 1.73 | 1.7 | 2.05 |
+| 2026-11-28 19:30 (szombat) | Palermo – Benevento | 2 | 3.45 | 3.55 | 1.68 | 2.07 | 1.56 | 2.28 |
+| 2026-11-28 14:30 (szombat) | U19Vicenza – U19Modena | 2.2 | 3.4 | 2.7 | 1.6 | 2.04 | 1.52 | 2.19 |
+| 2026-11-28 14:30 (szombat) | U19Sampdoria – U19Renate | 1.62 | 3.8 | 4.25 | 1.5 | 2.23 | 1.55 | 2.14 |
+| 2026-11-28 14:30 (szombat) | U19Benevento – U19Napoli | 1.9 | 3.5 | 3.3 | 1.55 | 2.13 | 1.47 | 2.29 |
+| 2026-11-28 14:30 (szombat) | U19Catanzaro – U19Perugia | 2.25 | 3.25 | 2.75 | 1.72 | 1.87 | 1.57 | 2.1 |
+| 2026-11-28 14:30 (szombat) | U19Monopoli – U19Frosinone | 1.87 | 3.45 | 3.45 | 1.61 | 2.03 | 1.53 | 2.17 |
+| 2026-11-28 14:30 (szombat) | U19Avellino – U19Salernitana | 1.3 | 4.95 | 6.75 | 1.37 | 2.6 | 1.63 | 2 |
+| 2026-11-28 14:30 (szombat) | U19Südtirol – U19Padova | 1.7 | 3.55 | 4.05 | 1.65 | 1.97 | 1.63 | 2 |
+| 2026-11-28 14:30 (szombat) | ASD San Giorgio Piana – Vigor Borgetto | 1.76 | 3.55 | 3.75 | 1.66 | 1.95 | 1.65 | 1.97 |
+| 2026-11-28 18:00 (szombat) | Calcio Pomigliano ASD – Real Grazzanise | 2.64 | 3.05 | 2.45 | 1.87 | 1.73 | 1.71 | 1.89 |
+| 2026-11-28 14:30 (szombat) | Carpi – Lecco | 3 | 3.2 | 2.12 | 1.77 | 1.82 | 1.59 | 2.07 |
+| 2026-11-28 14:30 (szombat) | Novara Alcione – Milano | 2.15 | 3.05 | 3.05 | 1.86 | 1.74 | 1.62 | 2.01 |
+| 2026-11-28 17:30 (szombat) | Ospitaletto Union – Brescia | 3.3 | 3.05 | 2.06 | 2.04 | 1.6 | 1.78 | 1.81 |
+| 2026-11-28 17:30 (szombat) | Lumezzane Desenzano – Calvina | 1.98 | 3.2 | 3.4 | 1.76 | 1.83 | 1.6 | 2.05 |
+| 2026-11-28 17:30 (szombat) | Pergolettese Giana – Erminio | 2.02 | 3 | 3.45 | 1.92 | 1.69 | 1.68 | 1.93 |
+| 2026-11-28 14:30 (szombat) | Pescara – Pianese | 1.49 | 3.9 | 5.25 | 1.56 | 2.11 | 1.64 | 1.98 |
+| 2026-11-28 14:30 (szombat) | Gubbio – Vado | 2.21 | 3 | 3 | 2.08 | 1.58 | 1.79 | 1.8 |
+| 2026-11-28 14:30 (szombat) | Guidonia Montecelio – Campobasso | 2.14 | 3.1 | 3.05 | 1.75 | 1.85 | 1.56 | 2.12 |
+| 2026-11-28 14:30 (szombat) | Giugliano – Altamura | 2.5 | 3.05 | 2.59 | 1.93 | 1.68 | 1.65 | 1.97 |
+| 2026-11-28 17:30 (szombat) | Salernitana – Monopoli | 1.92 | 3.05 | 3.7 | 2.06 | 1.59 | 1.83 | 1.76 |
+| 2026-11-28 17:30 (szombat) | Sorrento – Cosenza | 2.04 | 2.9 | 3.55 | 2.36 | 1.45 | 1.97 | 1.65 |
+| 2026-11-28 14:30 (szombat) | GS Arconatese 1926 Cittadella – Vis Modena | 3.8 | 3.25 | 1.83 | 2.05 | 1.59 | 1.87 | 1.73 |
+| 2026-11-28 14:30 (szombat) | Afragolese 1944 Certosa – Vigor Campagnano | 2.48 | 3.1 | 2.58 | 1.92 | 1.68 | 1.69 | 1.92 |
 
 ---
 _Ensemble: stat + xG + form · odds 1.8–2.1 · min. esély 45.0% · bankroll 100000 HUF_
